@@ -1,0 +1,397 @@
+titre,objectifs,prerequis,public,programme,durée,modalité,tarif,lieu,prochaines_sessions,resume_html
+Formation Deep Learning,"['Comprendre les concepts fondamentaux du Deep Learning', 'Maîtriser les différentes architectures de réseaux de neurones', 'Savoir implémenter des modèles de Deep Learning avec des frameworks tels que TensorFlow ou Keras', 'Appliquer le Deep Learning à des cas concrets tels que la vision par ordinateur et le traitement du langage naturel']","['Connaissances de base en programmation Python', 'Notions en Machine Learning recommandées']","['Ingénieurs', 'Data Scientists', 'Développeurs', 'Toute personne souhaitant approfondir ses connaissances en réseaux de neurones et apprentissage profond']","['Introduction au Deep Learning', 'Fondamentaux des réseaux de neurones', 'Entraînement des réseaux de neurones', 'Architectures avancées de réseaux de neurones', 'Outils et frameworks de Deep Learning', 'Applications pratiques du Deep Learning', 'Déploiement et mise en production des modèles']",jours ( heures),,2 280 HT,À distance ou sur site,,"<div>
+ <div>
+  <nav>
+   <ul>
+    <li>
+     <a>
+      <h3>
+       Public visé
+      </h3>
+     </a>
+    </li>
+    <li>
+     <a>
+      <h3>
+       Prérequis
+      </h3>
+     </a>
+    </li>
+    <li>
+     <a>
+      <h3>
+       Objectifs
+      </h3>
+     </a>
+    </li>
+    <li>
+     <a>
+      <h3>
+       Programme
+      </h3>
+     </a>
+    </li>
+   </ul>
+  </nav>
+ </div>
+ <div>
+  <section>
+   <ul>
+    <li>
+     <i>
+     </i>
+     <span>
+      Ingénieurs
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Data Scientists
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Développeurs
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Toute personne souhaitant approfondir ses connaissances en réseaux de neurones et apprentissage profond
+     </span>
+    </li>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Ingénieurs,Data Scientists,Dév""
+}-->
+   </ul>
+  </section>
+  <section>
+   <ul>
+    <li>
+     <i>
+     </i>
+     <span>
+      Connaissances de base en programmation Python
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Notions en Machine Learning recommandées
+     </span>
+    </li>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Connaissances de base en progr""
+}-->
+   </ul>
+  </section>
+  <section>
+   <ul>
+    <li>
+     <i>
+     </i>
+     <span>
+      Comprendre les concepts fondamentaux du Deep Learning
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Maîtriser les différentes architectures de réseaux de neurones
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Savoir implémenter des modèles de Deep Learning avec des frameworks tels que TensorFlow ou Keras
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Appliquer le Deep Learning à des cas concrets tels que la vision par ordinateur et le traitement du langage naturel
+     </span>
+    </li>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Comprendre les concepts fondam""
+}-->
+   </ul>
+  </section>
+  <section>
+   <div>
+    <div>
+     <div>
+      <h3>
+       Introduction au Deep Learning
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Historique et évolution
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Différences entre Machine Learning et Deep Learning
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Applications et cas d'usage
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Historique et évolution,Différ""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Fondamentaux des réseaux de neurones
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Neurone artificiel et fonction d'activation
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Architecture des réseaux : couches, neurones, connexions
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Propagation avant et rétropropagation de l'erreur
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Neurone artificiel et fonction""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Entraînement des réseaux de neurones
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Fonctions de coût et optimisation
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Techniques de régularisation : dropout, batch normalization
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Gestion du surapprentissage et validation croisée
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Fonctions de coût et optimisat""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Architectures avancées de réseaux de neurones
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Réseaux de neurones convolutifs (CNN) pour la vision par ordinateur
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Réseaux de neurones récurrents (RNN) et LSTM pour le traitement du langage naturel
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Auto-encodeurs et réseaux antagonistes génératifs (GAN)
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Réseaux de neurones convolutif""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Outils et frameworks de Deep Learning
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Présentation de TensorFlow et Keras
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Prise en main des environnements de développement
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Implémentation de modèles simples
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Présentation de TensorFlow et ""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Applications pratiques du Deep Learning
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Classification d'images
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Reconnaissance vocale
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Analyse de sentiments
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Classification d'images,Reconn""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Déploiement et mise en production des modèles
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Optimisation des performances
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Exportation et intégration dans des applications
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Surveillance et maintenance des modèles en production
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Optimisation des performances,""
+}-->
+      </ul>
+     </div>
+    </div>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""[object Object],[object Object""
+}-->
+   </div>
+  </section>
+ </div>
+</div>
+"

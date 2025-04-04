@@ -1,0 +1,14 @@
+[
+  {
+    "chunk_id": "6243a352-b777-408f-9c4c-fb861d1e872d",
+    "titre": "Formation Python – Data Visualisation",
+    "content": "",
+    "source": "Formation_Python_Data_Visualisation.json"
+  },
+  {
+    "chunk_id": "237f5b55-74af-4ef4-9265-99348c84d8fa",
+    "titre": "Formation Python – Data Visualisation",
+    "content": "Comprendre les concepts fondamentaux de la visualisation de données\nMaîtriser les bibliothèques Python dédiées à la datavisualisation\nCréer des visualisations interactives et informatives\nAdapter les visualisations aux besoins spécifiques des projets\n\nConnaissance de base du langage Python\nNotions en manipulation de données recommandées\n\nAnalystes de données\nScientifiques de données\nDéveloppeurs\nToute personne souhaitant maîtriser la visualisation de données avec Python\n\nIntroduction à la Data Visualisation\nEnvironnement Python pour la Data Visualisation\nCréation de visualisations avec Matplotlib\nVisualisations avancées avec Seaborn\nVisualisations interactives avec Plotly\nManipulation et préparation des données\n\nAnalystes de données\nScientifiques de données\nDéveloppeurs\nToute personne souhaitant maîtriser la visualisation de données avec Python\nConnaissance de base du langage Python\nNotions en manipulation de données recommandées\nComprendre les concepts fondamentaux de la visualisation de données\nMaîtriser les bibliothèques Python dédiées à la datavisualisation\nCréer des visualisations interactives et informatives\nAdapter les visualisations aux besoins spécifiques des projets\nIntroduction à la Data Visualisation\nImportance et objectifs de la visualisation de données\nBonnes pratiques et principes de conception\nTypes de visualisations et leurs usages\nEnvironnement Python pour la Data Visualisation\nInstallation et configuration des outils nécessaires\nPrésentation des bibliothèques principales : Matplotlib, Seaborn, Plotly\nCréation de visualisations avec Matplotlib\nStructure d'une figure Matplotlib\nCréation de graphiques de base : lignes, barres, histogrammes\nPersonnalisation des graphiques : titres, légendes, axes\nVisualisations avancées avec Seaborn\nCréation de graphiques statistiques\nVisualisation de distributions et de relations entre variables\nPersonnalisation et thèmes\nVisualisations interactives avec Plotly\nIntroduction à Plotly et ses fonctionnalités\nCréation de graphiques interactifs\nIntégration dans des applications web\nManipulation et préparation des données\nUtilisation de Pandas pour le nettoyage des données\nGestion des données manquantes\nAgrégation et transformation des données",
+    "source": "Formation_Python_Data_Visualisation.json"
+  }
+]

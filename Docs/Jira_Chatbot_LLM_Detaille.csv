@@ -1,0 +1,24 @@
+Issue Type,Summary,Sprint,Assignee,Epic Link
+Epic,EPIC 1 - Préparation des données,Sprint 1,Michel,
+Epic,EPIC 2 - Intégration du LLM,Sprint 2,Mohammed,
+Epic,EPIC 3 - Interface utilisateur,Sprint 3,Michel,
+Epic,EPIC 4 - Logique de recommandation,Sprint 3,Mohammed,
+Epic,EPIC 5 - Déploiement & démonstration,Sprint 4,Michel,
+Story,Scraper les données du site cible (HTML/API),Sprint 1,Michel,EPIC 1 - Préparation des données
+Story,"Nettoyer, normaliser et structurer les données extraites",Sprint 1,Michel,EPIC 1 - Préparation des données
+Story,Segmenter les textes en chunks pour vectorisation,Sprint 1,Michel,EPIC 1 - Préparation des données
+Story,Mettre en place un système de vectorisation (FAISS/Chroma),Sprint 1,Michel,EPIC 1 - Préparation des données
+Story,"Sélectionner le modèle LLM adapté (OpenAI, Mistral, LLaMA2)",Sprint 2,Mohammed,EPIC 2 - Intégration du LLM
+Story,Configurer le système RAG pour réponses contextuelles,Sprint 2,Mohammed,EPIC 2 - Intégration du LLM
+Story,Rédiger et tester des prompts (prompt engineering),Sprint 2,Mohammed,EPIC 2 - Intégration du LLM
+Story,Tester la pertinence des réponses selon différents profils,Sprint 2,Mohammed,EPIC 2 - Intégration du LLM
+Story,Concevoir l’interface web du chatbot (Angular/React),Sprint 3,Michel,EPIC 3 - Interface utilisateur
+Story,Développer les composants de conversation dynamiques,Sprint 3,Michel,EPIC 3 - Interface utilisateur
+Story,Connecter le frontend à l’API du LLM via backend,Sprint 3,Michel,EPIC 3 - Interface utilisateur
+Story,Assurer l'expérience utilisateur fluide (UX + état du dialogue),Sprint 3,Michel,EPIC 3 - Interface utilisateur
+Story,Élaborer les règles de matching profil / formation,Sprint 3,Michel,EPIC 4 - Logique de recommandation
+Story,Intégrer une logique conditionnelle pour bilan de compétence,Sprint 3,Mohammed,EPIC 4 - Logique de recommandation
+Story,Tester l’ensemble du pipeline (front ↔ backend ↔ LLM),Sprint 4,Mohammed,EPIC 5 - Déploiement & démonstration
+Story,Déployer l’application sur Render.com ou HuggingFace Spaces,Sprint 4,Michel,EPIC 5 - Déploiement & démonstration
+Story,Préparer la démo finale et créer la présentation PowerPoint,Sprint 4,Mohammed,EPIC 5 - Déploiement & démonstration
+Story,Rédiger un livrable professionnel du projet final,Sprint 4,Michel,EPIC 5 - Déploiement & démonstration

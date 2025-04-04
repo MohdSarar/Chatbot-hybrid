@@ -1,0 +1,14 @@
+[
+  {
+    "chunk_id": "e4437479-2bb6-47ad-8208-70246c5b9622",
+    "titre": "Formation Machine Learning",
+    "content": "",
+    "source": "Formation_Machine_Learning.json"
+  },
+  {
+    "chunk_id": "56ebbabc-d2b8-4761-ab93-be0b65de92fe",
+    "titre": "Formation Machine Learning",
+    "content": "Comprendre les concepts fondamentaux du Machine Learning\nMaîtriser les principales techniques d'apprentissage supervisé et non supervisé\nSavoir prétraiter et préparer des données pour le Machine Learning\nDévelopper et évaluer des modèles prédictifs\nAppliquer des algorithmes de Machine Learning à des cas concrets\n\nConnaissances de base en programmation Python\nNotions en statistiques et probabilités recommandées\n\nDéveloppeurs\nData Scientists\nAnalystes de données\nToute personne souhaitant acquérir des compétences en apprentissage automatique\n\nIntroduction au Machine Learning\nPréparation des données\nApprentissage supervisé\nApprentissage non supervisé\nTechniques d'amélioration des modèles\nIntroduction au Deep Learning\nMise en production des modèles\n\nDéveloppeurs\nData Scientists\nAnalystes de données\nToute personne souhaitant acquérir des compétences en apprentissage automatique\nConnaissances de base en programmation Python\nNotions en statistiques et probabilités recommandées\nComprendre les concepts fondamentaux du Machine Learning\nMaîtriser les principales techniques d'apprentissage supervisé et non supervisé\nSavoir prétraiter et préparer des données pour le Machine Learning\nDévelopper et évaluer des modèles prédictifs\nAppliquer des algorithmes de Machine Learning à des cas concrets\nIntroduction au Machine Learning\nDéfinition et concepts clés\nDifférences entre apprentissage supervisé, non supervisé et semi-supervisé\nApplications et cas d'usage du Machine Learning\nPréparation des données\nCollecte et exploration des données\nNettoyage des données : gestion des valeurs manquantes et des outliers\nTransformation des variables et normalisation\nDivision des données en ensembles d'entraînement et de test\nApprentissage supervisé\nRégression linéaire et polynomiale\nMéthodes de classification : k-NN, régression logistique, SVM\nArbres de décision et forêts aléatoires\nÉvaluation des modèles : métriques de performance et validation croisée\nApprentissage non supervisé\nAlgorithmes de clustering : k-means, DBSCAN\nRéduction de dimensionnalité : ACP, t-SNE\nDétection d'anomalies\nTechniques d'amélioration des modèles\nSélection de caractéristiques\nRégularisation : L1, L2\nMéthodes d'ensemble : bagging, boosting\nIntroduction au Deep Learning\nPrésentation des réseaux de neurones\nCas d'utilisation du Deep Learning\nMise en production des modèles\nEntraînement et optimisation des modèles\nDéploiement des modèles\nSurveillance et maintenance des performances",
+    "source": "Formation_Machine_Learning.json"
+  }
+]

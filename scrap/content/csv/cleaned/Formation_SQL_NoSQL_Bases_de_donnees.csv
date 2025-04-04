@@ -1,0 +1,381 @@
+titre,objectifs,prerequis,public,programme,durée,modalité,tarif,lieu,prochaines_sessions,resume_html
+Formation SQL/NoSQL & Bases de données,"['Comprendre les concepts fondamentaux des bases de données relationnelles (SQL) et non relationnelles (NoSQL)', 'Maîtriser le langage SQL pour interroger et manipuler des bases de données', ""Découvrir les différentes technologies NoSQL et leurs cas d'utilisation"", ""Savoir choisir la solution de base de données adaptée aux besoins spécifiques d'un projet""]","['Connaissances de base en informatique', 'Notions en programmation recommandées']","['Développeurs', 'Administrateurs de bases de données', 'Analystes de données', 'Toute personne souhaitant acquérir des compétences en gestion de bases de données relationnelles et non relationnelles']","['Introduction aux bases de données', 'Langage SQL et bases de données relationnelles', 'Introduction aux bases de données NoSQL', 'Mise en œuvre de MongoDB (Base de données documentaire)', 'Mise en œuvre de Cassandra (Base de données en colonnes)', 'Comparaison et intégration des solutions SQL et NoSQL']",4 jours (28 heures),Hybride,2 400 HT,À distance ou sur site,,"<div>
+ <div>
+  <nav>
+   <ul>
+    <li>
+     <a>
+      <h3>
+       Public visé
+      </h3>
+     </a>
+    </li>
+    <li>
+     <a>
+      <h3>
+       Prérequis
+      </h3>
+     </a>
+    </li>
+    <li>
+     <a>
+      <h3>
+       Objectifs
+      </h3>
+     </a>
+    </li>
+    <li>
+     <a>
+      <h3>
+       Programme
+      </h3>
+     </a>
+    </li>
+   </ul>
+  </nav>
+ </div>
+ <div>
+  <section>
+   <ul>
+    <li>
+     <i>
+     </i>
+     <span>
+      Développeurs
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Administrateurs de bases de données
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Analystes de données
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Toute personne souhaitant acquérir des compétences en gestion de bases de données relationnelles et non relationnelles
+     </span>
+    </li>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Développeurs,Administrateurs d""
+}-->
+   </ul>
+  </section>
+  <section>
+   <ul>
+    <li>
+     <i>
+     </i>
+     <span>
+      Connaissances de base en informatique
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Notions en programmation recommandées
+     </span>
+    </li>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Connaissances de base en infor""
+}-->
+   </ul>
+  </section>
+  <section>
+   <ul>
+    <li>
+     <i>
+     </i>
+     <span>
+      Comprendre les concepts fondamentaux des bases de données relationnelles (SQL) et non relationnelles (NoSQL)
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Maîtriser le langage SQL pour interroger et manipuler des bases de données
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Découvrir les différentes technologies NoSQL et leurs cas d'utilisation
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Savoir choisir la solution de base de données adaptée aux besoins spécifiques d'un projet
+     </span>
+    </li>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Comprendre les concepts fondam""
+}-->
+   </ul>
+  </section>
+  <section>
+   <div>
+    <div>
+     <div>
+      <h3>
+       Introduction aux bases de données
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Historique et évolution des systèmes de gestion de bases de données
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Différences entre bases de données relationnelles et non relationnelles
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Cas d'utilisation typiques pour SQL et NoSQL
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Historique et évolution des sy""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Langage SQL et bases de données relationnelles
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Modélisation des données : schémas, tables, relations
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Requêtes SQL de base : SELECT, INSERT, UPDATE, DELETE
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Fonctions avancées : jointures, sous-requêtes, agrégations
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Gestion des transactions et intégrité des données
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Modélisation des données : sch""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Introduction aux bases de données NoSQL
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Présentation des différents types de bases NoSQL : clé-valeur, document, colonne, graphe
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Avantages et inconvénients des solutions NoSQL
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Critères de choix entre SQL et NoSQL en fonction des besoins
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Présentation des différents ty""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Mise en œuvre de MongoDB (Base de données documentaire)
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Installation et configuration de MongoDB
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Modélisation des données avec des documents JSON
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Opérations CRUD avec MongoDB
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Indexation et optimisation des performances
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Installation et configuration ""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Mise en œuvre de Cassandra (Base de données en colonnes)
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Présentation et architecture de Cassandra
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Modélisation des données et création de tables
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Requêtes avec CQL (Cassandra Query Language)
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Gestion de la réplication et tolérance aux pannes
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Présentation et architecture d""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Comparaison et intégration des solutions SQL et NoSQL
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Scénarios d'utilisation combinée de bases SQL et NoSQL
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Stratégies de migration et intégration des données
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Considérations sur la scalabilité et la performance
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Scénarios d'utilisation combin""
+}-->
+      </ul>
+     </div>
+    </div>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""[object Object],[object Object""
+}-->
+   </div>
+  </section>
+ </div>
+</div>
+"

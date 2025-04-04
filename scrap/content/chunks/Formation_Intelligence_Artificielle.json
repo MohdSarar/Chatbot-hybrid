@@ -1,0 +1,20 @@
+[
+  {
+    "chunk_id": "24cc6a3b-5ffb-42f5-995d-61db4b577191",
+    "titre": "Formation Intelligence Artificielle",
+    "content": "",
+    "source": "Formation_Intelligence_Artificielle.json"
+  },
+  {
+    "chunk_id": "78114efc-1d98-40d9-9005-1d27fb072faa",
+    "titre": "Formation Intelligence Artificielle",
+    "content": "Comprendre les concepts fondamentaux de l'Intelligence Artificielle\nIdentifier les différentes branches et applications de l'IA\nDécouvrir les technologies et outils utilisés en IA\nAppréhender les enjeux éthiques et les implications de l'IA dans divers secteurs\n\nConnaissances de base en informatique\nNotions en programmation recommandées\n\nProfessionnels souhaitant comprendre et appliquer les concepts de l'IA\nManagers et décideurs impliqués dans des projets technologiques\nDéveloppeurs et ingénieurs intéressés par l'implémentation de solutions d'IA\n\nIntroduction à l'Intelligence Artificielle\nTechniques fondamentales de l'IA\nOutils et technologies de l'IA\nEnjeux éthiques et réglementaires\nÉtudes de cas et applications pratiques\n\nProfessionnels souhaitant comprendre et appliquer les concepts de l'IA\nManagers et décideurs impliqués dans des projets technologiques\nDéveloppeurs et ingénieurs intéressés par l'implémentation de solutions d'IA\nConnaissances de base en informatique\nNotions en programmation recommandées\nComprendre les concepts fondamentaux de l'Intelligence Artificielle\nIdentifier les différentes branches et applications de l'IA\nDécouvrir les technologies et outils utilisés en IA\nAppréhender les enjeux éthiques et les implications de l'IA dans divers secteurs\nIntroduction à l'Intelligence Artificielle\nDéfinition et historique de l'IA\nLes différentes branches de l'IA : Machine Learning, Deep Learning, etc.",
+    "source": "Formation_Intelligence_Artificielle.json"
+  },
+  {
+    "chunk_id": "eb2f7d96-be06-47d3-a3e5-defba2c0fe6b",
+    "titre": "Formation Intelligence Artificielle",
+    "content": "Applications actuelles de l'IA dans divers secteurs\nTechniques fondamentales de l'IA\nMachine Learning : principes et algorithmes de base\nRéseaux de neurones artificiels et Deep Learning\nTraitement du langage naturel (NLP)\nVision par ordinateur\nOutils et technologies de l'IA\nPrésentation des frameworks populaires : TensorFlow, Keras, PyTorch\nIntroduction aux services cloud pour l'IA : Azure AI, AWS AI, Google AI\nEnjeux éthiques et réglementaires\nConsidérations éthiques liées à l'utilisation de l'IA\nRéglementations en vigueur et protection des données\nÉtudes de cas et applications pratiques\nAnalyse de cas concrets d'implémentation de l'IA\nAteliers pratiques pour développer une compréhension approfondie",
+    "source": "Formation_Intelligence_Artificielle.json"
+  }
+]

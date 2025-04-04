@@ -1,0 +1,14 @@
+[
+  {
+    "chunk_id": "c97c9f03-80c7-406e-b780-009ad6e890b8",
+    "titre": "Parcours Data Analyst",
+    "content": "",
+    "source": "Parcours_Data_Analyst.json"
+  },
+  {
+    "chunk_id": "f526ab54-e298-43bf-b79b-833f0382b509",
+    "titre": "Parcours Data Analyst",
+    "content": "Comprendre les fondamentaux de la data et Big Data\nCollecter, organiser, et préparer les données pour l'analyse\nCréer des visualisations claires et dynamiques\nAppliquer les bases du Machine Learning\nMaîtriser des outils comme Python, SQL, Power BI, Tableau, et Jira\n\nNotions en manipulation de données\nConnaissances en Python et SQL recommandées\n\nToute personne souhaitant se reconvertir ou approfondir ses compétences en analyse de données\n\nInitiation et maîtrise de Python\nIntroduction et perfectionnement en SQL\nIntroduction au NoSQL\nGestion de Projet Scrum avec Jira\nIntroduction et perfectionnement en ETL\nIntroduction au Cloud Computing\nAnglais professionnel et communication\nData Visualisation avec Power BI et Tableau\n\nToute personne souhaitant se reconvertir ou approfondir ses compétences en analyse de données\nNotions en manipulation de données\nConnaissances en Python et SQL recommandées\nComprendre les fondamentaux de la data et Big Data\nCollecter, organiser, et préparer les données pour l'analyse\nCréer des visualisations claires et dynamiques\nAppliquer les bases du Machine Learning\nMaîtriser des outils comme Python, SQL, Power BI, Tableau, et Jira\nInitiation et maîtrise de Python\nIntroduction au langage Python\nAnalyse des données avec Pandas et NumPy\nVisualisation de données avec Matplotlib et Seaborn\nBases du Machine Learning\nIntroduction et perfectionnement en SQL\nCréation et gestion de bases de données relationnelles\nRédaction et optimisation des requêtes SQL\nManipulation des données massives\nIntroduction au NoSQL\nPrincipes fondamentaux des bases NoSQL\nModélisation des données dans MongoDB\nRequêtes avancées et optimisation des performances\nGestion de Projet Scrum avec Jira\nIntroduction à la gestion de projet Agile\nUtilisation avancée de Jira pour les sprints et les workflows\nCollaboration et reporting avec Jira\nIntroduction et perfectionnement en ETL\nCréation et automatisation de workflows ETL avec Talend et KNIME\nTransformation et nettoyage des données\nOptimisation des pipelines ETL\nIntroduction au Cloud Computing\nConcepts fondamentaux des services Cloud\nStockage et traitement des données dans le Cloud\nSécurité et optimisation des coûts\nAnglais professionnel et communication\nCommunication écrite et orale dans un cadre professionnel\nAcquisition du vocabulaire technique pour les données et les outils\nSimulation de présentations et échanges professionnels\nData Visualisation avec Power BI et Tableau\nCréation de tableaux de bord interactifs\nPublication et partage des insights\nUtilisation avancée des mesures DAX",
+    "source": "Parcours_Data_Analyst.json"
+  }
+]

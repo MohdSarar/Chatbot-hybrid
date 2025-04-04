@@ -1,0 +1,411 @@
+titre,objectifs,prerequis,public,programme,durée,modalité,tarif,lieu,prochaines_sessions,resume_html
+Formation Machine Learning,"['Comprendre les concepts fondamentaux du Machine Learning', ""Maîtriser les principales techniques d'apprentissage supervisé et non supervisé"", 'Savoir prétraiter et préparer des données pour le Machine Learning', 'Développer et évaluer des modèles prédictifs', 'Appliquer des algorithmes de Machine Learning à des cas concrets']","['Connaissances de base en programmation Python', 'Notions en statistiques et probabilités recommandées']","['Développeurs', 'Data Scientists', 'Analystes de données', 'Toute personne souhaitant acquérir des compétences en apprentissage automatique']","['Introduction au Machine Learning', 'Préparation des données', 'Apprentissage supervisé', 'Apprentissage non supervisé', ""Techniques d'amélioration des modèles"", 'Introduction au Deep Learning', 'Mise en production des modèles']",3 jours (21 heures),Hybride,2 100 HT,À distance ou sur site,,"<div>
+ <div>
+  <nav>
+   <ul>
+    <li>
+     <a>
+      <h3>
+       Public visé
+      </h3>
+     </a>
+    </li>
+    <li>
+     <a>
+      <h3>
+       Prérequis
+      </h3>
+     </a>
+    </li>
+    <li>
+     <a>
+      <h3>
+       Objectifs
+      </h3>
+     </a>
+    </li>
+    <li>
+     <a>
+      <h3>
+       Programme
+      </h3>
+     </a>
+    </li>
+   </ul>
+  </nav>
+ </div>
+ <div>
+  <section>
+   <ul>
+    <li>
+     <i>
+     </i>
+     <span>
+      Développeurs
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Data Scientists
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Analystes de données
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Toute personne souhaitant acquérir des compétences en apprentissage automatique
+     </span>
+    </li>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Développeurs,Data Scientists,A""
+}-->
+   </ul>
+  </section>
+  <section>
+   <ul>
+    <li>
+     <i>
+     </i>
+     <span>
+      Connaissances de base en programmation Python
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Notions en statistiques et probabilités recommandées
+     </span>
+    </li>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Connaissances de base en progr""
+}-->
+   </ul>
+  </section>
+  <section>
+   <ul>
+    <li>
+     <i>
+     </i>
+     <span>
+      Comprendre les concepts fondamentaux du Machine Learning
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Maîtriser les principales techniques d'apprentissage supervisé et non supervisé
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Savoir prétraiter et préparer des données pour le Machine Learning
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Développer et évaluer des modèles prédictifs
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Appliquer des algorithmes de Machine Learning à des cas concrets
+     </span>
+    </li>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Comprendre les concepts fondam""
+}-->
+   </ul>
+  </section>
+  <section>
+   <div>
+    <div>
+     <div>
+      <h3>
+       Introduction au Machine Learning
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Définition et concepts clés
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Différences entre apprentissage supervisé, non supervisé et semi-supervisé
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Applications et cas d'usage du Machine Learning
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Définition et concepts clés,Di""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Préparation des données
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Collecte et exploration des données
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Nettoyage des données : gestion des valeurs manquantes et des outliers
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Transformation des variables et normalisation
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Division des données en ensembles d'entraînement et de test
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Collecte et exploration des do""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Apprentissage supervisé
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Régression linéaire et polynomiale
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Méthodes de classification : k-NN, régression logistique, SVM
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Arbres de décision et forêts aléatoires
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Évaluation des modèles : métriques de performance et validation croisée
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Régression linéaire et polynom""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Apprentissage non supervisé
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Algorithmes de clustering : k-means, DBSCAN
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Réduction de dimensionnalité : ACP, t-SNE
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Détection d'anomalies
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Algorithmes de clustering : k-""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Techniques d'amélioration des modèles
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Sélection de caractéristiques
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Régularisation : L1, L2
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Méthodes d'ensemble : bagging, boosting
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Sélection de caractéristiques,""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Introduction au Deep Learning
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Présentation des réseaux de neurones
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Cas d'utilisation du Deep Learning
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Présentation des réseaux de ne""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Mise en production des modèles
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Entraînement et optimisation des modèles
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Déploiement des modèles
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Surveillance et maintenance des performances
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Entraînement et optimisation d""
+}-->
+      </ul>
+     </div>
+    </div>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""[object Object],[object Object""
+}-->
+   </div>
+  </section>
+ </div>
+</div>
+"

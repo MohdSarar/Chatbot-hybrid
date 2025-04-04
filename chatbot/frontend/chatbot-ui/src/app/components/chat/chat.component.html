@@ -1,0 +1,79 @@
+<div class="chat-container">
+  <h1>Assistant Formation</h1>
+
+  <!-- 
+    Bouton "Modifier Profil" ou "Masquer Formulaire" 
+    selon l'état showForm().
+  -->
+  <button class="toggle-btn" (click)="toggleForm()">
+    {{ showForm() ? 'Masquer Formulaire' : 'Modifier le Profil' }}
+  </button>
+
+  <!-- 
+    Formulaire de profil (collapsable) 
+    Affiché si showForm() === true
+  -->
+  <div class="profile-form" *ngIf="showForm()">
+    <app-user-profile-form
+      [existingProfile]="profile()"
+      (profileSubmit)="onProfileSubmit($event)"
+    >
+    </app-user-profile-form>
+  </div>
+
+  <!-- 
+    Une fois le profil défini et si showForm() === false,
+    on affiche le résumé du profil 
+  -->
+  <div class="profile-summary" *ngIf="profile() && !showForm()">
+    <p>
+      <strong>Nom: </strong>{{ profile()?.name }}
+      | 
+      <em>Niveau: {{ profile()?.level }}</em>
+    </p>
+    <p>
+      <strong>Objectif: </strong>{{ profile()?.objective }}
+    </p>
+    <p>
+      <strong>Compétences: </strong>{{ profile()?.knowledge }}
+    </p>
+    <p *ngIf="profile()?.recommended_course">
+      <strong>Formation recommandée: </strong>
+      {{ profile()?.recommended_course }}
+    </p>
+  </div>
+
+  <!-- Zone de chat, visible si on a un profil -->
+  <div class="chat-interface" *ngIf="profile()">
+    <div 
+      #chatHistoryContainer 
+      class="chat-history"
+    >
+      <!-- 
+        Affiche les messages en ordre normal, 
+        mais le CSS inverse l’affichage (column-reverse).
+      -->
+      <app-message-bubble
+        *ngFor="let msg of messages()"
+        [message]="msg"
+      ></app-message-bubble>
+    </div>
+
+    <div class="chat-input">
+      <input
+        type="text"
+        [ngModel]="currentInput()"
+        (ngModelChange)="currentInput.set($event)"
+        (keydown.enter)="sendMessage()"
+        placeholder="Posez une question..."
+        [disabled]="sending()"
+      />
+      <button
+        (click)="sendMessage()"
+        [disabled]="sending()"
+      >
+        {{ sending() ? '...' : 'Envoyer' }}
+      </button>
+    </div>
+  </div>
+</div>

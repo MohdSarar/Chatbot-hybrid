@@ -1,0 +1,381 @@
+titre,objectifs,prerequis,public,programme,durée,modalité,tarif,lieu,prochaines_sessions,resume_html
+Formation Intégration des données (ETL),"[""Comprendre les concepts fondamentaux de l'intégration de données et des processus ETL (Extract, Transform, Load)"", ""Maîtriser l'utilisation d'outils ETL pour extraire, transformer et charger des données à partir de différentes sources"", 'Savoir concevoir et implémenter des flux de données efficaces et fiables', 'Être capable de gérer les erreurs et optimiser les performances des processus ETL']","['Connaissances de base en bases de données et SQL', 'Notions en programmation recommandées']","['Développeurs', 'Administrateurs de bases de données', 'Ingénieurs en Business Intelligence', ""Toute personne impliquée dans des projets d'intégration de données""]","[""Introduction à l'intégration de données et aux processus ETL"", 'Conception des processus ETL', ""Utilisation d'un outil ETL : Talend"", 'Gestion des erreurs et optimisation des performances', 'Intégration de données pour le Big Data', ""Bonnes pratiques et stratégies d'intégration""]",3 jours (21 heures),Hybride,2 100 HT,À distance,,"<div>
+ <div>
+  <nav>
+   <ul>
+    <li>
+     <a>
+      <h3>
+       Public visé
+      </h3>
+     </a>
+    </li>
+    <li>
+     <a>
+      <h3>
+       Prérequis
+      </h3>
+     </a>
+    </li>
+    <li>
+     <a>
+      <h3>
+       Objectifs
+      </h3>
+     </a>
+    </li>
+    <li>
+     <a>
+      <h3>
+       Programme
+      </h3>
+     </a>
+    </li>
+   </ul>
+  </nav>
+ </div>
+ <div>
+  <section>
+   <ul>
+    <li>
+     <i>
+     </i>
+     <span>
+      Développeurs
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Administrateurs de bases de données
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Ingénieurs en Business Intelligence
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Toute personne impliquée dans des projets d'intégration de données
+     </span>
+    </li>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Développeurs,Administrateurs d""
+}-->
+   </ul>
+  </section>
+  <section>
+   <ul>
+    <li>
+     <i>
+     </i>
+     <span>
+      Connaissances de base en bases de données et SQL
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Notions en programmation recommandées
+     </span>
+    </li>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Connaissances de base en bases""
+}-->
+   </ul>
+  </section>
+  <section>
+   <ul>
+    <li>
+     <i>
+     </i>
+     <span>
+      Comprendre les concepts fondamentaux de l'intégration de données et des processus ETL (Extract, Transform, Load)
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Maîtriser l'utilisation d'outils ETL pour extraire, transformer et charger des données à partir de différentes sources
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Savoir concevoir et implémenter des flux de données efficaces et fiables
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Être capable de gérer les erreurs et optimiser les performances des processus ETL
+     </span>
+    </li>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Comprendre les concepts fondam""
+}-->
+   </ul>
+  </section>
+  <section>
+   <div>
+    <div>
+     <div>
+      <h3>
+       Introduction à l'intégration de données et aux processus ETL
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Définition et importance de l'intégration de données
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Présentation des processus ETL et de leur rôle en Business Intelligence
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Aperçu des principaux outils ETL du marché
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Définition et importance de l'""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Conception des processus ETL
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Analyse des sources de données et des besoins en intégration
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Modélisation des flux de données
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Définition des transformations nécessaires
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Planification des chargements et des mises à jour
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Analyse des sources de données""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Utilisation d'un outil ETL : Talend
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Présentation de l'environnement Talend et de ses fonctionnalités
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Création de projets et de jobs ETL
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Connexion aux différentes sources de données
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Implémentation des transformations de données
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Chargement des données dans des cibles variées
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Présentation de l'environnemen""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Gestion des erreurs et optimisation des performances
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Identification et traitement des erreurs dans les processus ETL
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Mise en place de mécanismes de journalisation et de suivi
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Techniques d'optimisation des performances des flux de données
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Identification et traitement d""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Intégration de données pour le Big Data
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Spécificités de l'intégration de données dans des environnements Big Data
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Utilisation de Talend pour le Big Data
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Cas pratiques d'intégration de données volumineuses
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Spécificités de l'intégration ""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Bonnes pratiques et stratégies d'intégration
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Mise en place de standards et de conventions
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Gestion des métadonnées
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Stratégies de maintenance et d'évolution des processus ETL
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Mise en place de standards et ""
+}-->
+      </ul>
+     </div>
+    </div>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""[object Object],[object Object""
+}-->
+   </div>
+  </section>
+ </div>
+</div>
+"

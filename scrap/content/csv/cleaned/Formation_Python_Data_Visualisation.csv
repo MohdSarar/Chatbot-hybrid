@@ -1,0 +1,353 @@
+titre,objectifs,prerequis,public,programme,durée,modalité,tarif,lieu,prochaines_sessions,resume_html
+Formation Python – Data Visualisation,"['Comprendre les concepts fondamentaux de la visualisation de données', 'Maîtriser les bibliothèques Python dédiées à la datavisualisation', 'Créer des visualisations interactives et informatives', 'Adapter les visualisations aux besoins spécifiques des projets']","['Connaissance de base du langage Python', 'Notions en manipulation de données recommandées']","['Analystes de données', 'Scientifiques de données', 'Développeurs', 'Toute personne souhaitant maîtriser la visualisation de données avec Python']","['Introduction à la Data Visualisation', 'Environnement Python pour la Data Visualisation', 'Création de visualisations avec Matplotlib', 'Visualisations avancées avec Seaborn', 'Visualisations interactives avec Plotly', 'Manipulation et préparation des données']",3 jours (21 heures),Hybride,1 800 HT,À distance,,"<div>
+ <div>
+  <nav>
+   <ul>
+    <li>
+     <a>
+      <h3>
+       Public visé
+      </h3>
+     </a>
+    </li>
+    <li>
+     <a>
+      <h3>
+       Prérequis
+      </h3>
+     </a>
+    </li>
+    <li>
+     <a>
+      <h3>
+       Objectifs
+      </h3>
+     </a>
+    </li>
+    <li>
+     <a>
+      <h3>
+       Programme
+      </h3>
+     </a>
+    </li>
+   </ul>
+  </nav>
+ </div>
+ <div>
+  <section>
+   <ul>
+    <li>
+     <i>
+     </i>
+     <span>
+      Analystes de données
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Scientifiques de données
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Développeurs
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Toute personne souhaitant maîtriser la visualisation de données avec Python
+     </span>
+    </li>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Analystes de données,Scientifi""
+}-->
+   </ul>
+  </section>
+  <section>
+   <ul>
+    <li>
+     <i>
+     </i>
+     <span>
+      Connaissance de base du langage Python
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Notions en manipulation de données recommandées
+     </span>
+    </li>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Connaissance de base du langag""
+}-->
+   </ul>
+  </section>
+  <section>
+   <ul>
+    <li>
+     <i>
+     </i>
+     <span>
+      Comprendre les concepts fondamentaux de la visualisation de données
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Maîtriser les bibliothèques Python dédiées à la datavisualisation
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Créer des visualisations interactives et informatives
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Adapter les visualisations aux besoins spécifiques des projets
+     </span>
+    </li>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Comprendre les concepts fondam""
+}-->
+   </ul>
+  </section>
+  <section>
+   <div>
+    <div>
+     <div>
+      <h3>
+       Introduction à la Data Visualisation
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Importance et objectifs de la visualisation de données
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Bonnes pratiques et principes de conception
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Types de visualisations et leurs usages
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Importance et objectifs de la ""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Environnement Python pour la Data Visualisation
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Installation et configuration des outils nécessaires
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Présentation des bibliothèques principales : Matplotlib, Seaborn, Plotly
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Installation et configuration ""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Création de visualisations avec Matplotlib
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Structure d'une figure Matplotlib
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Création de graphiques de base : lignes, barres, histogrammes
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Personnalisation des graphiques : titres, légendes, axes
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Structure d'une figure Matplot""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Visualisations avancées avec Seaborn
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Création de graphiques statistiques
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Visualisation de distributions et de relations entre variables
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Personnalisation et thèmes
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Création de graphiques statist""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Visualisations interactives avec Plotly
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Introduction à Plotly et ses fonctionnalités
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Création de graphiques interactifs
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Intégration dans des applications web
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Introduction à Plotly et ses f""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Manipulation et préparation des données
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Utilisation de Pandas pour le nettoyage des données
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Gestion des données manquantes
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Agrégation et transformation des données
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Utilisation de Pandas pour le ""
+}-->
+      </ul>
+     </div>
+    </div>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""[object Object],[object Object""
+}-->
+   </div>
+  </section>
+ </div>
+</div>
+"

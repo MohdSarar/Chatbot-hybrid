@@ -1,0 +1,427 @@
+titre,objectifs,prerequis,public,programme,durée,modalité,tarif,lieu,prochaines_sessions,resume_html
+Parcours Data Analyst,"['Comprendre les fondamentaux de la data et Big Data', ""Collecter, organiser, et préparer les données pour l'analyse"", 'Créer des visualisations claires et dynamiques', 'Appliquer les bases du Machine Learning', 'Maîtriser des outils comme Python, SQL, Power BI, Tableau, et Jira']","['Notions en manipulation de données', 'Connaissances en Python et SQL recommandées']",['Toute personne souhaitant se reconvertir ou approfondir ses compétences en analyse de données'],"['Initiation et maîtrise de Python', 'Introduction et perfectionnement en SQL', 'Introduction au NoSQL', 'Gestion de Projet Scrum avec Jira', 'Introduction et perfectionnement en ETL', 'Introduction au Cloud Computing', 'Anglais professionnel et communication', 'Data Visualisation avec Power BI et Tableau']",38 jours (306 heures),Hybride,Sur demande,À distance ou sur site,,"<div>
+ <div>
+  <nav>
+   <ul>
+    <li>
+     <a>
+      <h3>
+       Public visé
+      </h3>
+     </a>
+    </li>
+    <li>
+     <a>
+      <h3>
+       Prérequis
+      </h3>
+     </a>
+    </li>
+    <li>
+     <a>
+      <h3>
+       Objectifs
+      </h3>
+     </a>
+    </li>
+    <li>
+     <a>
+      <h3>
+       Programme
+      </h3>
+     </a>
+    </li>
+   </ul>
+  </nav>
+ </div>
+ <div>
+  <section>
+   <ul>
+    <li>
+     <i>
+     </i>
+     <span>
+      Toute personne souhaitant se reconvertir ou approfondir ses compétences en analyse de données
+     </span>
+    </li>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Toute personne souhaitant se r""
+}-->
+   </ul>
+  </section>
+  <section>
+   <ul>
+    <li>
+     <i>
+     </i>
+     <span>
+      Notions en manipulation de données
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Connaissances en Python et SQL recommandées
+     </span>
+    </li>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Notions en manipulation de don""
+}-->
+   </ul>
+  </section>
+  <section>
+   <ul>
+    <li>
+     <i>
+     </i>
+     <span>
+      Comprendre les fondamentaux de la data et Big Data
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Collecter, organiser, et préparer les données pour l'analyse
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Créer des visualisations claires et dynamiques
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Appliquer les bases du Machine Learning
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Maîtriser des outils comme Python, SQL, Power BI, Tableau, et Jira
+     </span>
+    </li>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Comprendre les fondamentaux de""
+}-->
+   </ul>
+  </section>
+  <section>
+   <div>
+    <div>
+     <div>
+      <h3>
+       Initiation et maîtrise de Python
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Introduction au langage Python
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Analyse des données avec Pandas et NumPy
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Visualisation de données avec Matplotlib et Seaborn
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Bases du Machine Learning
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Introduction au langage Python""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Introduction et perfectionnement en SQL
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Création et gestion de bases de données relationnelles
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Rédaction et optimisation des requêtes SQL
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Manipulation des données massives
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Création et gestion de bases d""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Introduction au NoSQL
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Principes fondamentaux des bases NoSQL
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Modélisation des données dans MongoDB
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Requêtes avancées et optimisation des performances
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Principes fondamentaux des bas""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Gestion de Projet Scrum avec Jira
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Introduction à la gestion de projet Agile
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Utilisation avancée de Jira pour les sprints et les workflows
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Collaboration et reporting avec Jira
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Introduction à la gestion de p""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Introduction et perfectionnement en ETL
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Création et automatisation de workflows ETL avec Talend et KNIME
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Transformation et nettoyage des données
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Optimisation des pipelines ETL
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Création et automatisation de ""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Introduction au Cloud Computing
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Concepts fondamentaux des services Cloud
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Stockage et traitement des données dans le Cloud
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Sécurité et optimisation des coûts
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Concepts fondamentaux des serv""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Anglais professionnel et communication
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Communication écrite et orale dans un cadre professionnel
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Acquisition du vocabulaire technique pour les données et les outils
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Simulation de présentations et échanges professionnels
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Communication écrite et orale ""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Data Visualisation avec Power BI et Tableau
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Création de tableaux de bord interactifs
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Publication et partage des insights
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Utilisation avancée des mesures DAX
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Création de tableaux de bord i""
+}-->
+      </ul>
+     </div>
+    </div>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""[object Object],[object Object""
+}-->
+   </div>
+  </section>
+ </div>
+</div>
+"

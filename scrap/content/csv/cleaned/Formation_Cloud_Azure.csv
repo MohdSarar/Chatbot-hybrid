@@ -1,0 +1,374 @@
+titre,objectifs,prerequis,public,programme,durée,modalité,tarif,lieu,prochaines_sessions,resume_html
+Formation Cloud Azure,"['Comprendre les concepts fondamentaux du cloud computing et les services offerts par Microsoft Azure', 'Apprendre à créer et gérer des machines virtuelles et des services applicatifs sur Azure', 'Maîtriser la configuration des réseaux virtuels et des solutions de stockage Azure', 'Savoir implémenter des solutions de sécurité et de surveillance sur Azure', 'Être capable de gérer les identités et la gouvernance dans un environnement Azure']","['Connaissances de base en administration système', 'Notions en réseaux et virtualisation recommandées']","['Administrateurs système', 'Ingénieurs cloud', 'Développeurs', 'Toute personne souhaitant acquérir des compétences en gestion et déploiement de solutions sur Microsoft Azure']","['Introduction à Microsoft Azure', 'Gestion des identités et de la gouvernance', 'Implémentation et gestion du stockage', 'Déploiement et gestion des ressources de calcul', 'Configuration et gestion des réseaux virtuels', 'Surveillance et sauvegarde des ressources Azure']",3 jours (21 heures),Hybride,2 100 HT,À distance ou sur site,,"<div>
+ <div>
+  <nav>
+   <ul>
+    <li>
+     <a>
+      <h3>
+       Public visé
+      </h3>
+     </a>
+    </li>
+    <li>
+     <a>
+      <h3>
+       Prérequis
+      </h3>
+     </a>
+    </li>
+    <li>
+     <a>
+      <h3>
+       Objectifs
+      </h3>
+     </a>
+    </li>
+    <li>
+     <a>
+      <h3>
+       Programme
+      </h3>
+     </a>
+    </li>
+   </ul>
+  </nav>
+ </div>
+ <div>
+  <section>
+   <ul>
+    <li>
+     <i>
+     </i>
+     <span>
+      Administrateurs système
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Ingénieurs cloud
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Développeurs
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Toute personne souhaitant acquérir des compétences en gestion et déploiement de solutions sur Microsoft Azure
+     </span>
+    </li>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Administrateurs système,Ingéni""
+}-->
+   </ul>
+  </section>
+  <section>
+   <ul>
+    <li>
+     <i>
+     </i>
+     <span>
+      Connaissances de base en administration système
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Notions en réseaux et virtualisation recommandées
+     </span>
+    </li>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Connaissances de base en admin""
+}-->
+   </ul>
+  </section>
+  <section>
+   <ul>
+    <li>
+     <i>
+     </i>
+     <span>
+      Comprendre les concepts fondamentaux du cloud computing et les services offerts par Microsoft Azure
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Apprendre à créer et gérer des machines virtuelles et des services applicatifs sur Azure
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Maîtriser la configuration des réseaux virtuels et des solutions de stockage Azure
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Savoir implémenter des solutions de sécurité et de surveillance sur Azure
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Être capable de gérer les identités et la gouvernance dans un environnement Azure
+     </span>
+    </li>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Comprendre les concepts fondam""
+}-->
+   </ul>
+  </section>
+  <section>
+   <div>
+    <div>
+     <div>
+      <h3>
+       Introduction à Microsoft Azure
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Concepts clés du cloud computing
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Présentation des services Azure
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Modèles de déploiement : IaaS, PaaS, SaaS
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Concepts clés du cloud computi""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Gestion des identités et de la gouvernance
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Configuration de Microsoft Entra ID
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Gestion des utilisateurs et des groupes
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Mise en place des abonnements et des comptes
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Application des politiques Azure et du contrôle d'accès basé sur les rôles (RBAC)
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Configuration de Microsoft Ent""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Implémentation et gestion du stockage
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Création et configuration des comptes de stockage
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Gestion des blobs, des fichiers et des disques
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Sécurisation et surveillance du stockage
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Création et configuration des ""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Déploiement et gestion des ressources de calcul
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Création et configuration des machines virtuelles
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Gestion de la disponibilité et de l'extensibilité des VM
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Déploiement des applications avec Azure App Service
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Création et configuration des ""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Configuration et gestion des réseaux virtuels
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Mise en place des réseaux virtuels et des sous-réseaux
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Configuration des groupes de sécurité réseau et des pare-feu
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Implémentation des solutions de connectivité inter-sites
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Mise en place des réseaux virt""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Surveillance et sauvegarde des ressources Azure
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Utilisation d'Azure Monitor pour la supervision
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Configuration des alertes et des journaux
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Mise en place des solutions de sauvegarde et de restauration
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Utilisation d'Azure Monitor po""
+}-->
+      </ul>
+     </div>
+    </div>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""[object Object],[object Object""
+}-->
+   </div>
+  </section>
+ </div>
+</div>
+"

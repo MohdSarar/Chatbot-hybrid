@@ -1,0 +1,27 @@
+{
+  "titre": "Formation Power BI",
+  "objectifs": [
+    "Créer des tableaux de bord interactifs",
+    "Analyser les données de manière visuelle",
+    "Maîtriser Power BI Service"
+  ],
+  "prerequis": [
+    "Connaissance de base en Excel",
+    "Notions de bases en manipulation de données"
+  ],
+  "public": [
+    "Analystes de données",
+    "Développeurs",
+    "Toute personne souhaitant utiliser Power BI"
+  ],
+  "programme": [
+    "Introduction à Power BI",
+    "Visualisation des données"
+  ],
+  "durée": "3 jours (21 heures)",
+  "modalité": "Hybride",
+  "tarif": "1 500 HT",
+  "lieu": "À distance ou sur site",
+  "prochaines_sessions": "",
+  "resume_html": "<div>\n <div>\n  <nav>\n   <ul>\n    <li>\n     <a>\n      <h3>\n       Public visé\n      </h3>\n     </a>\n    </li>\n    <li>\n     <a>\n      <h3>\n       Prérequis\n      </h3>\n     </a>\n    </li>\n    <li>\n     <a>\n      <h3>\n       Objectifs\n      </h3>\n     </a>\n    </li>\n    <li>\n     <a>\n      <h3>\n       Programme\n      </h3>\n     </a>\n    </li>\n   </ul>\n  </nav>\n </div>\n <div>\n  <section>\n   <ul>\n    <li>\n     <i>\n     </i>\n     <span>\n      Analystes de données\n     </span>\n    </li>\n    <li>\n     <i>\n     </i>\n     <span>\n      Développeurs\n     </span>\n    </li>\n    <li>\n     <i>\n     </i>\n     <span>\n      Toute personne souhaitant utiliser Power BI\n     </span>\n    </li>\n    <!--bindings={\n  \"ng-reflect-ng-for-of\": \"Analystes de données,Développe\"\n}-->\n   </ul>\n  </section>\n  <section>\n   <ul>\n    <li>\n     <i>\n     </i>\n     <span>\n      Connaissance de base en Excel\n     </span>\n    </li>\n    <li>\n     <i>\n     </i>\n     <span>\n      Notions de bases en manipulation de données\n     </span>\n    </li>\n    <!--bindings={\n  \"ng-reflect-ng-for-of\": \"Connaissance de base en Excel,\"\n}-->\n   </ul>\n  </section>\n  <section>\n   <ul>\n    <li>\n     <i>\n     </i>\n     <span>\n      Créer des tableaux de bord interactifs\n     </span>\n    </li>\n    <li>\n     <i>\n     </i>\n     <span>\n      Analyser les données de manière visuelle\n     </span>\n    </li>\n    <li>\n     <i>\n     </i>\n     <span>\n      Maîtriser Power BI Service\n     </span>\n    </li>\n    <!--bindings={\n  \"ng-reflect-ng-for-of\": \"Créer des tableaux de bord int\"\n}-->\n   </ul>\n  </section>\n  <section>\n   <div>\n    <div>\n     <div>\n      <h3>\n       Introduction à Power BI\n      </h3>\n      <i>\n      </i>\n     </div>\n     <div>\n      <ul>\n       <li>\n        <i>\n        </i>\n        <span>\n         Présentation de l'interface\n        </span>\n       </li>\n       <li>\n        <i>\n        </i>\n        <span>\n         Connexions aux sources de données\n        </span>\n       </li>\n       <li>\n        <i>\n        </i>\n        <span>\n         Création de rapports simples\n        </span>\n       </li>\n       <!--bindings={\n  \"ng-reflect-ng-for-of\": \"Présentation de l'interface,Co\"\n}-->\n      </ul>\n     </div>\n    </div>\n    <div>\n     <div>\n      <h3>\n       Visualisation des données\n      </h3>\n      <i>\n      </i>\n     </div>\n     <div>\n      <ul>\n       <li>\n        <i>\n        </i>\n        <span>\n         Utilisation des visuels\n        </span>\n       </li>\n       <li>\n        <i>\n        </i>\n        <span>\n         Formatage et personnalisation\n        </span>\n       </li>\n       <li>\n        <i>\n        </i>\n        <span>\n         Mise en page des rapports\n        </span>\n       </li>\n       <!--bindings={\n  \"ng-reflect-ng-for-of\": \"Utilisation des visuels,Format\"\n}-->\n      </ul>\n     </div>\n    </div>\n    <!--bindings={\n  \"ng-reflect-ng-for-of\": \"[object Object],[object Object\"\n}-->\n   </div>\n  </section>\n </div>\n</div>\n"
+}

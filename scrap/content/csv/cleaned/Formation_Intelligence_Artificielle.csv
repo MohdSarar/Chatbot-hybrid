@@ -1,0 +1,302 @@
+titre,objectifs,prerequis,public,programme,durée,modalité,tarif,lieu,prochaines_sessions,resume_html
+Formation Intelligence Artificielle,"[""Comprendre les concepts fondamentaux de l'Intelligence Artificielle"", ""Identifier les différentes branches et applications de l'IA"", 'Découvrir les technologies et outils utilisés en IA', ""Appréhender les enjeux éthiques et les implications de l'IA dans divers secteurs""]","['Connaissances de base en informatique', 'Notions en programmation recommandées']","[""Professionnels souhaitant comprendre et appliquer les concepts de l'IA"", 'Managers et décideurs impliqués dans des projets technologiques', ""Développeurs et ingénieurs intéressés par l'implémentation de solutions d'IA""]","[""Introduction à l'Intelligence Artificielle"", ""Techniques fondamentales de l'IA"", ""Outils et technologies de l'IA"", 'Enjeux éthiques et réglementaires', 'Études de cas et applications pratiques']",3 jours (21 heures),Hybride,1 800 HT,À distance,,"<div>
+ <div>
+  <nav>
+   <ul>
+    <li>
+     <a>
+      <h3>
+       Public visé
+      </h3>
+     </a>
+    </li>
+    <li>
+     <a>
+      <h3>
+       Prérequis
+      </h3>
+     </a>
+    </li>
+    <li>
+     <a>
+      <h3>
+       Objectifs
+      </h3>
+     </a>
+    </li>
+    <li>
+     <a>
+      <h3>
+       Programme
+      </h3>
+     </a>
+    </li>
+   </ul>
+  </nav>
+ </div>
+ <div>
+  <section>
+   <ul>
+    <li>
+     <i>
+     </i>
+     <span>
+      Professionnels souhaitant comprendre et appliquer les concepts de l'IA
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Managers et décideurs impliqués dans des projets technologiques
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Développeurs et ingénieurs intéressés par l'implémentation de solutions d'IA
+     </span>
+    </li>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Professionnels souhaitant comp""
+}-->
+   </ul>
+  </section>
+  <section>
+   <ul>
+    <li>
+     <i>
+     </i>
+     <span>
+      Connaissances de base en informatique
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Notions en programmation recommandées
+     </span>
+    </li>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Connaissances de base en infor""
+}-->
+   </ul>
+  </section>
+  <section>
+   <ul>
+    <li>
+     <i>
+     </i>
+     <span>
+      Comprendre les concepts fondamentaux de l'Intelligence Artificielle
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Identifier les différentes branches et applications de l'IA
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Découvrir les technologies et outils utilisés en IA
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Appréhender les enjeux éthiques et les implications de l'IA dans divers secteurs
+     </span>
+    </li>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Comprendre les concepts fondam""
+}-->
+   </ul>
+  </section>
+  <section>
+   <div>
+    <div>
+     <div>
+      <h3>
+       Introduction à l'Intelligence Artificielle
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Définition et historique de l'IA
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Les différentes branches de l'IA : Machine Learning, Deep Learning, etc.
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Applications actuelles de l'IA dans divers secteurs
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Définition et historique de l'""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Techniques fondamentales de l'IA
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Machine Learning : principes et algorithmes de base
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Réseaux de neurones artificiels et Deep Learning
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Traitement du langage naturel (NLP)
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Vision par ordinateur
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Machine Learning : principes e""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Outils et technologies de l'IA
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Présentation des frameworks populaires : TensorFlow, Keras, PyTorch
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Introduction aux services cloud pour l'IA : Azure AI, AWS AI, Google AI
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Présentation des frameworks po""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Enjeux éthiques et réglementaires
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Considérations éthiques liées à l'utilisation de l'IA
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Réglementations en vigueur et protection des données
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Considérations éthiques liées ""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Études de cas et applications pratiques
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Analyse de cas concrets d'implémentation de l'IA
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Ateliers pratiques pour développer une compréhension approfondie
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Analyse de cas concrets d'impl""
+}-->
+      </ul>
+     </div>
+    </div>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""[object Object],[object Object""
+}-->
+   </div>
+  </section>
+ </div>
+</div>
+"

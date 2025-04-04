@@ -1,0 +1,14 @@
+[
+  {
+    "chunk_id": "ced5bab0-4f49-4399-a7a7-34553378b01d",
+    "titre": "Formation ATLASSIAN - JIRA",
+    "content": "",
+    "source": "Formation_ATLASSIAN_JIRA.json"
+  },
+  {
+    "chunk_id": "785e97e5-cf54-4ce5-af53-d13a3f2229c6",
+    "titre": "Formation ATLASSIAN - JIRA",
+    "content": "Utiliser les fonctionnalités de base et avancées de JIRA\nGérer les utilisateurs, projets et workflows\nGénérer des rapports et personnaliser des tableaux de bord\nAutomatiser des actions et intégrer JIRA avec d'autres outils\nAppliquer les méthodologies Agile avec JIRA\nConfigurer et utiliser JIRA Service Management\n\nConnaissance des méthodologies de développement, notamment Agile\n\nChefs de projet\nDéveloppeurs\nTesteurs\nMembres d'équipes Agile\nToute personne impliquée dans la gestion de projets\n\nIntroduction à JIRA\nGestion des projets et des tickets\nPersonnalisation et automatisation des processus\nGestion des tests et de la qualité\nMise en œuvre de projets Agile avec JIRA\nIntroduction à JIRA Service Management (JSM)\nAdministration de JIRA\n\nChefs de projet\nDéveloppeurs\nTesteurs\nMembres d'équipes Agile\nToute personne impliquée dans la gestion de projets\nConnaissance des méthodologies de développement, notamment Agile\nUtiliser les fonctionnalités de base et avancées de JIRA\nGérer les utilisateurs, projets et workflows\nGénérer des rapports et personnaliser des tableaux de bord\nAutomatiser des actions et intégrer JIRA avec d'autres outils\nAppliquer les méthodologies Agile avec JIRA\nConfigurer et utiliser JIRA Service Management\nIntroduction à JIRA\nHistorique et vue d'ensemble des fonctionnalités\nNavigation dans l'interface utilisateur\nConfiguration de base et accès\nGestion des projets et des tickets\nCréation et configuration de projets\nCréation, édition et recherche de tickets\nUtilisation des filtres et des tableaux de bord\nPersonnalisation et automatisation des processus\nPersonnalisation des workflows\nAutomatisation des actions répétitives\nGestion des tests et de la qualité\nSuivi des bugs et des anomalies\nGestion des tests avec des plugins tels que Xray\nCréation de rapports et suivi de l'avancement\nMise en œuvre de projets Agile avec JIRA\nIntroduction aux méthodologies Agile\nGestion des projets Scrum et Kanban\nPlanification des sprints et gestion du backlog\nIntroduction à JIRA Service Management (JSM)\nConfiguration du centre d'assistance\nGestion des demandes et des incidents\nSuivi des SLA et des performances\nAdministration de JIRA\nGestion des droits et des rôles des utilisateurs\nParamétrage avancé de JIRA\nIntégration avec d'autres outils",
+    "source": "Formation_ATLASSIAN_JIRA.json"
+  }
+]

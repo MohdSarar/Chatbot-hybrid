@@ -1,0 +1,42 @@
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+  <h2>Profil Utilisateur <span class="edit-label">(Modifier)</span></h2>
+
+  <label for="name">Nom :</label>
+  <input 
+    id="name" 
+    type="text"
+    formControlName="name" 
+    placeholder="Entrez votre nom"
+  />
+  <div class="error" *ngIf="profileForm.get('name')?.invalid && profileForm.get('name')?.touched">
+    Le nom est requis.
+  </div>
+
+  <label for="objective">Objectif :</label>
+  <input 
+    id="objective"
+    type="text"
+    formControlName="objective"
+    placeholder="Ex: Devenir Data Analyst"
+  />
+  <div class="error" *ngIf="profileForm.get('objective')?.invalid && profileForm.get('objective')?.touched">
+    L'objectif est requis.
+  </div>
+
+  <label for="level">Niveau :</label>
+  <select id="level" formControlName="level">
+    <option *ngFor="let lvl of levelOptions" [value]="lvl">{{ lvl }}</option>
+  </select>
+
+  <label for="knowledge">Compétences (libre) :</label>
+  <input
+    id="knowledge"
+    type="text"
+    formControlName="knowledge"
+    placeholder="Ex: Python, Data, SQL"
+  />
+
+  <button type="submit" [disabled]="profileForm.invalid">
+    Soumettre le profil
+  </button>
+</form>

@@ -1,0 +1,198 @@
+titre,objectifs,prerequis,public,programme,durée,modalité,tarif,lieu,prochaines_sessions,resume_html
+Formation Power BI,"['Créer des tableaux de bord interactifs', 'Analyser les données de manière visuelle', 'Maîtriser Power BI Service']","['Connaissance de base en Excel', 'Notions de bases en manipulation de données']","['Analystes de données', 'Développeurs', 'Toute personne souhaitant utiliser Power BI']","['Introduction à Power BI', 'Visualisation des données']",3 jours (21 heures),Hybride,1 500 HT,À distance ou sur site,,"<div>
+ <div>
+  <nav>
+   <ul>
+    <li>
+     <a>
+      <h3>
+       Public visé
+      </h3>
+     </a>
+    </li>
+    <li>
+     <a>
+      <h3>
+       Prérequis
+      </h3>
+     </a>
+    </li>
+    <li>
+     <a>
+      <h3>
+       Objectifs
+      </h3>
+     </a>
+    </li>
+    <li>
+     <a>
+      <h3>
+       Programme
+      </h3>
+     </a>
+    </li>
+   </ul>
+  </nav>
+ </div>
+ <div>
+  <section>
+   <ul>
+    <li>
+     <i>
+     </i>
+     <span>
+      Analystes de données
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Développeurs
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Toute personne souhaitant utiliser Power BI
+     </span>
+    </li>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Analystes de données,Développe""
+}-->
+   </ul>
+  </section>
+  <section>
+   <ul>
+    <li>
+     <i>
+     </i>
+     <span>
+      Connaissance de base en Excel
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Notions de bases en manipulation de données
+     </span>
+    </li>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Connaissance de base en Excel,""
+}-->
+   </ul>
+  </section>
+  <section>
+   <ul>
+    <li>
+     <i>
+     </i>
+     <span>
+      Créer des tableaux de bord interactifs
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Analyser les données de manière visuelle
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Maîtriser Power BI Service
+     </span>
+    </li>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Créer des tableaux de bord int""
+}-->
+   </ul>
+  </section>
+  <section>
+   <div>
+    <div>
+     <div>
+      <h3>
+       Introduction à Power BI
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Présentation de l'interface
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Connexions aux sources de données
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Création de rapports simples
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Présentation de l'interface,Co""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Visualisation des données
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Utilisation des visuels
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Formatage et personnalisation
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Mise en page des rapports
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Utilisation des visuels,Format""
+}-->
+      </ul>
+     </div>
+    </div>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""[object Object],[object Object""
+}-->
+   </div>
+  </section>
+ </div>
+</div>
+"

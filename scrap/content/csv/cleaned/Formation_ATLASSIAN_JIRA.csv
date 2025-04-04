@@ -1,0 +1,404 @@
+titre,objectifs,prerequis,public,programme,durée,modalité,tarif,lieu,prochaines_sessions,resume_html
+Formation ATLASSIAN - JIRA,"['Utiliser les fonctionnalités de base et avancées de JIRA', 'Gérer les utilisateurs, projets et workflows', 'Générer des rapports et personnaliser des tableaux de bord', ""Automatiser des actions et intégrer JIRA avec d'autres outils"", 'Appliquer les méthodologies Agile avec JIRA', 'Configurer et utiliser JIRA Service Management']","['Connaissance des méthodologies de développement, notamment Agile']","['Chefs de projet', 'Développeurs', 'Testeurs', ""Membres d'équipes Agile"", 'Toute personne impliquée dans la gestion de projets']","['Introduction à JIRA', 'Gestion des projets et des tickets', 'Personnalisation et automatisation des processus', 'Gestion des tests et de la qualité', 'Mise en œuvre de projets Agile avec JIRA', 'Introduction à JIRA Service Management (JSM)', 'Administration de JIRA']",3 jours (21 heures),Hybride,2 280 HT,À distance,,"<div>
+ <div>
+  <nav>
+   <ul>
+    <li>
+     <a>
+      <h3>
+       Public visé
+      </h3>
+     </a>
+    </li>
+    <li>
+     <a>
+      <h3>
+       Prérequis
+      </h3>
+     </a>
+    </li>
+    <li>
+     <a>
+      <h3>
+       Objectifs
+      </h3>
+     </a>
+    </li>
+    <li>
+     <a>
+      <h3>
+       Programme
+      </h3>
+     </a>
+    </li>
+   </ul>
+  </nav>
+ </div>
+ <div>
+  <section>
+   <ul>
+    <li>
+     <i>
+     </i>
+     <span>
+      Chefs de projet
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Développeurs
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Testeurs
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Membres d'équipes Agile
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Toute personne impliquée dans la gestion de projets
+     </span>
+    </li>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Chefs de projet,Développeurs,T""
+}-->
+   </ul>
+  </section>
+  <section>
+   <ul>
+    <li>
+     <i>
+     </i>
+     <span>
+      Connaissance des méthodologies de développement, notamment Agile
+     </span>
+    </li>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Connaissance des méthodologies""
+}-->
+   </ul>
+  </section>
+  <section>
+   <ul>
+    <li>
+     <i>
+     </i>
+     <span>
+      Utiliser les fonctionnalités de base et avancées de JIRA
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Gérer les utilisateurs, projets et workflows
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Générer des rapports et personnaliser des tableaux de bord
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Automatiser des actions et intégrer JIRA avec d'autres outils
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Appliquer les méthodologies Agile avec JIRA
+     </span>
+    </li>
+    <li>
+     <i>
+     </i>
+     <span>
+      Configurer et utiliser JIRA Service Management
+     </span>
+    </li>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Utiliser les fonctionnalités d""
+}-->
+   </ul>
+  </section>
+  <section>
+   <div>
+    <div>
+     <div>
+      <h3>
+       Introduction à JIRA
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Historique et vue d'ensemble des fonctionnalités
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Navigation dans l'interface utilisateur
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Configuration de base et accès
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Historique et vue d'ensemble d""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Gestion des projets et des tickets
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Création et configuration de projets
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Création, édition et recherche de tickets
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Utilisation des filtres et des tableaux de bord
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Création et configuration de p""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Personnalisation et automatisation des processus
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Personnalisation des workflows
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Automatisation des actions répétitives
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Personnalisation des workflows""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Gestion des tests et de la qualité
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Suivi des bugs et des anomalies
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Gestion des tests avec des plugins tels que Xray
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Création de rapports et suivi de l'avancement
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Suivi des bugs et des anomalie""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Mise en œuvre de projets Agile avec JIRA
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Introduction aux méthodologies Agile
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Gestion des projets Scrum et Kanban
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Planification des sprints et gestion du backlog
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Introduction aux méthodologies""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Introduction à JIRA Service Management (JSM)
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Configuration du centre d'assistance
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Gestion des demandes et des incidents
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Suivi des SLA et des performances
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Configuration du centre d'assi""
+}-->
+      </ul>
+     </div>
+    </div>
+    <div>
+     <div>
+      <h3>
+       Administration de JIRA
+      </h3>
+      <i>
+      </i>
+     </div>
+     <div>
+      <ul>
+       <li>
+        <i>
+        </i>
+        <span>
+         Gestion des droits et des rôles des utilisateurs
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Paramétrage avancé de JIRA
+        </span>
+       </li>
+       <li>
+        <i>
+        </i>
+        <span>
+         Intégration avec d'autres outils
+        </span>
+       </li>
+       <!--bindings={
+  ""ng-reflect-ng-for-of"": ""Gestion des droits et des rôle""
+}-->
+      </ul>
+     </div>
+    </div>
+    <!--bindings={
+  ""ng-reflect-ng-for-of"": ""[object Object],[object Object""
+}-->
+   </div>
+  </section>
+ </div>
+</div>
+"
