@@ -36,6 +36,17 @@
     placeholder="Ex: Python, Data, SQL"
   />
 
+  <!-- Champ PDF (CV ou autre) -->
+  <label for="pdfFile">Fichier PDF (facultatif) :</label>
+  <input 
+    id="pdfFile" 
+    type="file" 
+    accept=".pdf" 
+    (change)="onFileSelected($event)"
+  />
+  <p class="file-name" *ngIf="selectedFileName">{{ selectedFileName }}</p>
+
+
   <button type="submit" [disabled]="profileForm.invalid">
     Soumettre le profil
   </button>

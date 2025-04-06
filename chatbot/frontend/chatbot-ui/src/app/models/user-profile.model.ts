@@ -7,6 +7,7 @@ export interface UserProfile {
   name: string;
   objective: string;
   level: string;
-  knowledge: string;  // Champ libre
+  knowledge: string;
+  pdf_content?: string; // Nouveau champ pour inclure le texte extrait du fichier PDF
   recommended_course?: string;
 }

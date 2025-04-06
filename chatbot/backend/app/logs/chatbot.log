@@ -1,0 +1,134 @@
+2025-04-06 07:33:06,913 | INFO | [RECOMMEND] IP=127.0.0.1 | Profil={'name': 'Michel', 'objective': 'Je souhaite devenir un pro du web', 'level': 'Débutant', 'knowledge': 'Je sais utiliser des logiciel microsoft excel pour créer des tableaux de bord', 'pdf_content': '', 'recommended_course': None} | Tokens=['devenir', 'souhaite', 'utiliser', 'tableaux', 'sais', 'excel', 'pro', 'bord', 'créer', 'du', 'microsoft', 'je', 'web', 'logiciel']
+2025-04-06 07:33:06,914 | INFO | [MATCH] Titre: Formation ATLASSIAN - JIRA | Score: 6
+2025-04-06 07:57:13 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/STAGE/chatbot/backend/app/content
+2025-04-06 07:57:13 - DEBUG - Fichier chargé : Formation_Integration_des_donnees_ETL.json
+2025-04-06 07:57:13 - DEBUG - Fichier chargé : Formation_Power_BI.json
+2025-04-06 07:57:13 - DEBUG - Fichier chargé : Formation_Deep_Learning.json
+2025-04-06 07:57:13 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-06 07:57:13 - DEBUG - Fichier chargé : Formation_Machine_Learning.json
+2025-04-06 07:57:13 - DEBUG - Fichier chargé : Formation_Cloud_Azure.json
+2025-04-06 07:57:13 - DEBUG - Fichier chargé : Formation_SQL_NoSQL_Bases_de_donnees.json
+2025-04-06 07:57:13 - DEBUG - Fichier chargé : Formation_ATLASSIAN_JIRA.json
+2025-04-06 07:57:13 - DEBUG - Fichier chargé : Formation_Intelligence_Artificielle.json
+2025-04-06 07:57:13 - DEBUG - Fichier chargé : Formation_Python_Data_Visualisation.json
+2025-04-06 07:57:13 - INFO - 10 formations chargées
+2025-04-06 07:57:26 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/STAGE/chatbot/backend/app/content
+2025-04-06 07:57:26 - DEBUG - Fichier chargé : Formation_Integration_des_donnees_ETL.json
+2025-04-06 07:57:26 - DEBUG - Fichier chargé : Formation_Power_BI.json
+2025-04-06 07:57:26 - DEBUG - Fichier chargé : Formation_Deep_Learning.json
+2025-04-06 07:57:26 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-06 07:57:26 - DEBUG - Fichier chargé : Formation_Machine_Learning.json
+2025-04-06 07:57:26 - DEBUG - Fichier chargé : Formation_Cloud_Azure.json
+2025-04-06 07:57:26 - DEBUG - Fichier chargé : Formation_SQL_NoSQL_Bases_de_donnees.json
+2025-04-06 07:57:26 - DEBUG - Fichier chargé : Formation_ATLASSIAN_JIRA.json
+2025-04-06 07:57:26 - DEBUG - Fichier chargé : Formation_Intelligence_Artificielle.json
+2025-04-06 07:57:26 - DEBUG - Fichier chargé : Formation_Python_Data_Visualisation.json
+2025-04-06 07:57:26 - INFO - 10 formations chargées
+2025-04-06 07:58:02 - INFO - /recommend appelé pour utilisateur : Michel
+2025-04-06 07:58:02 - DEBUG - Mots-clés extraits : ['azure', 'prédiction', 'machine', 'learning', 'ordinateur', 'faire', 'windows', 'souhaite']
+2025-04-06 07:58:02 - INFO - Top formations (tri par score) :
+                                  titre  score
+                Formation Deep Learning      3
+                  Parcours Data Analyst      2
+             Formation Machine Learning      2
+                  Formation Cloud Azure      2
+Formation Intégration des données (ETL)      0
+                     Formation Power BI      0
+ Formation SQL/NoSQL & Bases de données      0
+             Formation ATLASSIAN - JIRA      0
+    Formation Intelligence Artificielle      0
+  Formation Python – Data Visualisation      0
+2025-04-06 07:58:02 - INFO - Formation recommandée : Formation Deep Learning
+2025-04-06 08:02:24 - INFO - /query appelé avec question : T'es sûre ??
+2025-04-06 08:09:08 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/STAGE/chatbot/backend/app/content
+2025-04-06 08:09:08 - DEBUG - Fichier chargé : Formation_Integration_des_donnees_ETL.json
+2025-04-06 08:09:08 - DEBUG - Fichier chargé : Formation_Power_BI.json
+2025-04-06 08:09:08 - DEBUG - Fichier chargé : Formation_Deep_Learning.json
+2025-04-06 08:09:08 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-06 08:09:08 - DEBUG - Fichier chargé : Formation_Machine_Learning.json
+2025-04-06 08:09:08 - DEBUG - Fichier chargé : Formation_Cloud_Azure.json
+2025-04-06 08:09:08 - DEBUG - Fichier chargé : Formation_SQL_NoSQL_Bases_de_donnees.json
+2025-04-06 08:09:08 - DEBUG - Fichier chargé : Formation_ATLASSIAN_JIRA.json
+2025-04-06 08:09:08 - DEBUG - Fichier chargé : Formation_Intelligence_Artificielle.json
+2025-04-06 08:09:08 - DEBUG - Fichier chargé : Formation_Python_Data_Visualisation.json
+2025-04-06 08:09:08 - INFO - 10 formations chargées
+2025-04-06 08:09:16 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/STAGE/chatbot/backend/app/content
+2025-04-06 08:09:16 - DEBUG - Fichier chargé : Formation_Integration_des_donnees_ETL.json
+2025-04-06 08:09:16 - DEBUG - Fichier chargé : Formation_Power_BI.json
+2025-04-06 08:09:16 - DEBUG - Fichier chargé : Formation_Deep_Learning.json
+2025-04-06 08:09:16 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-06 08:09:16 - DEBUG - Fichier chargé : Formation_Machine_Learning.json
+2025-04-06 08:09:16 - DEBUG - Fichier chargé : Formation_Cloud_Azure.json
+2025-04-06 08:09:16 - DEBUG - Fichier chargé : Formation_SQL_NoSQL_Bases_de_donnees.json
+2025-04-06 08:09:16 - DEBUG - Fichier chargé : Formation_ATLASSIAN_JIRA.json
+2025-04-06 08:09:16 - DEBUG - Fichier chargé : Formation_Intelligence_Artificielle.json
+2025-04-06 08:09:16 - DEBUG - Fichier chargé : Formation_Python_Data_Visualisation.json
+2025-04-06 08:09:16 - INFO - 10 formations chargées
+2025-04-06 08:09:28 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/STAGE/chatbot/backend/app/content
+2025-04-06 08:09:28 - DEBUG - Fichier chargé : Formation_Integration_des_donnees_ETL.json
+2025-04-06 08:09:28 - DEBUG - Fichier chargé : Formation_Power_BI.json
+2025-04-06 08:09:28 - DEBUG - Fichier chargé : Formation_Deep_Learning.json
+2025-04-06 08:09:28 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-06 08:09:28 - DEBUG - Fichier chargé : Formation_Machine_Learning.json
+2025-04-06 08:09:28 - DEBUG - Fichier chargé : Formation_Cloud_Azure.json
+2025-04-06 08:09:28 - DEBUG - Fichier chargé : Formation_SQL_NoSQL_Bases_de_donnees.json
+2025-04-06 08:09:28 - DEBUG - Fichier chargé : Formation_ATLASSIAN_JIRA.json
+2025-04-06 08:09:28 - DEBUG - Fichier chargé : Formation_Intelligence_Artificielle.json
+2025-04-06 08:09:28 - DEBUG - Fichier chargé : Formation_Python_Data_Visualisation.json
+2025-04-06 08:09:28 - INFO - 10 formations chargées
+2025-04-06 08:10:05 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/STAGE/chatbot/backend/app/content
+2025-04-06 08:10:05 - DEBUG - Fichier chargé : Formation_Integration_des_donnees_ETL.json
+2025-04-06 08:10:05 - DEBUG - Fichier chargé : Formation_Power_BI.json
+2025-04-06 08:10:05 - DEBUG - Fichier chargé : Formation_Deep_Learning.json
+2025-04-06 08:10:05 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-06 08:10:05 - DEBUG - Fichier chargé : Formation_Machine_Learning.json
+2025-04-06 08:10:05 - DEBUG - Fichier chargé : Formation_Cloud_Azure.json
+2025-04-06 08:10:05 - DEBUG - Fichier chargé : Formation_SQL_NoSQL_Bases_de_donnees.json
+2025-04-06 08:10:05 - DEBUG - Fichier chargé : Formation_ATLASSIAN_JIRA.json
+2025-04-06 08:10:05 - DEBUG - Fichier chargé : Formation_Intelligence_Artificielle.json
+2025-04-06 08:10:05 - DEBUG - Fichier chargé : Formation_Python_Data_Visualisation.json
+2025-04-06 08:10:05 - INFO - 10 formations chargées
+2025-04-06 08:10:56 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/STAGE/chatbot/backend/app/content
+2025-04-06 08:10:56 - DEBUG - Fichier chargé : Formation_Integration_des_donnees_ETL.json
+2025-04-06 08:10:56 - DEBUG - Fichier chargé : Formation_Power_BI.json
+2025-04-06 08:10:56 - DEBUG - Fichier chargé : Formation_Deep_Learning.json
+2025-04-06 08:10:56 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-06 08:10:56 - DEBUG - Fichier chargé : Formation_Machine_Learning.json
+2025-04-06 08:10:56 - DEBUG - Fichier chargé : Formation_Cloud_Azure.json
+2025-04-06 08:10:56 - DEBUG - Fichier chargé : Formation_SQL_NoSQL_Bases_de_donnees.json
+2025-04-06 08:10:56 - DEBUG - Fichier chargé : Formation_ATLASSIAN_JIRA.json
+2025-04-06 08:10:56 - DEBUG - Fichier chargé : Formation_Intelligence_Artificielle.json
+2025-04-06 08:10:56 - DEBUG - Fichier chargé : Formation_Python_Data_Visualisation.json
+2025-04-06 08:10:56 - INFO - 10 formations chargées
+2025-04-06 08:11:11 - INFO - PDF 'Lettre motivation.pdf' traité avec succès.
+2025-04-06 08:11:12 - INFO - /recommend appelé pour utilisateur : Michel
+2025-04-06 08:11:12 - DEBUG - Mots-clés extraits : ['personnes', 'convaincu', '(powerbi', 'helicopters', 'm’a', 'poste', 'prêt', 'entreprise', 'aussi', 'artificielle.', 'déménager', 'moi', 'fastapi', 'tableaux', "c'est", 'créer', 'si', 'l’offre', 'visualisation', 'airbus', 'suivi', 'bordbonjour', 'offres', 'distribué', "l'utilisation", 'renommé', 'détermination', 'mais', 'spark)', 'industrialisation', 'traitement', 'serais', 'cadre', 'pratique', 'pas', 'n’est', 'années', 'tout', 'suis', 'logiciel', 'métiers', 'personne', 'votre.', 'niveau', 'excel', 'learning', 'utiliser', 'devenir', 'd’expérience...', 'germanotti', 'distance', 'mon', 'l’attente', 'analyse', 'retour', 'd’un', 'souhaite', 'développé', 'l’évolution', 'l’engagement', 'nosql)', '(machine', 'comment', 'microsoft', 'ma', 'données', 'reconvertir', 'pourrais', 'rejoindre', '(sql', 'j’ai', '2', 'python', "l'intelligence", 'chance', 'atteindre', 'ravi', 'récemment', 'contribuer', 'sais', 'serait', 'michel', 'long', 'deep', 'atouts', 'motivation', 'chez', 'intégrer', 'mes', 'vers', 'candidature', 'mettre', 'd’évoluer', 'complémentaire.', 'web', 'd’apprendre', 'seraient', 'votre', 'data.', 'd’échanger', 'parcours.', 'me', 'proposez', 'laisse', '2025', 'idéal', '(hadoop', 'formation', 'avancées', 'tableau', 'obstacle', 'information', 'lettre', 'bases', 'nombreuses', '(docker', 'toute', 'façon', 'reste', 'disponible', 'sense)', "l'innovation", 'plusieurs', 'exigent', 'angular)...', 'technologies', 'ne', 'd’apprenti', 'tels', 'd’acquérir', "m'attire", 'vos', 'gestion', 'compétences', 'avril', 'pro', 'qlik', 'sépare', 'objectifs.', 'projets.', 'particulièrement', 'learning)', 'motivées', 'comme', 'équipe', 'permis']
+2025-04-06 08:11:12 - INFO - Top formations (tri par score) :
+                                  titre  score
+                  Parcours Data Analyst     15
+                Formation Deep Learning     12
+ Formation SQL/NoSQL & Bases de données     11
+Formation Intégration des données (ETL)      9
+                     Formation Power BI      9
+             Formation Machine Learning      9
+             Formation ATLASSIAN - JIRA      9
+  Formation Python – Data Visualisation      9
+    Formation Intelligence Artificielle      7
+                  Formation Cloud Azure      6
+2025-04-06 08:11:12 - INFO - Formation recommandée : Parcours Data Analyst
+2025-04-06 08:12:37 - INFO - PDF 'cv_data_analyst.pdf' traité avec succès.
+2025-04-06 08:12:38 - INFO - /recommend appelé pour utilisateur : Michel
+2025-04-06 08:12:38 - DEBUG - Mots-clés extraits : ['collectif', 'seo', 'toi', 'c’est', 'centres', 'session)', '2018)', 'office', 'linkedin.com/in/michel-germanotti/', 'matplotlib)', 'continue', 'pack', 'viabon', 'jour', 'moi', 'fastapi', 'travail', 'tableaux', '(2016', '2016)', 'activités', 'satisfactions', '(2024', 'compte', 'formateur', 'visualisation', 'claire', '(numpy', '(2019', 'diremichel', 'l’écoute', '(2011', '(satisfaction', '2022)', 'passe', 'sont', 'industrialisation', 'base', 'conception', 'recouvrement)', 'scikit-learn', '(2015', '(15', 'sites', 'pixeliq', 'tickets', 'clé', 'vidéo', 'spark', 'domaines', 'data', 'impression', 'niveau', 'gfcom', 'michel.germanotti@gmail.com', 'germanotti', 'montage', 'big', 'analyse', 'belambra', '77', 'd’un', 'webdesigner', 'session', 'l’évolution', 'retours', 'statistiques', '30', '(2023', '33', 'esprit', 'programme', 'sql', '2025)', 'montée', 'données', 'chargé', 'spectacles', '1', 'ça', 'python', 'skills', 'd’équipe', '3d', '/', 'hadoop', 'devine', 'technologies.', 'cloud', 'communication', 'bord', 'anciennes', 'profil', 'azure', 'traiter', '-', 'm2i', 'création', '2020)', 'organisation', 'greta', 'essentielles', '28150', 'passion', 'réussite.', 'soft', 'support', 'web', '06', 'responsable', 'techniques', 'pandas', 'sens', 'me', 'prise', 'développeur', 'extras', 'civilisations', 'infrep', 'crm', 'd’animation', 'formation', 'former', 'tableau', 'analyst', 'nouvelles', 'stagiaires', 'être', '14', 'chacun', 'problèmes', 'bi', 'clients', '(2021', 'animation', 'réalisation', 'l’avis', '2024)', 'professionnelle', 'échanges', 'd’intérêt', '2014)', 'gestion', 'compétences', 'expérience', 'qlik', 'technologique', 'science', 'supports', 'autonomie', 'veille', 'référencement', 'mongodb', 'docker', 'résolution', 'power', 'postgresql', 'bureautique', 'designer', 'équipe', 'concepteur']
+2025-04-06 08:12:38 - INFO - Top formations (tri par score) :
+                                  titre  score
+                  Parcours Data Analyst     16
+Formation Intégration des données (ETL)     11
+                     Formation Power BI      9
+             Formation Machine Learning      8
+  Formation Python – Data Visualisation      8
+                  Formation Cloud Azure      7
+             Formation ATLASSIAN - JIRA      7
+ Formation SQL/NoSQL & Bases de données      5
+                Formation Deep Learning      3
+    Formation Intelligence Artificielle      3
+2025-04-06 08:12:38 - INFO - Formation recommandée : Parcours Data Analyst
