@@ -1,15 +1,36 @@
+/* 
+  chat.component.scss
+
+  Gère l'aspect visuel général du composant de chat :
+   - .chat-container : conteneur principal
+   - .toggle-btn : bouton pour afficher/masquer le formulaire
+   - .profile-form, .profile-summary : éléments conditionnels
+   - .chat-interface : zone qui contient l’historique + saisie
+   - .chat-history : conteneur scrollable pour l’historique des messages
+   - .chat-input : zone de saisie + bouton envoyer
+   - .message-bubble : animation d’apparition
+
+  Principes généraux :
+   - background: linear-gradient(...) pour un dégradé pastel
+   - flex-direction: column pour empiler
+   - animations (fadeInBubble) pour une entrée fluide des bulles
+*/
+
 .chat-container {
+  /* Taille max de la zone de chat */
   max-width: 800px;
-  margin: 2rem auto;
+  margin: 2rem auto; /* centre horizontalement et espace vertical */
   padding: 1.5rem;
+
+  /* Dégradé de fond (diagonale pastel) */
   background: linear-gradient(to bottom right, #d2e6fa, #f8d9f8);
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   font-family: 'Roboto', sans-serif;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* empile verticalement */
   gap: 1.2rem;
-  color: #333;
+  color: #333; /* couleur de texte par défaut */
 
   h1 {
     text-align: center;
@@ -17,8 +38,9 @@
     font-size: 1.6rem;
   }
 
+  /* Bouton toggle pour afficher/cacher le formulaire */
   .toggle-btn {
-    align-self: center;
+    align-self: center; /* place le bouton au centre horizontalement */
     background-color: #ff954f;
     color: #fff;
     border: none;
@@ -27,18 +49,18 @@
     cursor: pointer;
     font-size: 0.95rem;
     transition: background 0.2s ease;
+
     &:hover {
       background-color: #e88545;
     }
   }
 
-  // .profile-form {
-  //   /* pas d'animation explicite ici, 
-  //      *ngIf supprime/rend l’élément. 
-  //      On peut ajouter un animate.css ou un animation keyframes. 
-  //   */
-  // }
+  /* .profile-form :
+     contiendra le user-profile-form avec *ngIf
+     (pas d'animation dans cette démo)
+  */
 
+  /* Style du résumé du profil (après validation du formulaire) */
   .profile-summary {
     background: #fff;
     border: 1px solid #ddd;
@@ -47,6 +69,10 @@
     font-size: 0.95rem;
   }
 
+  /* 
+    chat-interface : 
+    Contient l’historique + la zone de saisie
+  */
   .chat-interface {
     display: flex;
     flex-direction: column;
@@ -54,29 +80,29 @@
   }
 
   .chat-history {
+    /* Disposition en colonne */
     display: flex;
-    flex-direction: column; /* Historique dans l'ordre naturel */
-    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    background: #f8f8f8;
+    padding: 12px;
+    max-height: 400px;
     overflow-y: auto;
-    max-height: 300px;
-    /* Autres styles (couleur de fond, padding, etc.) inchangés */
-    background-color: #ffffff;
-    border-radius: 8px;
-    padding: 1rem;
-    gap: 0.5rem;
-    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
   }
+  
+  
 
   .chat-input {
     display: flex;
     gap: 0.5rem;
 
     input {
-      flex: 1;
+      flex: 1; /* occupe tout l'espace restant */
       padding: 0.6rem;
       border-radius: 6px;
       border: 1px solid #ccc;
       outline: none;
+
       &:focus {
         border-color: #4a90e2;
       }
@@ -91,13 +117,41 @@
       cursor: pointer;
       font-weight: 500;
       transition: background 0.2s ease;
+
       &:hover:not(:disabled) {
         background-color: #3d7abf;
       }
+
       &:disabled {
         background-color: #a8b4bf;
         cursor: not-allowed;
       }
     }
+  }
+}
+
+/* 
+  Option : inverser l’ordre des messages (plus récent en bas)
+  .chat-history {
+    flex-direction: column-reverse;
+  }
+*/
+
+/* 
+  .message-bubble : classe appliquée par le composant enfant 
+  pour animer l’apparition de chaque message
+*/
+.message-bubble {
+  animation: fadeInBubble 0.3s ease forwards;
+}
+
+@keyframes fadeInBubble {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

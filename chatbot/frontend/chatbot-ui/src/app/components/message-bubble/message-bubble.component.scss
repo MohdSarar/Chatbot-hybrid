@@ -1,60 +1,83 @@
-/* Conteneur général du message */
+/*
+  message-bubble.component.scss
+  On applique align-self: flex-start ou flex-end 
+  selon la classe user-msg ou assistant-msg.
+*/
 .message-bubble {
   display: flex;
-  align-items: flex-start;
+  // align-items: flex-start;
   gap: 0.75rem;
   margin-bottom: 1rem;
 
-  /* Animation d’apparition fluide */
-  animation: fadeInUp 0.35s ease;
+  &.assistant-msg {
+    align-self: flex-start;
+    /* etc. */
+  }
+  &.user-msg {
+    align-self: flex-end;
+    /* etc. */
+  }
+
+  .avatar {
+    width: 36px;
+    height: 36px;
+  }
+
+  .bubble-text {
+    background: #f0f0f0;
+    border-radius: 12px;
+    /* etc. */
+  }
+
+  .card {
+    background: #fff;
+    /* etc. */
+  }
 }
 
-/* Avatar : image circulaire à gauche */
-.avatar {
-  width: 36px;
-  height: 36px;
-  object-fit: contain;
-  border-radius: 50%;
-  background: white;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-}
 
-/* Style d'une bulle texte classique */
-.bubble-text {
-  background-color: #f0f0f0;
-  padding: 0.75rem 1rem;
-  border-radius: 12px;
-  max-width: 80%;
-  font-size: 0.95rem;
-  line-height: 1.4;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-}
+  /* Avatar, 36x36, arrondi */
+  .avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: contain;
+  }
 
-/* Carte contenant les infos de formation */
-.card {
-  background: white;
-  padding: 1rem;
-  border-radius: 12px;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
-  max-width: 600px;
-  font-size: 0.95rem;
-}
+  /* Bubble de texte basique */
+  .bubble-text {
+    background-color: #f0f0f0;
+    padding: 0.75rem 1rem;
+    border-radius: 12px;
+    max-width: 80%;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
 
-/* Titre de la formation */
-.card h3 {
-  margin-top: 0;
-  font-size: 1.1rem;
-  font-weight: 600;
-}
+  /* Card pour un message structuré */
+  .card {
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.12);
+    max-width: 600px;
+    font-size: 0.95rem;
 
-/* Style spécifique pour absence de match */
-.no-match {
-  color: #a00;
-  font-style: italic;
-  margin-top: 0.5rem;
-}
+    h3 {
+      margin-top: 0;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
 
-/* Animation keyframes */
+    .no-match {
+      color: #a00;
+      font-style: italic;
+      margin-top: 0.5rem;
+    }
+  }
+
+
 @keyframes fadeInUp {
   from {
     opacity: 0;

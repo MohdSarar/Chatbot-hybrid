@@ -1,18 +1,21 @@
+<!-- 
+  chat.component.html
+
+  - Bouton "Modifier le Profil" ou "Masquer Formulaire"
+  - Formulaire user-profile-form si showForm() === true
+  - Résumé du profil si un profil est défini et showForm() === false
+  - Zone de chat (historique + saisie) si un profil existe
+-->
+
 <div class="chat-container">
   <h1>Assistant Formation</h1>
 
-  <!-- 
-    Bouton "Modifier Profil" ou "Masquer Formulaire" 
-    selon l'état showForm().
-  -->
+  <!-- Bouton toggle form -->
   <button class="toggle-btn" (click)="toggleForm()">
     {{ showForm() ? 'Masquer Formulaire' : 'Modifier le Profil' }}
   </button>
 
-  <!-- 
-    Formulaire de profil (collapsable) 
-    Affiché si showForm() === true
-  -->
+  <!-- Formulaire collapsable -->
   <div class="profile-form" *ngIf="showForm()">
     <app-user-profile-form
       [existingProfile]="profile()"
@@ -21,10 +24,7 @@
     </app-user-profile-form>
   </div>
 
-  <!-- 
-    Une fois le profil défini et si showForm() === false,
-    on affiche le résumé du profil 
-  -->
+  <!-- Résumé du profil si profil défini et showForm = false -->
   <div class="profile-summary" *ngIf="profile() && !showForm()">
     <p>
       <strong>Nom: </strong>{{ profile()?.name }}
@@ -41,17 +41,27 @@
       <strong>Formation recommandée: </strong>
       {{ profile()?.recommended_course }}
     </p>
+  
+    <!-- 
+      Bouton d’envoi du mail :
+      Appele la méthode sendRecapEmail() dans chat.component.ts
+    -->
+    <button (click)="sendRecapEmail()">
+      Envoyer un récapitulatif par mail
+    </button>
+    
   </div>
+  
 
-  <!-- Zone de chat, visible si on a un profil -->
+  <!-- Zone de chat (historique + saisie) si on a un profil -->
   <div class="chat-interface" *ngIf="profile()">
-    <div 
-      #chatHistoryContainer 
-      class="chat-history"
-    >
+    <!-- Conteneur historique 
+         => #chatHistoryContainer pour le scroll auto
+    -->
+    <div #chatHistoryContainer class="chat-history">
       <!-- 
-        Affiche les messages en ordre normal, 
-        mais le CSS inverse l’affichage (column-reverse).
+        On utilise *ngFor="let msg of messages()" 
+        car messages est un signal<ChatMessage[]>
       -->
       <app-message-bubble
         *ngFor="let msg of messages()"
@@ -59,6 +69,7 @@
       ></app-message-bubble>
     </div>
 
+    <!-- Zone de saisie -->
     <div class="chat-input">
       <input
         type="text"
@@ -68,8 +79,8 @@
         placeholder="Posez une question..."
         [disabled]="sending()"
       />
-      <button
-        (click)="sendMessage()"
+      <button 
+        (click)="sendMessage()" 
         [disabled]="sending()"
       >
         {{ sending() ? '...' : 'Envoyer' }}

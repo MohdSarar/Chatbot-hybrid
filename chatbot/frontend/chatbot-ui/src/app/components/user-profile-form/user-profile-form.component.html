@@ -1,3 +1,13 @@
+<!-- 
+  user-profile-form.component.html
+
+  Formulaire de profil utilisateur :
+   - Champs name, objective, level, knowledge
+   - Champ fichier PDF facultatif
+   - Envoi du PDF à l’API => extraction => uploadedContent
+   - Button => Soumettre 
+-->
+
 <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
   <h2>Profil Utilisateur <span class="edit-label">(Modifier)</span></h2>
 
@@ -36,17 +46,41 @@
     placeholder="Ex: Python, Data, SQL"
   />
 
-  <!-- Champ PDF (CV ou autre) -->
-  <label for="pdfFile">Fichier PDF (facultatif) :</label>
+  <label for="email">Email :</label>
   <input 
-    id="pdfFile" 
-    type="file" 
-    accept=".pdf" 
-    (change)="onFileSelected($event)"
+    type="email" 
+    id="email"
+    formControlName="email"
+    placeholder="ex: user@example.com"
   />
-  <p class="file-name" *ngIf="selectedFileName">{{ selectedFileName }}</p>
 
 
+  <!-- 
+    CHARGEMENT DE FICHIER PDF (facultatif).
+    Affiche un loader + le nom du fichier.
+  -->
+  <div class="form-group">
+    <label for="pdf">Importer un fichier PDF (facultatif)</label>
+    <input 
+      type="file" 
+      id="pdf" 
+      accept=".pdf" 
+      (change)="onFileSelected($event)" 
+    />
+
+    <!-- Nom du fichier, si pas en cours de chargement -->
+    <div *ngIf="selectedFileName && !loadingPdf">
+      ✅ {{ selectedFileName }} chargé avec succès.
+    </div>
+
+    <!-- Loader pendant l’extraction -->
+    <div *ngIf="loadingPdf" class="loader-container">
+      <div class="loader"></div>
+      <p>Extraction du contenu en cours...</p>
+    </div>
+  </div>
+
+  <!-- Bouton de soumission -->
   <button type="submit" [disabled]="profileForm.invalid">
     Soumettre le profil
   </button>

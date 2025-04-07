@@ -1,13 +1,12 @@
-/*
-  user-profile.model.ts
-  Décrit le modèle du profil utilisateur.
-*/
+// user-profile.model.ts
 
 export interface UserProfile {
   name: string;
   objective: string;
   level: string;
   knowledge: string;
-  pdf_content?: string; // Nouveau champ pour inclure le texte extrait du fichier PDF
+
+  email?: string;         // <-- nouveau champ optionnel
+  pdf_content?: string;
   recommended_course?: string;
 }

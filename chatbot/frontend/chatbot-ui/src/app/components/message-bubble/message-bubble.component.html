@@ -1,65 +1,42 @@
 <!-- 
-  Composant de bulle de message.
-  Affiche un avatar selon le rôle (user ou assistant),
-  puis affiche soit un message structuré (recommandation),
-  soit un simple texte.
+  message-bubble.component.html
+
+  Rôle : Affiche un message de chat avec avatar à gauche,
+  et une "bulle" alignée à gauche (assistant) ou à droite (user).
+  
+  - Si isStructured() => affiche un bloc .card (formation)
+  - Sinon => fallback (#defaultMsg) => bulle texte simple
 -->
 
-<div class="message-bubble animated">
-  <!-- Affiche l’avatar (gauche) selon le rôle -->
+<div class="message-bubble" [ngClass]="getBubbleClasses()">
+  <!-- Avatar à gauche -->
   <img [src]="getAvatarPath()" alt="avatar" class="avatar" />
 
-  <!-- Contenu du message -->
+  <!-- 
+    *ngIf : test si le message est "structuré" (type formation).
+    Sinon => fallback (#defaultMsg).
+  -->
   <ng-container *ngIf="isStructured(); else defaultMsg">
-    <!-- Si le message est une réponse structurée (formation recommandée) -->
+    <!-- 
+      === CASE 1 : message structuré ===
+      ex: cours, objectifs, etc.
+    -->
     <div class="card">
-      <!-- Titre de la formation -->
       <h3>{{ parse()?.course }}</h3>
-
-      <!-- Affiche le message d’erreur si aucune formation recommandée -->
       <ng-container *ngIf="!parse()?.course || parse()?.course === 'Aucune formation pertinente'">
         <p class="no-match">Aucune formation ne correspond à votre profil.</p>
       </ng-container>
-
-      <!-- Affiche les détails si disponibles -->
-      <ng-container *ngIf="parse()?.details">
-
-        <!-- Objectifs -->
-        <div *ngIf="parse().details.objectifs?.length">
-          <strong>Objectifs :</strong>
-          <ul>
-            <li *ngFor="let obj of parse().details.objectifs">{{ obj }}</li>
-          </ul>
-        </div>
-
-        <!-- Prérequis -->
-        <div *ngIf="parse().details.prerequis?.length">
-          <strong>Prérequis :</strong>
-          <ul>
-            <li *ngFor="let pre of parse().details.prerequis">{{ pre }}</li>
-          </ul>
-        </div>
-
-        <!-- Programme -->
-        <div *ngIf="parse().details.programme?.length">
-          <strong>Programme :</strong>
-          <ul>
-            <li *ngFor="let p of parse().details.programme">{{ p }}</li>
-          </ul>
-        </div>
-
-        <!-- Lien vers la fiche formation -->
-        <div *ngIf="parse().details.lien">
-          <a [href]="parse().details.lien" target="_blank">
-            Voir la formation complète
-          </a>
-        </div>
-
-      </ng-container>
+      <!-- 
+        Optionnel : 
+        afficher parse().details.objectifs, prerequis, programme, etc.
+      -->
     </div>
   </ng-container>
 
-  <!-- Fallback : message simple (utilisateur ou assistant) -->
+  <!-- 
+    === CASE 2 : Fallback => message texte classique
+    -> le template #defaultMsg
+  -->
   <ng-template #defaultMsg>
     <div class="bubble-text">
       {{ message.content }}

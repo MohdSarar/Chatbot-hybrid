@@ -1,9 +1,8 @@
 /*
-  Composant MessageBubbleComponent
-  Gère l'affichage conditionnel de chaque message dans le chat :
-  - message texte classique
-  - message structuré avec formation recommandée
-  - avatar selon le rôle (user ou assistant)
+  message-bubble.component.ts
+  
+  On applique directement la classe 'assistant-msg' ou 'user-msg'
+  sur le conteneur principal .message-bubble
 */
 
 import { Component, Input } from '@angular/core';
@@ -18,12 +17,19 @@ import { ChatMessage } from '../../models/chat.models';
   styleUrls: ['./message-bubble.component.scss']
 })
 export class MessageBubbleComponent {
-  // Message à afficher (texte ou JSON structuré)
   @Input() message!: ChatMessage;
 
-  /*
-   * Détermine si le contenu est une réponse structurée
-   * On teste si c'est un objet JSON contenant "reply" et "course"
+  isUser(): boolean {
+    return this.message.role === 'user';
+  }
+
+  isAssistant(): boolean {
+    return this.message.role === 'assistant';
+  }
+
+  /**
+   * Teste si c'est un message structuré (recommandation).
+   * On vérifie la présence de .reply et .course
    */
   isStructured(): boolean {
     try {
@@ -34,9 +40,7 @@ export class MessageBubbleComponent {
     }
   }
 
-  /*
-   * Parse le message.content (JSON string) en objet
-   */
+  /** Parse le content JSON */
   parse(): any {
     try {
       return JSON.parse(this.message.content);
@@ -45,14 +49,13 @@ export class MessageBubbleComponent {
     }
   }
 
-  /*
-   * Retourne le chemin de l’avatar à utiliser :
-   * - assistant => assets/ai.png
-   * - user      => assets/user.png
-   */
+  /** Classe user-msg ou assistant-msg en fonction du rôle */
+  getBubbleClasses(): string {
+    return this.isUser() ? 'user-msg' : 'assistant-msg';
+  }
+
+  /** Avatar en fonction du rôle */
   getAvatarPath(): string {
-    return this.message.role === 'assistant'
-      ? 'assets/ai.png'
-      : 'assets/user.png';
+    return this.isAssistant() ? 'assets/ai.png' : 'assets/user.png';
   }
 }
