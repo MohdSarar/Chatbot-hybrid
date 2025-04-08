@@ -9,7 +9,7 @@ Endpoints:
  - POST /recommend : reçoit un profil, renvoie une formation adaptée ou un fallback.
  - POST /query : simulation de conversation (réponse fictive).
  - POST /upload-pdf : extrait le contenu d'un fichier PDF.
- - POST /send-email : envoie un e-mail à l'utilisateur (facultatif).
+ - POST /send-email : envoie un e-mail à l'utilisateur, y compris l'historique du chat.
 
 Nécessite: fastapi, uvicorn, pandas, fitz (PyMuPDF), etc.
 Pour lancer:
@@ -26,9 +26,13 @@ from pathlib import Path
 import fitz  # PyMuPDF
 import smtplib
 from email.mime.text import MIMEText
-import os
 
 from app.logging_config import logger
+from dotenv import load_dotenv
+import os
+
+load_dotenv()  # charge les variables depuis .env et les place dans os.environ
+
 
 # --------------------------------------------------
 # Initialisation FastAPI
@@ -39,7 +43,6 @@ app = FastAPI(
     description="API de recommandation de formations utilisant pandas, avec chargement JSON depuis 'content'."
 )
 
-# Middleware CORS pour autoriser le front Angular local
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:4200"],
@@ -162,6 +165,15 @@ class UserProfile(BaseModel):
     pdf_content: Optional[str] = None
     recommended_course: Optional[str] = None
 
+# Ajout d'un modèle ChatMessage
+class ChatMessage(BaseModel):
+    role: str  # 'user' ou 'assistant'
+    content: str
+
+class SendEmailRequest(BaseModel):
+    profile: UserProfile
+    chatHistory: List[ChatMessage] = []
+
 class RecommendRequest(BaseModel):
     profile: UserProfile
 
@@ -188,8 +200,10 @@ def send_email_notification(to: str, subject: str, body: str):
     Nécessite les variables d'env GMAIL_USER / GMAIL_APP_PASS
     et la validation 2FA activée côté Google.
     """
+
     gmail_user = os.environ.get("GMAIL_USER")
     gmail_app_password = os.environ.get("GMAIL_APP_PASS")
+
 
     message = MIMEText(body, "plain", "utf-8")
     message["From"] = gmail_user
@@ -211,6 +225,55 @@ def send_email_notification(to: str, subject: str, body: str):
         print(f"[INFO] Email envoyé à {to}")
     except Exception as e:
         print(f"[ERROR] Erreur envoi email à {to} : {e}")
+
+# --------------------------------------------------
+# Construire le corps d'email intégrant l'historique
+# --------------------------------------------------
+
+def build_email_body(profile: UserProfile, chat_history: List[ChatMessage]) -> str:
+    lines = []
+    lines.append(f"Bonjour {profile.name},\n")
+    lines.append(f"Objectif : {profile.objective}")
+    lines.append(f"Niveau : {profile.level}")
+    lines.append(f"Compétences : {profile.knowledge}")
+    lines.append(f"Formation recommandée : {profile.recommended_course or 'Aucune'}\n")
+
+    lines.append("=== Historique de Chat ===")
+
+    for msg in chat_history:
+        role_label = "USER" if msg.role == "user" else "ASSISTANT"
+
+        # Tente de parser le JSON
+        if msg.role == "assistant":
+            try:
+                data = json.loads(msg.content)
+                # data = { "reply": "...", "course": "...", "details": {...} }
+                # On reconstruit un affichage plus sympa :
+                lines.append(f"{role_label}: {data['reply']}")  # ex "Voici une formation..."
+
+                # Si tu veux afficher le 'course' comme "Formation Intégration ..."
+                if 'course' in data:
+                    lines.append(f"  -> Formation : {data['course']}")
+
+                # Idem pour details, si c'est un dict
+                if 'details' in data and isinstance(data['details'], dict):
+                    # On peut extraire objectifs, prerequis, programme, ...
+                    obj = data['details'].get('objectifs', [])
+                    pre = data['details'].get('prerequis', [])
+                    prog = data['details'].get('programme', [])
+
+                    # ex: lines.append(f"    Objectifs: {', '.join(obj)}")
+
+            except json.JSONDecodeError:
+                # Si pas du JSON => on affiche tel quel
+                lines.append(f"{role_label}: {msg.content}")
+        else:
+            # C'est un message user
+            lines.append(f"{role_label}: {msg.content}")
+
+    lines.append("\nMerci de votre visite.")
+    return "\n".join(lines)
+
 
 # --------------------------------------------------
 # Endpoint /query (réponse fictive)
@@ -285,31 +348,32 @@ async def upload_pdf(file: UploadFile = File(...)):
         logger.error("Erreur lors de la lecture du PDF '%s' : %s", file.filename, str(e))
         return {"content": "Erreur lors de la lecture du fichier."}
 
+
 # --------------------------------------------------
 # Endpoint /send-email
 # --------------------------------------------------
 @app.post("/send-email")
-def send_email(profile: UserProfile, background_tasks: BackgroundTasks):
+def send_email(req: SendEmailRequest, background_tasks: BackgroundTasks):
     """
-    Envoie un email récapitulatif au profil.email, si présent.
+    Reçoit :
+      - profile (UserProfile)
+      - chatHistory (liste de ChatMessage)
+    Construit un email récapitulatif et l'envoie, si profile.email est renseigné.
     """
-    if profile.email:
-        subject = "Votre récapitulatif de session Chatbot"
-        body = (
-            f"Bonjour {profile.name},\n\n"
-            f"Objectif : {profile.objective}\n"
-            f"Niveau : {profile.level}\n"
-            f"Compétences : {profile.knowledge}\n\n"
-            f"Recommandation de formation : {profile.recommended_course}\n\n"
-            "Merci de votre visite."
-        )
+    profile = req.profile
+    history = req.chatHistory
 
-        background_tasks.add_task(
-            send_email_notification,  # la fonction ci-dessus
-            profile.email,
-            subject,
-            body
-        )
-        return {"status": "Email en cours d'envoi"}
+    if not profile.email:
+        return {"status": "Aucune adresse email fournie"}
 
-    return {"status": "Aucune adresse email fournie"}
+    subject = "Votre récapitulatif de session Chatbot"
+    # Construit un corps de mail intégrant l'historique
+    body = build_email_body(profile, history)
+
+    background_tasks.add_task(
+        send_email_notification,
+        profile.email,
+        subject,
+        body
+    )
+    return {"status": "Email en cours d'envoi"}

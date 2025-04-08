@@ -30,7 +30,7 @@ import { ChatMessage } from './../../models/chat.models';
   imports: [
     CommonModule,
     FormsModule,
-    HttpClientModule, // <-- si tu veux injecter HttpClient, importer HttpClientModule
+    HttpClientModule,
     UserProfileFormComponent,
     MessageBubbleComponent
   ],
@@ -39,121 +39,80 @@ import { ChatMessage } from './../../models/chat.models';
 })
 export class ChatComponent implements OnInit, AfterViewChecked {
 
-  /*
-   * Profil utilisateur => null si pas encore renseigné.
-   * Quand le formulaire est soumis, on met un UserProfile dedans.
-   */
+  // Profil utilisateur => null si pas défini
   profile = signal<UserProfile | null>(null);
 
-  /*
-   * messages() : Historique de messages du chat
-   * ( ex: [ { role: 'assistant', content: 'Bonjour' }, ... ] )
-   */
+  // Historique de messages
   messages = signal<ChatMessage[]>([]);
 
-  /*
-   * Indicateur d’envoi (disable input/bouton)
-   */
+  // Indicateur d’envoi (disable input/bouton)
   sending = signal(false);
 
-  /*
-   * Saisie actuelle (champ input)
-   */
+  // Saisie courante du champ input
   currentInput = signal('');
 
-  /*
-   * showForm => True => on affiche le form user-profile
-   *          => False => on affiche le résumé du profil
-   */
+  // showForm => True => affiche le formulaire
+  //          => False => affiche résumé du profil
   showForm = signal(true);
 
-  /*
-   * Reference au conteneur DOM de l’historique,
-   * pour le scroll automatique.
-   */
+  // Conteneur DOM de l’historique
   @ViewChild('chatHistoryContainer')
   chatHistoryContainer!: ElementRef<HTMLDivElement>;
 
-  /*
-   * Endpoints sur le backend
-   */
+  // Endpoint backend
   private API_BASE_URL = 'http://localhost:8000';
 
   constructor(private http: HttpClient) {
-    /*
-      On crée un effet sur messages() :
-      A chaque fois que messages() change, on appelle scrollToBottom().
-      L’effet est un Reactif Angular Signals
-    */
+    // Effet sur messages() => scroll auto
     effect(() => {
-      const _ = this.messages();  // lecture du signal
-      this.scrollToBottom();      // on scroll automatiquement
+      const _ = this.messages(); // lecture du signal
+      this.scrollToBottom();
     });
   }
 
   ngOnInit(): void {
-    // Pas de logique particulière ici
+    // Rien de spécial
   }
 
   ngAfterViewChecked() {
-    /*
-      Au moment où la vue est vérifiée,
-      si on a un profil défini, on scroll en bas
-      (pour être sûr qu'un message ajouté est visible).
-    */
+    // Scroll auto si un profil est défini
     if (this.profile()) {
       this.scrollToBottom();
     }
   }
 
-  /*
-   * Toggle entre formulaire et résumé
-   */
   toggleForm(): void {
     this.showForm.set(!this.showForm());
   }
 
-  /*
-   * Quand l’utilisateur soumet son profil
-   *  - on stocke le nouveau UserProfile
-   *  - on masque le formulaire (showForm = false)
-   *  - on lance la recommandation (/recommend)
-   */
+  // Lors de la soumission du formulaire
   onProfileSubmit(profileData: UserProfile): void {
     this.profile.set(profileData);
     this.showForm.set(false);
     this.getRecommendation();
   }
 
-  /*
-   * getRecommendation : appelle /recommend avec le profil,
-   * puis insère un message assistant dans l'historique.
-   */
+  // Appel /recommend
   private getRecommendation(): void {
     const p = this.profile();
     if (!p) return;
-
     this.sending.set(true);
 
-    this.http.post<{
-      recommended_course: string;
-      reply: string;
-      details?: any;
-    }>(
+    this.http.post<{ recommended_course: string; reply: string; details?: any }>(
       `${this.API_BASE_URL}/recommend`,
       { profile: p }
     ).subscribe({
       next: (response) => {
         this.sending.set(false);
         if (response) {
-          // Met à jour le profil (recommended_course)
+          // Met à jour le profil avec la formation recommandée
           const updated = {
             ...p,
             recommended_course: response.recommended_course
           } as UserProfile;
           this.profile.set(updated);
 
-          // Construire un message assistant
+          // Construit un message assistant structuré
           const formattedReply: ChatMessage = {
             role: 'assistant',
             content: JSON.stringify({
@@ -162,8 +121,7 @@ export class ChatComponent implements OnInit, AfterViewChecked {
               details: response.details
             })
           };
-
-          // Ajout à l'historique
+          // Ajoute ce msg dans l’historique
           this.messages.update(msgs => [...msgs, formattedReply]);
         }
       },
@@ -171,28 +129,20 @@ export class ChatComponent implements OnInit, AfterViewChecked {
         this.sending.set(false);
         this.messages.update(msgs => [
           ...msgs,
-          {
-            role: 'assistant',
-            content: 'Erreur lors de la recommandation.'
-          }
+          { role: 'assistant', content: 'Erreur lors de la recommandation.' }
         ]);
       }
     });
   }
 
-  /*
-   * Envoi d'un message user à /query :
-   *   1) Ajoute le message user localement
-   *   2) Appelle l'API
-   *   3) Ajoute la réponse assistant
-   */
+  // Envoi d'un message user => /query
   sendMessage(): void {
     const p = this.profile();
-    if (!p) return; // si pas de profil, rien
+    if (!p) return;
     const inputText = this.currentInput().trim();
-    if (!inputText) return; // vide ?
+    if (!inputText) return;
 
-    // Ajout local
+    // Ajout local d'un message user
     this.messages.update(msgs => [
       ...msgs,
       { role: 'user', content: inputText }
@@ -200,12 +150,11 @@ export class ChatComponent implements OnInit, AfterViewChecked {
 
     const payload = {
       profile: p,
-      history: this.messages().slice(0, -1), // On exclut le message user courant
+      history: this.messages().slice(0, -1),
       question: inputText
     };
 
     this.sending.set(true);
-
     this.http.post<{ reply: string }>(
       `${this.API_BASE_URL}/query`,
       payload
@@ -213,13 +162,13 @@ export class ChatComponent implements OnInit, AfterViewChecked {
       next: (res) => {
         this.sending.set(false);
         if (res?.reply) {
-          // message assistant
+          // Ajout d'un message assistant
           this.messages.update(msgs => [
             ...msgs,
             { role: 'assistant', content: res.reply }
           ]);
         }
-        // Reset champ input
+        // Réinit champ input
         this.currentInput.set('');
       },
       error: () => {
@@ -232,13 +181,9 @@ export class ChatComponent implements OnInit, AfterViewChecked {
     });
   }
 
-  /*
-   * scrollToBottom :
-   * place l'ascenseur tout en bas pour voir le dernier message
-   */
+  // Scroll auto
   private scrollToBottom(): void {
     try {
-      // Vérifie qu'on a bien la référence
       if (!this.chatHistoryContainer?.nativeElement) return;
       const container = this.chatHistoryContainer.nativeElement;
       container.scrollTop = container.scrollHeight;
@@ -247,11 +192,12 @@ export class ChatComponent implements OnInit, AfterViewChecked {
     }
   }
 
+  // Envoi d’un récap par e-mail => /send-email
   sendRecapEmail(): void {
     const p = this.profile();
     if (!p) return;
-  
-    // Vérifie que l'utilisateur a un email
+
+    // Vérifie la présence d'un email
     if (!p.email) {
       this.messages.update(msgs => [
         ...msgs,
@@ -259,11 +205,17 @@ export class ChatComponent implements OnInit, AfterViewChecked {
       ]);
       return;
     }
-  
-    // Appel HTTP vers /send-email
+
+    // On doit envoyer { profile, chatHistory } au backend
+    // car /send-email attend un SendEmailRequest
+    const payload = {
+      profile: p,
+      chatHistory: this.messages() // ex: [ { role, content }, ... ]
+    };
+
     this.http.post<{ status: string }>(
-      `${this.API_BASE_URL}/send-email`, 
-      p
+      `${this.API_BASE_URL}/send-email`,
+      payload
     ).subscribe({
       next: (res) => {
         this.messages.update(msgs => [
@@ -279,9 +231,8 @@ export class ChatComponent implements OnInit, AfterViewChecked {
       }
     });
   }
-  
-  
 }
+
 
 
 
