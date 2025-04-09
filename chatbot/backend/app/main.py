@@ -30,6 +30,7 @@ from email.mime.text import MIMEText
 from app.logging_config import logger
 from dotenv import load_dotenv
 import os
+from app.llm_engine import LLMEngine 
 
 load_dotenv()  # charge les variables depuis .env et les place dans os.environ
 
@@ -184,7 +185,7 @@ class RecommendResponse(BaseModel):
 
 class QueryRequest(BaseModel):
     profile: UserProfile
-    history: List[dict] = []
+    history: List[ChatMessage] = [] #modifié pour correspondre à la structure de ChatMessage , avant :   history: List[dict] = []
     question: str
 
 class QueryResponse(BaseModel):
@@ -275,13 +276,33 @@ def build_email_body(profile: UserProfile, chat_history: List[ChatMessage]) -> s
     return "\n".join(lines)
 
 
+llm_engine = LLMEngine(df_formations)
+logger.info("Moteur LLM et RAG initialisé avec succès")
+
+def process_llm_response(question: str, history: List[ChatMessage]) -> str:
+    """Nouvelle fonction externe pour gérer la logique LLM"""
+    chat_history = []
+    for i in range(0, len(history)-1, 2):
+        user_msg = history[i]
+        assistant_msg = history[i+1]
+        if user_msg.role == "user" and assistant_msg.role == "assistant":
+            chat_history.append((user_msg.content, assistant_msg.content))
+    
+    # Appel sécurisé même avec historique vide
+    try:
+        llm_response = llm_engine.generate_response(question, chat_history)
+        return f"{llm_response['answer']}\nSources: {', '.join(llm_response['sources'])}"
+    except Exception as e:
+        logger.error("Erreur LLM : %s", str(e))
+        return "Désolé, une erreur est survenue lors de la génération de la réponse."
 # --------------------------------------------------
 # Endpoint /query (réponse fictive)
 # --------------------------------------------------
 @app.post("/query", response_model=QueryResponse)
 def query_endpoint(req: QueryRequest):
     logger.info("/query appelé avec question : %s", req.question)
-    return QueryResponse(reply=f"Réponse fictive à '{req.question.strip()}'. (Pas de LLM)")
+    
+    return QueryResponse(reply=process_llm_response(req.question, req.history))
 
 # --------------------------------------------------
 # Endpoint /recommend

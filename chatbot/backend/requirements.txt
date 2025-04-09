@@ -3,3 +3,12 @@ uvicorn
 chromadb
 transformers
 pydantic
+langchain-openai
+langchain-community
+langchain-text-splitters
+langchain
+faiss-cpu
+pandas
+python-dotenv
+openai
+tiktoken #requis par LangChain
