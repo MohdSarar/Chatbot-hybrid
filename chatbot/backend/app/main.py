@@ -32,7 +32,7 @@ from dotenv import load_dotenv
 import os
 from app.llm_engine import LLMEngine 
 
-load_dotenv()  # charge les variables depuis .env et les place dans os.environ
+load_dotenv(dotenv_path="app\.env")  # charge les variables depuis .env et les place dans os.environ
 
 
 # --------------------------------------------------
@@ -154,43 +154,50 @@ def partial_match_formations(df: pd.DataFrame, tokens: List[str], niveau_user: s
     )
     return df[df["score"] >= seuil_score].sort_values(by="score", ascending=False)
 
-# --------------------------------------------------
-# Modèles Pydantic
-# --------------------------------------------------
-class UserProfile(BaseModel):
-    name: str
-    email: Optional[EmailStr] = None
-    objective: str
-    level: str
-    knowledge: str
-    pdf_content: Optional[str] = None
-    recommended_course: Optional[str] = None
 
-# Ajout d'un modèle ChatMessage
-class ChatMessage(BaseModel):
-    role: str  # 'user' ou 'assistant'
-    content: str
 
-class SendEmailRequest(BaseModel):
-    profile: UserProfile
-    chatHistory: List[ChatMessage] = []
+from app.schemas import (
+    UserProfile,
+    ChatMessage,
+    SendEmailRequest,
+    RecommendRequest,
+    RecommendResponse,
+    QueryRequest,
+    QueryResponse
+)   # Importer les modèles Pydantic depuis le fichier schemas.py, car les modèles sont utilisés dans les endpoints FastAPI mais aussi dans llm_engine.py
 
-class RecommendRequest(BaseModel):
-    profile: UserProfile
-
-class RecommendResponse(BaseModel):
-    recommended_course: str
-    reply: str
-    details: Optional[dict] = None
-
-class QueryRequest(BaseModel):
-    profile: UserProfile
-    history: List[ChatMessage] = [] #modifié pour correspondre à la structure de ChatMessage , avant :   history: List[dict] = []
-    question: str
-
-class QueryResponse(BaseModel):
-    reply: str
     
+def custom_recommendation_scoring(profile: UserProfile, df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Évalue la compatibilité entre le profil utilisateur et les formations.
+    """
+    if df.empty:
+        return df
+
+    tokens_objectif = extract_keywords(profile.objective, "")
+    tokens_knowledge = extract_keywords("", profile.knowledge)
+
+    df = df.copy()
+
+    def score_row(row):
+        objectifs = " ".join(row.get("objectifs", [])).lower()
+        prerequis = " ".join(row.get("prerequis", [])).lower()
+        programme = " ".join(row.get("programme", [])).lower()
+
+        score = 0
+        score += sum(1 for t in tokens_objectif if t in objectifs or t in programme)
+        score += sum(1 for t in tokens_knowledge if t in prerequis)
+
+        niveau = row.get("niveau", "").lower()
+        if profile.level.lower() == niveau:
+            score += 1
+
+        return score
+
+    df["score"] = df.apply(score_row, axis=1)
+    return df[df["score"] > 0].sort_values(by="score", ascending=False)
+
+
 
 # --------------------------------------------------
 # Envoi email via Gmail (App password)
@@ -279,18 +286,20 @@ def build_email_body(profile: UserProfile, chat_history: List[ChatMessage]) -> s
 llm_engine = LLMEngine(df_formations)
 logger.info("Moteur LLM et RAG initialisé avec succès")
 
-def process_llm_response(question: str, history: List[ChatMessage]) -> str:
-    """Nouvelle fonction externe pour gérer la logique LLM"""
+def process_llm_response(question: str, history: List[ChatMessage], profile: UserProfile) -> str:
     chat_history = []
     for i in range(0, len(history)-1, 2):
         user_msg = history[i]
         assistant_msg = history[i+1]
         if user_msg.role == "user" and assistant_msg.role == "assistant":
             chat_history.append((user_msg.content, assistant_msg.content))
-    
-    # Appel sécurisé même avec historique vide
+
     try:
-        llm_response = llm_engine.generate_response(question, chat_history)
+        llm_response = llm_engine.generate_response(
+            question=question,
+            chat_history=chat_history,
+            profile=profile
+        )
         return f"{llm_response['answer']}\nSources: {', '.join(llm_response['sources'])}"
     except Exception as e:
         logger.error("Erreur LLM : %s", str(e))
@@ -301,8 +310,8 @@ def process_llm_response(question: str, history: List[ChatMessage]) -> str:
 @app.post("/query", response_model=QueryResponse)
 def query_endpoint(req: QueryRequest):
     logger.info("/query appelé avec question : %s", req.question)
-    
-    return QueryResponse(reply=process_llm_response(req.question, req.history))
+    return QueryResponse(reply=process_llm_response(req.question, req.history, req.profile))
+
 
 # --------------------------------------------------
 # Endpoint /recommend
@@ -317,12 +326,15 @@ def recommend_endpoint(r: RecommendRequest):
     logger.info("/recommend appelé pour utilisateur : %s", profile.name)
 
     # Extraction de mots-clés
-    tokens = extract_keywords(profile.objective, profile.knowledge + (profile.pdf_content or ""))
+    """ tokens = extract_keywords(profile.objective, profile.knowledge + (profile.pdf_content or ""))
     niveau = profile.level.lower().strip()
     seuil = 2
 
     # Matching
-    matched_df = partial_match_formations(df_formations, tokens, niveau_user=niveau, seuil_score=seuil)
+    matched_df = partial_match_formations(df_formations, tokens, niveau_user=niveau, seuil_score=seuil)"""
+
+    matched_df = custom_recommendation_scoring(profile, df_formations)
+
     if not matched_df.empty:
         match = matched_df.iloc[0]
         logger.info("Formation recommandée : %s", match["titre"])
@@ -337,12 +349,21 @@ def recommend_endpoint(r: RecommendRequest):
             }
         )
     else:
-        logger.warning("Aucune formation ne correspond au profil fourni")
-        return RecommendResponse(
-            recommended_course="Aucune formation pertinente",
-            reply="Aucune formation ne correspond aux mots-clés fournis.",
-            details=None
-        )
+        # Fallback intelligent : formations pour débutants sans prérequis
+        fallback = df_formations[df_formations["prerequis"].apply(lambda x: not x or len(x) == 0)]
+        if not fallback.empty:
+            match = fallback.sample(1).iloc[0]
+            return RecommendResponse(
+                recommended_course=match["titre"],
+                reply="Aucune formation ne correspond exactement à votre profil, mais voici une formation accessible sans prérequis.",
+                details={
+                    "objectifs": match["objectifs"],
+                    "prerequis": match["prerequis"],
+                    "programme": match["programme"],
+                    "lien": match["lien"]
+                }
+            )
+
 
 # --------------------------------------------------
 # Endpoint /upload-pdf
