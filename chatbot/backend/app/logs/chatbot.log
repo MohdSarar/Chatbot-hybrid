@@ -1677,3 +1677,64 @@ Formation Intégration des données (ETL)      1
 2025-04-09 19:27:26 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
 2025-04-09 19:27:26 - INFO - 10 formations chargées
 2025-04-09 19:27:27 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-13 18:45:41 - INFO - Chargement des fichiers depuis : C:\ChatBotStage\chatbot-llm\chatbot\backend\app\content
+2025-04-13 18:45:41 - DEBUG - Fichier chargé : Formation_ATLASSIAN_JIRA.json
+2025-04-13 18:45:41 - DEBUG - Fichier chargé : Formation_Cloud_Azure.json
+2025-04-13 18:45:41 - DEBUG - Fichier chargé : Formation_Deep_Learning.json
+2025-04-13 18:45:41 - DEBUG - Fichier chargé : Formation_Integration_des_donnees_ETL.json
+2025-04-13 18:45:41 - DEBUG - Fichier chargé : Formation_Intelligence_Artificielle.json
+2025-04-13 18:45:41 - DEBUG - Fichier chargé : Formation_Machine_Learning.json
+2025-04-13 18:45:41 - DEBUG - Fichier chargé : Formation_Power_BI.json
+2025-04-13 18:45:41 - DEBUG - Fichier chargé : Formation_Python_Data_Visualisation.json
+2025-04-13 18:45:41 - DEBUG - Fichier chargé : Formation_SQL_NoSQL_Bases_de_donnees.json
+2025-04-13 18:45:41 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-13 18:45:41 - INFO - 10 formations chargées
+2025-04-13 18:45:45 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-13 18:48:11 - INFO - Chargement des fichiers depuis : C:\ChatBotStage\chatbot-llm\chatbot\backend\app\content
+2025-04-13 18:48:11 - DEBUG - Fichier chargé : Formation_ATLASSIAN_JIRA.json
+2025-04-13 18:48:11 - DEBUG - Fichier chargé : Formation_Cloud_Azure.json
+2025-04-13 18:48:11 - DEBUG - Fichier chargé : Formation_Deep_Learning.json
+2025-04-13 18:48:11 - DEBUG - Fichier chargé : Formation_Integration_des_donnees_ETL.json
+2025-04-13 18:48:11 - DEBUG - Fichier chargé : Formation_Intelligence_Artificielle.json
+2025-04-13 18:48:11 - DEBUG - Fichier chargé : Formation_Machine_Learning.json
+2025-04-13 18:48:11 - DEBUG - Fichier chargé : Formation_Power_BI.json
+2025-04-13 18:48:11 - DEBUG - Fichier chargé : Formation_Python_Data_Visualisation.json
+2025-04-13 18:48:11 - DEBUG - Fichier chargé : Formation_SQL_NoSQL_Bases_de_donnees.json
+2025-04-13 18:48:11 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-13 18:48:11 - INFO - 10 formations chargées
+2025-04-13 18:48:13 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-13 18:48:16 - INFO - Chargement des fichiers depuis : C:\ChatBotStage\chatbot-llm\chatbot\backend\app\content
+2025-04-13 18:48:16 - DEBUG - Fichier chargé : Formation_ATLASSIAN_JIRA.json
+2025-04-13 18:48:16 - DEBUG - Fichier chargé : Formation_Cloud_Azure.json
+2025-04-13 18:48:16 - DEBUG - Fichier chargé : Formation_Deep_Learning.json
+2025-04-13 18:48:16 - DEBUG - Fichier chargé : Formation_Integration_des_donnees_ETL.json
+2025-04-13 18:48:16 - DEBUG - Fichier chargé : Formation_Intelligence_Artificielle.json
+2025-04-13 18:48:16 - DEBUG - Fichier chargé : Formation_Machine_Learning.json
+2025-04-13 18:48:16 - DEBUG - Fichier chargé : Formation_Power_BI.json
+2025-04-13 18:48:16 - DEBUG - Fichier chargé : Formation_Python_Data_Visualisation.json
+2025-04-13 18:48:16 - DEBUG - Fichier chargé : Formation_SQL_NoSQL_Bases_de_donnees.json
+2025-04-13 18:48:16 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-13 18:48:16 - INFO - 10 formations chargées
+2025-04-13 18:48:18 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-13 18:51:37 - ERROR - Erreur lors de la lecture du PDF '_Data Scientist French CV for CDI (2).pdf' : [Errno 2] No such file or directory: '/tmp/_Data Scientist French CV for CDI (2).pdf'
+2025-04-13 18:51:38 - INFO - /recommend appelé pour utilisateur : Madel
+2025-04-13 18:51:38 - DEBUG - Mots-clés extraits : ['intelligence', 'artificille']
+2025-04-13 18:51:38 - DEBUG - Mots-clés extraits : ['scientiste', 'deep', 'analyste', 'algorithmique', 'learning', 'machine', 'python', 'data', 'etl']
+2025-04-13 18:51:38 - INFO - Formation recommandée : Formation Deep Learning
+2025-04-13 18:51:43 - INFO - /query appelé avec question : pourquoi ?
+2025-04-13 18:51:53 - INFO - /query appelé avec question : pourquoi cette formation ?
+2025-04-13 18:52:50 - INFO - /query appelé avec question : pour quel public ?
+2025-04-13 18:52:57 - INFO - /query appelé avec question : la durée ?
+2025-04-13 18:53:18 - INFO - /query appelé avec question : le prix ?
+2025-04-13 18:53:35 - INFO - /query appelé avec question : mais je veux apprendre l'intelligence artificielle
+2025-04-13 18:53:56 - INFO - /query appelé avec question : pour quel public ?
+2025-04-13 18:54:13 - INFO - /query appelé avec question : quelle est sa durée ?
+2025-04-13 18:54:30 - INFO - /query appelé avec question : c'est où ?
+2025-04-13 18:54:45 - INFO - /query appelé avec question : je veux apprendre le cloud
+2025-04-13 18:55:04 - INFO - /query appelé avec question : la durée ?
+2025-04-13 18:55:13 - INFO - /query appelé avec question : le public ?
+2025-04-13 18:55:23 - INFO - /query appelé avec question : combien ça coute ?
+2025-04-13 18:55:54 - INFO - /query appelé avec question : ça se fait où ?
+2025-04-13 18:56:11 - INFO - /query appelé avec question : donc je peux le faire à distance ?
+2025-04-13 18:56:39 - INFO - /query appelé avec question : parle moi de la formation intelligence artificielle ?
+2025-04-13 18:56:53 - INFO - /query appelé avec question : il s'adresse à qui ?
