@@ -16,9 +16,7 @@ import re
 import unicodedata
 from difflib import get_close_matches
 
-
 load_dotenv(dotenv_path="app/.env")
-
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 class LLMEngine:
