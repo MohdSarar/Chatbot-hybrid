@@ -122,11 +122,11 @@ class LLMEngine:
         intent = self.detect_intent(question)
         print(f"####\nIntent détecté : {intent}\n####")
 
-        if intent == "none":
-            return {
-                "answer": "Je suis un assistant spécialisé dans les formations. Vous pouvez me poser des questions sur les programmes, durées, tarifs, modalités, ou demander une recommandation personnalisée !",
-                "sources": []
-            }
+        known_intents = {
+            "liste_formations", "recommandation", "info_objectifs", "info_prerequis",
+            "info_programme", "info_public", "info_tarif", "info_duree",
+            "info_modalite", "info_certification", "info_lieu", "info_prochaine_session"
+        }
 
         matched_title = profile.recommended_course.lower() if profile and profile.recommended_course else None
         self.current_title = getattr(self, "current_title", matched_title)
@@ -149,7 +149,6 @@ class LLMEngine:
             Question : {question}
             """
 
-
         response = client.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[{"role": "user", "content": detect_title_prompt}]
@@ -157,9 +156,7 @@ class LLMEngine:
         detected_title = response.choices[0].message.content.strip().lower()
         print(f"####\nFormation détectée par LLM : {detected_title}\n####")
 
-        # Tenter de corriger la détection automatique
         if detected_title and detected_title != "aucun":
-            # Filtrage simple pour éviter les phrases entières
             if any(titre in detected_title for titre in self.formations_json.keys()):
                 close = get_close_matches(detected_title.lower(), self.formations_json.keys(), n=1, cutoff=0.7)
                 if close:
@@ -173,7 +170,6 @@ class LLMEngine:
             print("❌ Aucun titre détecté par le LLM.")
 
         print(f"#####\n####\n current title\n{self.current_title}\n#####\n####")
-       
 
         formation_context = self.formations_json.get(self.current_title, {}) if self.current_title else {}
         titre_affiche = self.current_title.title() if self.current_title else "(inconnu)"
@@ -246,20 +242,61 @@ class LLMEngine:
             public_text = "- " + "\n- ".join(public) if isinstance(public, list) else public
             prerequis_text = "- " + "\n- ".join(prerequis) if isinstance(prerequis, list) else prerequis
 
-            context_parts = [f"Je vous recommande la formation **{titre_affiche}** pour les raisons suivantes :\n\n",
-                            f"- Objectifs principaux :\n{objectifs_text}\n",
-                            f"- Public visé :\n{public_text}\n",
-                            f"- Prérequis recommandés :\n{prerequis_text}"]
+            context_parts = [
+                f" recommande la formation **{titre_affiche}** pour les raisons suivantes :\n\n",
+                f"- Objectifs principaux :\n{objectifs_text}\n",
+                f"- Public visé :\n{public_text}\n",
+                f"- Prérequis recommandés :\n{prerequis_text}"
+            ]
 
-        else:
-            context_parts = [f"Profil : {profile.objective}, niveau {profile.level}, compétences : {profile.knowledge}"] if profile else []
+            final_prompt = "\n\n".join(context_parts) + f"\n\nQuestion : {question}"
+            result = self.qa_chain.invoke({"question": final_prompt, "chat_history": chat_history})
+            sources = list(set(doc.metadata["titre"] for doc in result['source_documents']))
+            return {"answer": result['answer'], "sources": sources}
 
-        print(f"#####\n####\n current title\n{self.current_title}\n#####\n####")
-        final_prompt = "\n\n".join(context_parts) + f"\n\nQuestion : {question}"
-        result = self.qa_chain.invoke({"question": final_prompt, "chat_history": chat_history})
-        sources = list(set(doc.metadata["titre"] for doc in result['source_documents']))
-        return {"answer": result['answer'], "sources": sources}
+         # Fallback GPT : si aucune des conditions précédentes n'est remplie (y compris intent == "none")
+        if intent not in known_intents:
+            print(f"⚠️ Intent non reconnu ou générique ('{intent}'), fallback vers GPT.")
 
+            titre_affiche = self.current_title.title() if self.current_title else "(inconnu)"
+
+            context_parts = []
+
+            if profile:
+                context_parts.append(f"Profil : {profile.objective}, niveau {profile.level}, compétences : {profile.knowledge}")
+
+            if self.current_title:
+                formation = self.formations_json.get(self.current_title, {})
+                context_parts.append(f"Vous posez une question concernant la formation **{self.current_title.title()}**.")
+                context_parts.append(f"Objectifs : {', '.join(formation.get('objectifs', []))}")
+                context_parts.append(f"Programme : {', '.join(formation.get('programme', []))}")
+
+            if chat_history:
+                context_parts.append(f"Contexte précédent : {chat_history[-1][1]}")
+
+            if not context_parts:
+                context_parts = ["Vous posez une question générale sur les formations proposées."]
+            context_string = "\n\n".join(context_parts)
+            final_prompt = f"""
+                        Tu es un assistant spécialisé dans les formations professionnelles.
+
+                    L'utilisateur vient de poser une question qui n'entre dans aucune catégorie connue (objectifs, programme, tarifs, etc.).
+                    Ta mission est de :
+                    - Comprendre la question même si elle est vague (ex: "pourquoi ?", "comment ?", "et ensuite ?")
+                    - Fournir une réponse utile basée sur le contexte ci-dessous (profil, formation, historique)
+                    - Si la question n’est pas claire, propose une reformulation possible
+                    - Sois clair et synthétique, mais engageant
+
+                    Contexte :
+                    {context_string}
+
+                    Question de l’utilisateur :
+                    {question}
+                """
+
+            result = self.qa_chain.invoke({"question": final_prompt, "chat_history": chat_history})
+            sources = list(set(doc.metadata["titre"] for doc in result['source_documents']))
+            return {"answer": result['answer'], "sources": sources}
 
 
 
