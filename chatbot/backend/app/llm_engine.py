@@ -544,7 +544,7 @@ class LLMEngine:
         print(f"Documents trouvés : {len(docs)}")
         # Préparation du contexte textuel à partir des documents trouvés
         context_segments = []
-        for doc in docs:
+        for doc in docs :
             titre_doc = doc.metadata.get("titre", "Formation inconnue")
             extrait = doc.page_content.strip()
             context_segments.append(f"Formation: {titre_doc}\n{extrait}")
