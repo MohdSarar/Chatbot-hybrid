@@ -37,3 +37,10 @@ class QueryRequest(BaseModel):
 
 class QueryResponse(BaseModel):
     reply: str
+
+
+class SessionState(BaseModel):
+    user_id: str
+    current_title: Optional[str] = None
+    last_intent: Optional[str] = None
+    recommended_course: Optional[str] = None
