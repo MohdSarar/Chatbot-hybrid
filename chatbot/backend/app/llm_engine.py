@@ -16,11 +16,14 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_core.prompts import PromptTemplate
 
 from langchain_community.vectorstores import Chroma
-from langchain_community.embeddings import OpenAIEmbeddings
-from langchain_community.chat_models import ChatOpenAI
+# from langchain_community.embeddings import OpenAIEmbeddings
+# from langchain_community.chat_models import ChatOpenAI
+from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain.memory import ConversationBufferMemory, ConversationEntityMemory
 from openai import OpenAI
 from app.schemas import UserProfile, SessionState
+from langchain.chains import load_summarize_chain
+
 # Chargement des variables d’environnement (clé API OpenAI, etc.)
 
 load_dotenv(dotenv_path="app/.env")
@@ -55,6 +58,35 @@ class LLMEngine:
 
         # Initialisation de la base RAG (documents + vecteurs)
         self.initialize_rag(df_formations)
+
+        # Initialisation de la mémoire de conversation (historique + entités)# Initialisation mémoire
+        self._init_session_memory()        
+    
+    
+    def _init_session_memory(self):
+        """Initialise la mémoire de la session si elle n'existe pas."""
+        if self.session.buffer_memory is None:
+            self.session.buffer_memory = ConversationBufferMemory(
+                memory_key="history",
+                return_messages=False,
+                human_prefix="Utilisateur",
+                ai_prefix="Assistant"
+            )
+        if self.session.entity_memory is None:
+            self.session.entity_memory = ConversationEntityMemory(
+                llm=ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0),
+                memory_key="entities",
+                input_key="question"
+            )
+    def _summarize_history(self, history: str) -> str:
+        """Résume l'historique si trop long."""
+        if len(history) < 1000:
+            return history
+            
+        return load_summarize_chain(
+            llm=ChatOpenAI(model="gpt-3.5-turbo", temperature=0.3),
+            chain_type="map_reduce"
+        ).run(history)
 
     def _df_to_documents(self, df) -> List[Document]:
         """
@@ -460,36 +492,27 @@ class LLMEngine:
 
         # a. Préparation de la mémoire conversationnelle (historique + entités)
         # On utilise ConversationBufferMemory et ConversationEntityMemory de LangChain pour reconstituer l'historique en texte et extraire les entités mentionnées.
-        buffer_memory = ConversationBufferMemory(
-            memory_key="history",
-            human_prefix="Utilisateur",
-            ai_prefix="Assistant",
-            return_messages=False
-        )
-        entity_memory = ConversationEntityMemory(
-            llm=ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0),
-            memory_key="entities",
-            input_key="question"
-        )
-        # On alimente la mémoire avec l'historique de la conversation passée (paire utilisateur/assistant)
+        self._init_session_memory()
+        
+        # Alimenter la mémoire avec l'historique
         for user_msg, assistant_msg in chat_history:
-            buffer_memory.chat_memory.add_user_message(user_msg)
-            buffer_memory.chat_memory.add_ai_message(assistant_msg)
-            try:
-                # Mise à jour de la mémoire d'entités à chaque échange
-                entity_memory.save_context({"question": user_msg}, {"output": assistant_msg})
-                history_text = buffer_memory.load_memory_variables({}).get("history", "")
-                entities_text = entity_memory.load_memory_variables({"question": question}).get("entities", "")
+            self.session.buffer_memory.chat_memory.add_user_message(user_msg)
+            self.session.buffer_memory.chat_memory.add_ai_message(assistant_msg)
+            self.session.entity_memory.save_context(
+                {"question": user_msg}, 
+                {"output": assistant_msg}
+            )
 
+        # Récupérer et résumer l'historique
+        raw_history = self.session.buffer_memory.load_memory_variables({}).get("history", "")
+        history_text = self._summarize_history(raw_history)
+        
+        # Récupérer les entités
+        entities_text = self.session.entity_memory.load_memory_variables({"question": question}).get("entities", "Aucune")
 
-            except Exception as e:
-                print("Extraction entité échouée sur ", user_msg, e)
-        # Récupération des contenus formatés de l'historique et des entités
-        history_text = buffer_memory.load_memory_variables({}).get("history", "")
-        entities_text = entity_memory.load_memory_variables({"question": question}).get("entities", "")
-        # Si aucune entité identifiée, on met une valeur par défaut pour le prompt
-        if not entities_text or entities_text.strip().lower() == "none":
-            entities_text = "Aucune"
+        # Après le bloc entity_memory et buffer_memory :
+        print(f" Mémoire historique :\n{history_text}\n")
+        print(f" Entités extraites :\n{entities_text}\n")
 
         # b. Recherche des documents pertinents via Chroma
         # On filtre par formation courante si connue, sinon on cherche globalement
@@ -498,20 +521,26 @@ class LLMEngine:
         
 
         try:
-            # Requête de recherche vectorielle (on utilise la question non modifiée pour la similarité)
+            # Requête de recherche vectorielle
             docs = self.vector_store.similarity_search(question, k=6, filter=filter_criteria)
-            # Supprimer les doublons de contenu
+
+            # Vérification que les docs ont bien une metadata
             seen = set()
             unique_docs = []
             for doc in docs:
+                if not hasattr(doc, "metadata"):
+                    print("⚠️ doc sans attribut metadata : ", doc)
+                    continue  # on skippe
                 title = doc.metadata.get("titre", "")
                 if title not in seen:
                     seen.add(title)
                     unique_docs.append(doc)
+            docs = unique_docs
 
         except Exception as e:
-            print("Erreur lors de la recherche vectorielle : ", e)
+            print("❌ Erreur lors de la recherche vectorielle :", e)
             docs = []
+
         print(f"Documents trouvés : {len(docs)}")
         # Préparation du contexte textuel à partir des documents trouvés
         context_segments = []

@@ -1,5 +1,6 @@
 from pydantic import BaseModel, EmailStr
 from typing import List, Optional
+from langchain.memory import ConversationBufferMemory, ConversationEntityMemory  # Import added
 
 # --------------------------------------------------
 # Modèles Pydantic
@@ -44,3 +45,5 @@ class SessionState(BaseModel):
     current_title: Optional[str] = None
     last_intent: Optional[str] = None
     recommended_course: Optional[str] = None
+    buffer_memory: Optional[ConversationBufferMemory] = None  # <-- Ajout
+    entity_memory: Optional[ConversationEntityMemory] = None  # <-- Ajout
