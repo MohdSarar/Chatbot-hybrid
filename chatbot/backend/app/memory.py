@@ -27,7 +27,7 @@ def summarize_history(history: str) -> str:
         return history
     
     summarizer = load_summarize_chain(
-        llm=ChatOpenAI(model="gpt-3.5-turbo", temperature=0.2),
+        llm=ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0.2),
         chain_type="map_reduce"
     )
     return summarizer.run(history)
