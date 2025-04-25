@@ -47,3 +47,10 @@ class SessionState(BaseModel):
     recommended_course: Optional[str] = None
     buffer_memory: Optional[ConversationBufferMemory] = None  # <-- Ajout
     entity_memory: Optional[ConversationEntityMemory] = None  # <-- Ajout
+
+class SearchFilters(BaseModel):
+    certifiant: Optional[bool] = None
+    modalite:   Optional[str] = None   # ex. "distance", "presentiel"
+#    niveau:     Optional[str] = None   # débutant, intermédiaire, avancé
+    lieu:       Optional[str] = None
+    duree_max:  Optional[int] = None
