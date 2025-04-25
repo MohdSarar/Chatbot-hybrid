@@ -16,11 +16,9 @@ Pour lancer:
    uvicorn main:app --reload
 """
 
-import logging
 from fastapi import FastAPI, UploadFile, File, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel, EmailStr
-from typing import List, Optional
+from typing import List
 import pandas as pd
 import json
 from pathlib import Path
@@ -32,8 +30,9 @@ from app.logging_config import logger
 from dotenv import load_dotenv
 import os
 from app.llm_engine import LLMEngine 
-
-load_dotenv(dotenv_path="app\.env")  # charge les variables depuis .env et les place dans os.environ
+from pathlib import Path
+load_dotenv(dotenv_path=Path(__file__).resolve().parent / ".env")
+#load_dotenv(dotenv_path="app\.env")  # charge les variables depuis .env et les place dans os.environ ( doit marché sur windows et linux)
 
 
 # --------------------------------------------------
@@ -81,8 +80,12 @@ def load_formations_to_df(json_dir: Path) -> pd.DataFrame:
                     "prerequis": data.get("prerequis", []),
                     "programme": data.get("programme", []),
                     "public": data.get("public", []),
-                    "lien": data.get("lien", "")
-                })
+                    "lien": data.get("lien", ""),
+                    "durée":     data.get("durée", ""),      # ← nouvelles colonnes
+                    "tarif":     data.get("tarif", ""),
+                    "modalité":  data.get("modalité", ""),
+                    "certifiant": data.get("certifiant"),
+                            })   
                 logger.debug("Fichier chargé : %s", file.name)
         except Exception as e:
             logger.error("Erreur de lecture du fichier %s : %s", file.name, str(e))
@@ -168,8 +171,15 @@ from app.schemas import (
     SessionState
 )   # Importer les modèles Pydantic depuis le fichier schemas.py, car les modèles sont utilisés dans les endpoints FastAPI mais aussi dans llm_engine.py
 
+from fastapi import Depends, Request
 
-user_session = SessionState(user_id="default")
+#user_session = SessionState(user_id="default")
+def get_session(request: Request) -> SessionState:
+     # Exemple très simple : par adresse IP
+     uid = request.client.host
+     if not hasattr(request.app.state, "sessions"):
+         request.app.state.sessions = {}
+     return request.app.state.sessions.setdefault(uid, SessionState(user_id=uid))
 
 def custom_recommendation_scoring(profile: UserProfile, df: pd.DataFrame) -> pd.DataFrame:
     """
@@ -290,20 +300,21 @@ def build_email_body(profile: UserProfile, chat_history: List[ChatMessage]) -> s
 llm_engine = LLMEngine(df_formations)
 logger.info("Moteur LLM et RAG initialisé avec succès")
 
-def process_llm_response(question: str, history: list, profile: UserProfile) -> str:
+def process_llm_response(question: str, history: list, profile: UserProfile, session: SessionState) -> str:
     """
     Prépare l'historique sous forme de paires (utilisateur, assistant) et obtient la réponse du moteur LLM.
     """
     # Conversion de l'historique (liste de ChatMessage) en liste de tuples (user, assistant)
     chat_history = []
-    for i in range(0, len(history) - 1, 2):
-        user_msg = history[i]
-        assistant_msg = history[i+1]
-        if user_msg.role == "user" and assistant_msg.role == "assistant":
-            chat_history.append((user_msg.content, assistant_msg.content))
+    for i in range(0, len(history), 2):
+        if i + 1 < len(history):
+            user_msg = history[i]
+            assistant_msg = history[i+1]
+            if user_msg.role == "user" and assistant_msg.role == "assistant":
+                chat_history.append((user_msg.content, assistant_msg.content))
     # Appel au moteur LLM pour générer la réponse
     try:
-        llm_result = llm_engine.generate_response(question=question, chat_history=chat_history, profile=profile, session=user_session)
+        llm_result = llm_engine.generate_response(question=question, chat_history=chat_history, profile=profile, session=session)
         # On extrait le champ 'answer' du résultat du moteur
         return llm_result.get("answer", "")
     except Exception as e:
@@ -313,13 +324,13 @@ def process_llm_response(question: str, history: list, profile: UserProfile) -> 
 # Endpoint /query (réponse fictive)
 # --------------------------------------------------
 @app.post("/query", response_model=QueryResponse)
-def query_endpoint(req: QueryRequest):
+def query_endpoint(req: QueryRequest, session: SessionState = Depends(get_session)):
     """
     Endpoint pour poser une question au chatbot. 
     Utilise le moteur LLM pour obtenir une réponse en fonction de la question, de l'historique et du profil utilisateur fournis.
     """
     logger.info("Réception d'une requête /query : %s", req.question)
-    reply_text = process_llm_response(req.question, req.history, req.profile)
+    reply_text = process_llm_response(req.question, req.history, req.profile, session)
     return QueryResponse(reply=reply_text)
 # --------------------------------------------------
 # Endpoint /recommend
