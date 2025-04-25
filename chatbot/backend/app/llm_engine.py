@@ -19,8 +19,8 @@ from langchain_community.vectorstores import Chroma
 # from langchain_community.embeddings import OpenAIEmbeddings
 # from langchain_community.chat_models import ChatOpenAI
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
-from langchain.memory import ConversationBufferMemory, ConversationEntityMemory
 from openai import OpenAI
+import pandas as pd
 from app.schemas import UserProfile, SessionState
 from langchain.chains import load_summarize_chain
 
@@ -84,7 +84,7 @@ class LLMEngine:
             return history
             
         return load_summarize_chain(
-            llm=ChatOpenAI(model="gpt-3.5-turbo", temperature=0.3),
+            llm=ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0.3),
             chain_type="map_reduce"
         ).run(history)
 
@@ -177,9 +177,9 @@ class LLMEngine:
 
     def detect_intent(self, question: str) -> str:
         prompt = f"""
-            Tu es un classificateur d'intentions. Ton rôle est d'identifier l'intention de l'utilisateur à partir de sa question.
+            Tu es un classificateur d'intentions. Ton rôle est d'identifier l'intention exacte exprimée dans la question de l'utilisateur, afin de sélectionner une rubrique spécifique dans un fichier de formation structuré (.json).
 
-            Les intentions possibles sont :
+            Voici les intentions possibles :
 
             - liste_formations
             - recommandation
@@ -187,15 +187,19 @@ class LLMEngine:
             - info_prerequis
             - info_programme
             - info_public
-            - info_tarif
+            - info_tarif : L'utilisateur demande le **coût**, le **prix brut** ou les **réductions tarifaires** éventuelles.
+            - info_financement : L'utilisateur s'intéresse aux **modes de financement** disponibles (CPF, France Travail, Pôle Emploi, OPCO, FAF, région, aides, etc.).
             - info_duree
             - info_modalite
             - info_certification
-            - info_lieu
             - info_prochaine_session
-            - none
+            - Fallback : À utiliser pour toute question qui **a un lien avec le domaine des formations**, de l'apprentissage, des technologies ou de l'intelligence artificielle, **mais qui ne correspond à aucun des intents listés ci-dessus**. Ces questions peuvent nécessiter une réponse ouverte, un raisonnement, une opinion, ou une explication globale (ex : utilité, comparaison, histoire, tendances, conseils...).
+            - recherche_filtrée : l'utilisateur demande **une liste** de formations ET mentionne explicitement au moins UN filtre (certifiante/non, à distance/présentiel, niveau, lieu, durée, tarif…).
+            - info_lieu : L'utilisateur demande des informations sur le **lieu** de la formation (ex. "où se déroule la formation ?", " c'est où").
+            - none : À utiliser pour toute question qui **n’a aucun rapport avec le domaine de la formation**, ou qui est manifestement **hors sujet** (questions personnelles, discussions générales, météo, politique, blagues, etc.).
 
-            Ne réponds qu'avec une seule de ces intentions, sans justification.
+
+            Tu dois répondre **uniquement** par l’intention la plus adaptée dans cette liste, sans justification.
 
             Question : {question}
             """
@@ -205,6 +209,50 @@ class LLMEngine:
             messages=[{"role": "user", "content": prompt}]
         )
         return response.choices[0].message.content.strip()
+    
+        # ---------- NEW ----------
+    def detect_filters(self, question: str) -> Dict[str, Any]:
+        """
+        Extrait des critères de filtrage simples dans la question.
+        Retourne un dict : { "certifiant": True, "modalite": "distance", ... }
+        (implémentation naïve basée sur des regex + synonymes)
+        """
+        q = question.lower()
+        filtres = {}
+
+        # --- certifiant ---
+        if "certif" in q:
+            filtres["certifiant"] = True
+        if any(w in q for w in ["non certif", "pas certif"]):
+            filtres["certifiant"] = False
+
+        # --- modalité ---
+        if any(w in q for w in ["distance", "distanciel", "en ligne", "online"]):
+            filtres["modalite"] = "distance"
+        elif any(w in q for w in [
+            "présentiel", "presentiel",
+            "sur place", "sur site", "site", "place"
+            ]):
+            filtres["modalite"] = "presentiel"
+
+        # --- niveau ---
+        for lvl in ["débutant", "intermédiaire", "avancé"]:
+            if lvl in q:
+                filtres["niveau"] = lvl
+                break
+
+        # --- lieu ---
+        match = re.search(r"à\s+([A-Z][a-zéèëàôû\- ]+)", q)
+        if match:
+            filtres["lieu"] = match.group(1).strip()
+
+        # --- durée max ---
+        d = re.search(r"(\d+)\s*(jour|j|semaine|sem)", q)
+        if d:
+            jours = int(d.group(1))
+            filtres["duree_max"] = jours if "sem" not in d.group(2) else jours * 5
+
+        return filtres
 
     def detect_formation_title(self, question: str) -> str:
         """
@@ -320,12 +368,14 @@ class LLMEngine:
 
         # Étape 1 : Détection de l'intention de l'utilisateur
         intent = self.detect_intent(question)
+        intent = intent.lower()
         print(f"Intention détectée : {intent}")
         known_intents = {
             "liste_formations", "recommandation",
             "info_objectifs", "info_prerequis", "info_programme",
             "info_public", "info_tarif", "info_duree",
-            "info_modalite", "info_certification", "info_lieu", "info_prochaine_session"
+            "info_modalite", "info_certification", "info_lieu", "info_prochaine_session", "recherche_filtrée"
+
         }
 
         # Intents pouvant nécessiter une détection de titre implicite même si ce n'est pas 'recommandation'
@@ -442,7 +492,62 @@ class LLMEngine:
             valeur = formation_context.get(rubrique, "(non renseigné)")
             reponse_directe = rubriques_info[intent]["format"](valeur, titre_affiche)
             return {"answer": reponse_directe}
+                # --------------------------------------------------
+        # 3.bis. Intention de recherche filtrée  ------------
+        # --------------------------------------------------
+        if intent == "recherche_filtrée":
+             filters = self.detect_filters(question)
+             # ⇢ Pas de filtre explicite ? On requalifie en "recommandation"
+             if not filters:
+                intent = "recommandation"
+                # on continue le flux plus bas (ne PAS retourner ici)
 
+
+            #  if not filters:
+            #      return {"answer": "Quels critères souhaitez-vous appliquer ? (ex. certifiante, à distance, niveau débutant)"}
+
+             # --- DataFrame des formations ---
+             df = pd.DataFrame(self.formations_json.values())
+
+             # ----- mask cumulatif -----
+             mask = pd.Series(True, index=df.index)
+
+             # --- certifiant O/N ---
+             if "certifiant" in filters:
+                mask &= df["certifiant"].str.lower().eq("oui" if filters["certifiant"] else "non")
+
+             # --- modalité / distance ---
+             if "modalite" in filters and filters["modalite"] == "distance":
+                mask &= (
+                    df["modalité"].str.contains("distance|hybride", case=False, na=False) |
+                    df.get("lieu", "").str.contains("distance", case=False, na=False)
+                )
+             elif "modalite" in filters and filters["modalite"] == "presentiel":
+                mask &= (
+                    df["modalité"].str.contains("présentiel|presentiel|hybride", case=False, na=False) |
+                    df.get("lieu", "").str.contains("site|place|présentiel|presentiel", case=False, na=False)
+                )
+
+             # --- niveau ---
+             if "niveau" in filters:
+                 mask &= df["niveau"].str.contains(filters["niveau"], case=False, na=False)
+
+             # --- lieu explicite (ex. “à Paris”) ---
+             if "lieu" in filters:
+                 mask &= df.get("lieu", "").str.contains(filters["lieu"], case=False, na=False)
+
+             # --- durée max ---
+             if "duree_max" in filters:
+                 durees = df["durée"].str.extract(r"(\d+)").astype(float).fillna(9999)[0]
+                 mask &= durees <= filters["duree_max"]
+
+             results = df[mask]["titre"].tolist()
+
+             if not results:
+                 return {"answer": "Aucune formation ne correspond à vos critères."}
+
+             listing = "- " + "\n- ".join(results)
+             return {"answer": f"Voici les formations correspondant à vos critères :\n\n{listing}"}
         # 3.b. Intention de lister toutes les formations
         if intent == "liste_formations":
             titres = [data["titre"] for _, data in self.formations_json.items()]
