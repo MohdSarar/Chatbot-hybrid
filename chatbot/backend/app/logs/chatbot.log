@@ -1,0 +1,523 @@
+2025-04-28 14:24:13 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 14:24:13 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 14:24:13 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 14:24:13 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 14:24:13 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 14:24:13 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 14:24:13 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 14:24:13 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 14:24:13 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 14:24:13 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 14:24:13 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 14:24:13 - INFO - 10 formations chargées
+2025-04-28 14:24:18 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 14:24:30 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 14:24:30 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 14:24:30 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 14:24:30 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 14:24:30 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 14:24:30 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 14:24:30 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 14:24:30 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 14:24:30 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 14:24:30 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 14:24:30 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 14:24:30 - INFO - 10 formations chargées
+2025-04-28 14:24:33 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 14:24:53 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 14:24:53 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 14:24:53 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 14:24:53 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 14:24:53 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 14:24:53 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 14:24:53 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 14:24:53 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 14:24:53 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 14:24:53 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 14:24:53 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 14:24:53 - INFO - 10 formations chargées
+2025-04-28 14:24:56 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 14:25:15 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 14:25:15 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 14:25:15 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 14:25:15 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 14:25:15 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 14:25:15 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 14:25:15 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 14:25:15 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 14:25:15 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 14:25:15 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 14:25:15 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 14:25:15 - INFO - 10 formations chargées
+2025-04-28 14:25:17 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 14:25:30 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 14:25:30 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 14:25:30 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 14:25:30 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 14:25:30 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 14:25:30 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 14:25:30 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 14:25:30 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 14:25:30 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 14:25:30 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 14:25:30 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 14:25:30 - INFO - 10 formations chargées
+2025-04-28 14:25:32 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 14:25:43 - INFO - Réception d'une requête /recommend pour l'utilisateur : Michel
+2025-04-28 14:25:43 - DEBUG - Mots-clés extraits : ['souhaite', 'devenir', 'web', 'pro']
+2025-04-28 14:25:43 - DEBUG - Mots-clés extraits : ['excel', 'sais', 'utiliser', 'bord', 'tableaux', 'créer', 'logiciel', 'microsoft']
+2025-04-28 14:25:43 - INFO - Formation recommandée déterminée : ATLASSIAN - JIRA
+2025-04-28 14:25:50 - INFO - Réception d'une requête /query : Cool c'est quoi Jira
+2025-04-28 14:29:08 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 14:29:08 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 14:29:08 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 14:29:08 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 14:29:08 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 14:29:08 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 14:29:08 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 14:29:08 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 14:29:08 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 14:29:08 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 14:29:08 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 14:29:08 - INFO - 10 formations chargées
+2025-04-28 14:29:11 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 14:29:24 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 14:29:24 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 14:29:24 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 14:29:24 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 14:29:24 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 14:29:24 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 14:29:24 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 14:29:24 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 14:29:24 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 14:29:24 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 14:29:24 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 14:29:24 - INFO - 10 formations chargées
+2025-04-28 14:29:27 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 14:29:44 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 14:29:44 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 14:29:44 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 14:29:44 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 14:29:44 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 14:29:44 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 14:29:44 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 14:29:44 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 14:29:44 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 14:29:44 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 14:29:44 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 14:29:44 - INFO - 10 formations chargées
+2025-04-28 14:29:47 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 14:30:09 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 14:30:09 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 14:30:09 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 14:30:09 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 14:30:09 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 14:30:09 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 14:30:09 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 14:30:09 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 14:30:09 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 14:30:09 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 14:30:09 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 14:30:09 - INFO - 10 formations chargées
+2025-04-28 14:30:12 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 14:32:16 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 14:32:16 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 14:32:16 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 14:32:16 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 14:32:16 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 14:32:16 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 14:32:16 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 14:32:16 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 14:32:16 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 14:32:16 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 14:32:16 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 14:32:16 - INFO - 10 formations chargées
+2025-04-28 14:32:19 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 14:33:02 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 14:33:02 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 14:33:02 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 14:33:02 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 14:33:02 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 14:33:02 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 14:33:02 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 14:33:02 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 14:33:02 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 14:33:02 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 14:33:02 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 14:33:02 - INFO - 10 formations chargées
+2025-04-28 14:33:04 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 14:39:01 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 14:39:01 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 14:39:01 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 14:39:01 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 14:39:01 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 14:39:01 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 14:39:01 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 14:39:01 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 14:39:01 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 14:39:01 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 14:39:01 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 14:39:01 - INFO - 10 formations chargées
+2025-04-28 14:39:04 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 14:39:11 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 14:39:11 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 14:39:11 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 14:39:11 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 14:39:11 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 14:39:11 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 14:39:11 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 14:39:11 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 14:39:11 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 14:39:11 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 14:39:11 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 14:39:11 - INFO - 10 formations chargées
+2025-04-28 14:39:14 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 14:41:03 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 14:41:03 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 14:41:03 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 14:41:03 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 14:41:03 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 14:41:03 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 14:41:03 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 14:41:03 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 14:41:03 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 14:41:03 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 14:41:03 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 14:41:03 - INFO - 10 formations chargées
+2025-04-28 14:41:06 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 14:41:26 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 14:41:26 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 14:41:26 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 14:41:26 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 14:41:26 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 14:41:26 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 14:41:26 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 14:41:26 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 14:41:26 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 14:41:26 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 14:41:26 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 14:41:26 - INFO - 10 formations chargées
+2025-04-28 14:41:29 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 14:41:54 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 14:41:54 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 14:41:54 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 14:41:54 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 14:41:54 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 14:41:54 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 14:41:54 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 14:41:54 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 14:41:54 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 14:41:54 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 14:41:54 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 14:41:54 - INFO - 10 formations chargées
+2025-04-28 14:41:57 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 14:42:02 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 14:42:02 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 14:42:02 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 14:42:02 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 14:42:02 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 14:42:02 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 14:42:02 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 14:42:02 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 14:42:02 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 14:42:02 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 14:42:02 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 14:42:02 - INFO - 10 formations chargées
+2025-04-28 14:43:23 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 14:43:23 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 14:43:23 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 14:43:23 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 14:43:23 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 14:43:23 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 14:43:23 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 14:43:23 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 14:43:23 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 14:43:23 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 14:43:23 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 14:43:23 - INFO - 10 formations chargées
+2025-04-28 14:43:34 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 14:43:34 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 14:43:34 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 14:43:34 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 14:43:34 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 14:43:34 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 14:43:34 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 14:43:34 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 14:43:34 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 14:43:34 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 14:43:34 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 14:43:34 - INFO - 10 formations chargées
+2025-04-28 14:43:39 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 14:47:50 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 14:47:50 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 14:47:50 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 14:47:50 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 14:47:50 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 14:47:50 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 14:47:50 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 14:47:50 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 14:47:50 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 14:47:50 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 14:47:50 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 14:47:50 - INFO - 10 formations chargées
+2025-04-28 14:47:53 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 14:47:59 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 14:47:59 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 14:47:59 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 14:47:59 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 14:47:59 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 14:47:59 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 14:47:59 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 14:47:59 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 14:47:59 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 14:47:59 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 14:47:59 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 14:47:59 - INFO - 10 formations chargées
+2025-04-28 14:48:01 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 14:48:05 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 14:48:05 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 14:48:05 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 14:48:05 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 14:48:05 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 14:48:05 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 14:48:05 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 14:48:05 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 14:48:05 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 14:48:05 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 14:48:05 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 14:48:05 - INFO - 10 formations chargées
+2025-04-28 14:48:07 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 14:48:24 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 14:48:24 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 14:48:24 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 14:48:24 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 14:48:24 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 14:48:24 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 14:48:24 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 14:48:24 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 14:48:24 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 14:48:24 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 14:48:24 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 14:48:24 - INFO - 10 formations chargées
+2025-04-28 14:48:26 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 14:48:31 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 14:48:31 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 14:48:31 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 14:48:31 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 14:48:31 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 14:48:31 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 14:48:31 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 14:48:31 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 14:48:31 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 14:48:31 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 14:48:31 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 14:48:31 - INFO - 10 formations chargées
+2025-04-28 14:48:33 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 14:55:16 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 14:55:16 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 14:55:16 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 14:55:16 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 14:55:16 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 14:55:16 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 14:55:16 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 14:55:16 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 14:55:16 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 14:55:16 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 14:55:16 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 14:55:16 - INFO - 10 formations chargées
+2025-04-28 14:55:19 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 14:55:27 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 14:55:27 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 14:55:27 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 14:55:27 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 14:55:27 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 14:55:27 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 14:55:27 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 14:55:27 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 14:55:27 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 14:55:27 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 14:55:27 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 14:55:27 - INFO - 10 formations chargées
+2025-04-28 14:55:30 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 14:55:34 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 14:55:34 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 14:55:34 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 14:55:34 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 14:55:34 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 14:55:34 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 14:55:34 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 14:55:34 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 14:55:34 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 14:55:34 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 14:55:34 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 14:55:34 - INFO - 10 formations chargées
+2025-04-28 14:55:35 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 14:57:43 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 14:57:43 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 14:57:43 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 14:57:43 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 14:57:43 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 14:57:43 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 14:57:43 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 14:57:43 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 14:57:43 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 14:57:43 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 14:57:43 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 14:57:43 - INFO - 10 formations chargées
+2025-04-28 14:57:45 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 14:57:49 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 14:57:49 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 14:57:49 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 14:57:49 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 14:57:49 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 14:57:49 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 14:57:49 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 14:57:49 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 14:57:49 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 14:57:49 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 14:57:49 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 14:57:49 - INFO - 10 formations chargées
+2025-04-28 14:57:52 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 14:57:59 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 14:57:59 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 14:57:59 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 14:57:59 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 14:57:59 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 14:57:59 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 14:57:59 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 14:57:59 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 14:57:59 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 14:57:59 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 14:57:59 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 14:57:59 - INFO - 10 formations chargées
+2025-04-28 14:58:01 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 14:58:04 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 14:58:04 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 14:58:04 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 14:58:04 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 14:58:04 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 14:58:04 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 14:58:04 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 14:58:04 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 14:58:04 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 14:58:04 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 14:58:04 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 14:58:04 - INFO - 10 formations chargées
+2025-04-28 14:58:07 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 14:58:21 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 14:58:21 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 14:58:21 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 14:58:21 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 14:58:21 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 14:58:21 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 14:58:21 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 14:58:21 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 14:58:21 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 14:58:21 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 14:58:21 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 14:58:21 - INFO - 10 formations chargées
+2025-04-28 14:58:24 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 14:58:35 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 14:58:35 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 14:58:35 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 14:58:35 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 14:58:35 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 14:58:35 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 14:58:35 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 14:58:35 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 14:58:35 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 14:58:35 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 14:58:35 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 14:58:35 - INFO - 10 formations chargées
+2025-04-28 14:58:38 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 14:58:44 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 14:58:44 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 14:58:44 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 14:58:44 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 14:58:44 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 14:58:44 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 14:58:44 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 14:58:44 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 14:58:44 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 14:58:44 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 14:58:44 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 14:58:44 - INFO - 10 formations chargées
+2025-04-28 14:58:49 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 15:00:56 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 15:00:56 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 15:00:56 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 15:00:56 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 15:00:56 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 15:00:56 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 15:00:56 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 15:00:56 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 15:00:56 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 15:00:56 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 15:00:56 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 15:00:56 - INFO - 10 formations chargées
+2025-04-28 15:00:58 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 15:01:02 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 15:01:02 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 15:01:02 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 15:01:02 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 15:01:02 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 15:01:02 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 15:01:02 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 15:01:02 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 15:01:02 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 15:01:02 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 15:01:02 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 15:01:02 - INFO - 10 formations chargées
+2025-04-28 15:01:04 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 15:01:21 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 15:01:21 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 15:01:21 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 15:01:21 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 15:01:21 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 15:01:21 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 15:01:21 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 15:01:21 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 15:01:21 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 15:01:21 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 15:01:21 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 15:01:21 - INFO - 10 formations chargées
+2025-04-28 15:01:23 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 15:01:28 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 15:01:28 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 15:01:28 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 15:01:28 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 15:01:28 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 15:01:28 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 15:01:28 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 15:01:28 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 15:01:28 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 15:01:28 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 15:01:28 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 15:01:28 - INFO - 10 formations chargées
+2025-04-28 15:01:31 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 15:01:38 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 15:01:38 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 15:01:38 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 15:01:38 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 15:01:38 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 15:01:38 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 15:01:38 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 15:01:38 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 15:01:38 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 15:01:38 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 15:01:38 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 15:01:38 - INFO - 10 formations chargées
+2025-04-28 15:01:41 - INFO - Moteur LLM et RAG initialisé avec succès
+2025-04-28 15:01:49 - INFO - Chargement des fichiers depuis : /Users/michel/Documents/Data Analyst/Chat_bot/chatbot-llm/chatbot/backend/app/content
+2025-04-28 15:01:49 - DEBUG - Fichier chargé : ATLASSIAN_JIRA.json
+2025-04-28 15:01:49 - DEBUG - Fichier chargé : Integration_des_donnees_ETL.json
+2025-04-28 15:01:49 - DEBUG - Fichier chargé : Intelligence_Artificielle.json
+2025-04-28 15:01:49 - DEBUG - Fichier chargé : Parcours_Data_Analyst.json
+2025-04-28 15:01:49 - DEBUG - Fichier chargé : Cloud_Azure.json
+2025-04-28 15:01:49 - DEBUG - Fichier chargé : Python_Data_Visualisation.json
+2025-04-28 15:01:49 - DEBUG - Fichier chargé : Power_BI.json
+2025-04-28 15:01:49 - DEBUG - Fichier chargé : Machine_Learning.json
+2025-04-28 15:01:49 - DEBUG - Fichier chargé : Deep_Learning.json
+2025-04-28 15:01:49 - DEBUG - Fichier chargé : SQL_NoSQL_Bases_de_donnees.json
+2025-04-28 15:01:49 - INFO - 10 formations chargées
+2025-04-28 15:01:56 - INFO - Moteur LLM et RAG initialisé avec succès

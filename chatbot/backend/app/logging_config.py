@@ -1,35 +1,18 @@
-# logging_config.py
+# app/logging_config.py
+"""
+Configuration du logger global pour l'application.
+Permet d'afficher les logs dans la console avec formatage.
+"""
 
 import logging
-from pathlib import Path
 
-# Détermination du dossier de logs
-log_dir = Path(__file__).resolve().parent / "logs"
-log_dir.mkdir(parents=True, exist_ok=True)
+# Création d'un logger nommé "app"
+logger = logging.getLogger("app")
+logger.setLevel(logging.DEBUG)  # Niveau global : DEBUG pour tout voir
 
-# Fichier de log
-log_file = log_dir / "chatbot.log"
+# Création d'un handler pour afficher les logs dans la console
+handler = logging.StreamHandler()
+formatter = logging.Formatter("[%(asctime)s] %(levelname)s - %(message)s")
 
-# Format du log
-formatter = logging.Formatter(
-    "%(asctime)s - %(levelname)s - %(message)s", datefmt="%Y-%m-%d %H:%M:%S"
-)
-
-# Handler fichier
-file_handler = logging.FileHandler(log_file, encoding="utf-8")
-file_handler.setFormatter(formatter)
-file_handler.setLevel(logging.DEBUG)
-
-# Handler console
-console_handler = logging.StreamHandler()
-console_handler.setFormatter(formatter)
-console_handler.setLevel(logging.INFO)
-
-# Logger global
-logger = logging.getLogger("chatbot_logger")
-logger.setLevel(logging.DEBUG)
-
-# Ajouter les handlers (évite les doublons si redémarrage live)
-if not logger.handlers:
-    logger.addHandler(file_handler)
-    logger.addHandler(console_handler)
+handler.setFormatter(formatter)
+logger.addHandler(handler)
