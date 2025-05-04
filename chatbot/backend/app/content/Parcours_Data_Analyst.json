@@ -29,5 +29,5 @@
   "tarif": "Sur demande",
   "lieu": "À distance ou sur site",
   "prochaines_sessions": "",
-  "certifiant": "Non"
+  "certifiant": false
 }

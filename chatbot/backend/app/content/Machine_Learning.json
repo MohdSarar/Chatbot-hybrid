@@ -31,5 +31,5 @@
   "tarif": "2 100 HT",
   "lieu": "À distance ou sur site",
   "prochaines_sessions": "",
-  "certifiant": "Non"
+  "certifiant": false
 }

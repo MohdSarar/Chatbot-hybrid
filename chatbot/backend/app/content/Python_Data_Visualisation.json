@@ -29,5 +29,5 @@
   "tarif": "1 800 HT",
   "lieu": "À distance",
   "prochaines_sessions": "",
-  "certifiant": "Non"
+  "certifiant": false
 }
