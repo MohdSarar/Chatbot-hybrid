@@ -38,6 +38,9 @@ class QueryRequest(BaseModel):
 
 class QueryResponse(BaseModel):
     reply: str
+    intent: Optional[str] = None
+    next_action: Optional[str] = None
+    recommended_course: Optional[dict] = None
 
 
 class SessionState(BaseModel):
@@ -47,6 +50,8 @@ class SessionState(BaseModel):
     recommended_course: Optional[str] = None
     buffer_memory: Optional[ConversationBufferMemory] = None  # <-- Ajout
     entity_memory: Optional[ConversationEntityMemory] = None  # <-- Ajout
+    class Config:
+        arbitrary_types_allowed = True
 
 class SearchFilters(BaseModel):
     certifiant: Optional[bool] = None
