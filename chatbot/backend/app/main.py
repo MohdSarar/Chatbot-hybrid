@@ -12,10 +12,11 @@ from app.routes.upload_routes import router as upload_router
 from app.routes.email_routes import router as email_router
 
 # Outils
-from app.utils import DataService
 from app.llm_engine import LLMEngine
 from app.logging_config import logger
-import app.globals as globs        # ← on importe le MODULE
+import app.globals as globs
+from app.formation_search import FormationSearch
+
 
 APP_DIR = Path(__file__).resolve().parent
 DATA_DIR = APP_DIR / "content"
@@ -29,34 +30,24 @@ async def lifespan(app: FastAPI):
     enable_rncp = globs.enable_rncp
     enable_rncp = True  # for testing purposes
 
-    # 1 — une seule instance DataService
-    globs.data_service = DataService(
-        content_dir=str(DATA_DIR),
-        disable_auto_update=True,
-        enable_rncp=enable_rncp,
-    )
-
-    # 2 — une seule instance LLMEngine qui RÉUTILISE ce service
+    globs.formation_search = FormationSearch(["app/content/rncp/rncp.json",
+        "app\content\formations_internes.json"], "app/tfidf_model_all.joblib")
+    # 1 — une seule instance LLMEngine qui RÉUTILISE ce service
     globs.llm_engine = LLMEngine(
         content_dir=str(DATA_DIR),
-        disable_auto_update=True,
         enable_rncp=enable_rncp,
-        data_service=globs.data_service,
     )
-    globs.data_service.check_updates(force_check=True)
-    globs.llm_engine._get_chroma_store(force_init=True)
 
     yield
 
     # Nettoyage
     globs.llm_engine = None
-    globs.data_service = None
     logger.info("Application arrêtée")
 
 app = FastAPI(
     title="Chatbot Formation API",
-    version="1.2.0",
-    description="Recommandation de formations Beyond Expertise",
+    version="1.3.0",
+    description="Recommandation de formations Beyond Expertise - Optimisé avec TF-IDF",
     lifespan=lifespan,
 )
 
