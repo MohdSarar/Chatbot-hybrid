@@ -1,0 +1,297 @@
+[
+  {
+    "ID": "INT-1",
+    "titre": "Power BI",
+    "NOMENCLATURE_EUROPE_INTITULE": "",
+    "LIEN_URL_DESCRIPTION": "",
+    "TYPE_EMPLOI_ACCESSIBLES": "Data Analyst, Business Analyst",
+    "CERTIFICATEURS": "Formation interne",
+    "CAPACITES_ATTESTEES": "Créer des tableaux de bord interactifs\nAnalyser les données de manière visuelle\nMaîtriser Power BI Service",
+    "ACTIVITES_VISEES": "Introduction à Power BI\nVisualisation des données",
+    "LIBELLES_ROME": "",
+    "INTITULE_NSF": "",
+    "ABREGE_LIBELLES": "",
+    "certifiant": true,
+    "_source": "internal",
+    "public": [
+      "Analystes de données",
+      "Développeurs",
+      "Toute personne souhaitant utiliser Power BI"
+    ],
+    "prerequis": [
+      "Connaissance de base en Excel",
+      "Notions de bases en manipulation de données"
+    ],
+    "tarif": "1 500 HT",
+    "modalite": "Hybride",
+    "lieu": "À distance ou sur site",
+    "duree": "3 jours (21 heures)",
+    "prochaines_sessions": ""
+  },
+  {
+    "ID": "INT-2",
+    "titre": "Cloud Azure",
+    "NOMENCLATURE_EUROPE_INTITULE": "",
+    "LIEN_URL_DESCRIPTION": "",
+    "TYPE_EMPLOI_ACCESSIBLES": "Administrateur cloud, Ingénieur cloud",
+    "CERTIFICATEURS": "Formation interne",
+    "CAPACITES_ATTESTEES": "Comprendre les concepts fondamentaux du cloud computing et les services offerts par Microsoft Azure\nApprendre à créer et gérer des machines virtuelles et des services applicatifs sur Azure\nMaîtriser la configuration des réseaux virtuels et des solutions de stockage Azure\nSavoir implémenter des solutions de sécurité et de surveillance sur Azure\nÊtre capable de gérer les identités et la gouvernance dans un environnement Azure",
+    "ACTIVITES_VISEES": "Introduction à Microsoft Azure\nGestion des identités et de la gouvernance\nImplémentation et gestion du stockage\nDéploiement et gestion des ressources de calcul\nConfiguration et gestion des réseaux virtuels\nSurveillance et sauvegarde des ressources Azure",
+    "LIBELLES_ROME": "",
+    "INTITULE_NSF": "",
+    "ABREGE_LIBELLES": "",
+    "certifiant": true,
+    "_source": "internal",
+    "public": [
+      "Administrateurs système",
+      "Ingénieurs cloud",
+      "Développeurs",
+      "Toute personne souhaitant acquérir des compétences en gestion et déploiement de solutions sur Microsoft Azure"
+    ],
+    "prerequis": [
+      "Connaissances de base en administration système",
+      "Notions en réseaux et virtualisation recommandées"
+    ],
+    "tarif": "2 100 HT",
+    "modalite": "Hybride",
+    "lieu": "À distance ou sur site",
+    "duree": "3 jours (21 heures)",
+    "prochaines_sessions": ""
+  },
+  {
+    "ID": "INT-3",
+    "titre": "SQL/NoSQL & Bases de données",
+    "NOMENCLATURE_EUROPE_INTITULE": "",
+    "LIEN_URL_DESCRIPTION": "",
+    "TYPE_EMPLOI_ACCESSIBLES": "Administrateur base de données, Développeur backend",
+    "CERTIFICATEURS": "Formation interne",
+    "CAPACITES_ATTESTEES": "Comprendre les concepts fondamentaux des bases de données relationnelles (SQL) et non relationnelles (NoSQL)\nMaîtriser le langage SQL pour interroger et manipuler des bases de données\nDécouvrir les différentes technologies NoSQL et leurs cas d'utilisation\nSavoir choisir la solution de base de données adaptée aux besoins spécifiques d'un projet",
+    "ACTIVITES_VISEES": "Introduction aux bases de données\nLangage SQL et bases de données relationnelles\nIntroduction aux bases de données NoSQL\nMise en œuvre de MongoDB (Base de données documentaire)\nMise en œuvre de Cassandra (Base de données en colonnes)\nComparaison et intégration des solutions SQL et NoSQL",
+    "LIBELLES_ROME": "",
+    "INTITULE_NSF": "",
+    "ABREGE_LIBELLES": "",
+    "certifiant": false,
+    "_source": "internal",
+    "public": [
+      "Développeurs",
+      "Administrateurs de bases de données",
+      "Analystes de données",
+      "Toute personne souhaitant acquérir des compétences en gestion de bases de données relationnelles et non relationnelles"
+    ],
+    "prerequis": [
+      "Connaissances de base en informatique",
+      "Notions en programmation recommandées"
+    ],
+    "tarif": "2 400 HT",
+    "modalite": "Hybride",
+    "lieu": "À distance ou sur site",
+    "duree": "4 jours (28 heures)",
+    "prochaines_sessions": ""
+  },
+  {
+    "ID": "INT-4",
+    "titre": "Intégration des données (ETL)",
+    "NOMENCLATURE_EUROPE_INTITULE": "",
+    "LIEN_URL_DESCRIPTION": "",
+    "TYPE_EMPLOI_ACCESSIBLES": "Data Engineer, Intégrateur de données",
+    "CERTIFICATEURS": "Formation interne",
+    "CAPACITES_ATTESTEES": "Comprendre les concepts fondamentaux de l'intégration de données et des processus ETL (Extract, Transform, Load)\nMaîtriser l'utilisation d'outils ETL pour extraire, transformer et charger des données à partir de différentes sources\nSavoir concevoir et implémenter des flux de données efficaces et fiables\nÊtre capable de gérer les erreurs et optimiser les performances des processus ETL",
+    "ACTIVITES_VISEES": "Introduction à l'intégration de données et aux processus ETL\nConception des processus ETL\nUtilisation d'un outil ETL : Talend\nGestion des erreurs et optimisation des performances\nIntégration de données pour le Big Data\nBonnes pratiques et stratégies d'intégration",
+    "LIBELLES_ROME": "",
+    "INTITULE_NSF": "",
+    "ABREGE_LIBELLES": "",
+    "certifiant": false,
+    "_source": "internal",
+    "public": [
+      "Développeurs",
+      "Administrateurs de bases de données",
+      "Ingénieurs en Business Intelligence",
+      "Toute personne impliquée dans des projets d'intégration de données"
+    ],
+    "prerequis": [
+      "Connaissances de base en bases de données et SQL",
+      "Notions en programmation recommandées"
+    ],
+    "tarif": "2 100 HT",
+    "modalite": "Hybride",
+    "lieu": "À distance",
+    "duree": "3 jours (21 heures)",
+    "prochaines_sessions": ""
+  },
+  {
+    "ID": "INT-5",
+    "titre": "Deep Learning",
+    "NOMENCLATURE_EUROPE_INTITULE": "",
+    "LIEN_URL_DESCRIPTION": "",
+    "TYPE_EMPLOI_ACCESSIBLES": "Data Scientist, Chercheur en IA",
+    "CERTIFICATEURS": "Formation interne",
+    "CAPACITES_ATTESTEES": "Comprendre les concepts fondamentaux du Deep Learning\nMaîtriser les différentes architectures de réseaux de neurones\nSavoir implémenter des modèles de Deep Learning avec des frameworks tels que TensorFlow ou Keras\nAppliquer le Deep Learning à des cas concrets tels que la vision par ordinateur et le traitement du langage naturel",
+    "ACTIVITES_VISEES": "Introduction au Deep Learning\nFondamentaux des réseaux de neurones\nEntraînement des réseaux de neurones\nArchitectures avancées de réseaux de neurones\nOutils et frameworks de Deep Learning\nApplications pratiques du Deep Learning\nDéploiement et mise en production des modèles",
+    "LIBELLES_ROME": "",
+    "INTITULE_NSF": "",
+    "ABREGE_LIBELLES": "",
+    "certifiant": false,
+    "_source": "internal",
+    "public": [
+      "Ingénieurs",
+      "Data Scientists",
+      "Développeurs",
+      "Toute personne souhaitant approfondir ses connaissances en réseaux de neurones et apprentissage profond"
+    ],
+    "prerequis": [
+      "Connaissances de base en programmation Python",
+      "Notions en Machine Learning recommandées"
+    ],
+    "tarif": "2 280 HT",
+    "modalite": "",
+    "lieu": "À distance ou sur site",
+    "duree": "jours ( heures)",
+    "prochaines_sessions": ""
+  },
+  {
+    "ID": "INT-6",
+    "titre": "Machine Learning",
+    "NOMENCLATURE_EUROPE_INTITULE": "",
+    "LIEN_URL_DESCRIPTION": "",
+    "TYPE_EMPLOI_ACCESSIBLES": "Data Scientist, Ingénieur Machine Learning",
+    "CERTIFICATEURS": "Formation interne",
+    "CAPACITES_ATTESTEES": "Comprendre les concepts fondamentaux du Machine Learning\nMaîtriser les principales techniques d'apprentissage supervisé et non supervisé\nSavoir prétraiter et préparer des données pour le Machine Learning\nDévelopper et évaluer des modèles prédictifs\nAppliquer des algorithmes de Machine Learning à des cas concrets",
+    "ACTIVITES_VISEES": "Introduction au Machine Learning\nPréparation des données\nApprentissage supervisé\nApprentissage non supervisé\nTechniques d'amélioration des modèles\nIntroduction au Deep Learning\nMise en production des modèles",
+    "LIBELLES_ROME": "",
+    "INTITULE_NSF": "",
+    "ABREGE_LIBELLES": "",
+    "certifiant": false,
+    "_source": "internal",
+    "public": [
+      "Développeurs",
+      "Data Scientists",
+      "Analystes de données",
+      "Toute personne souhaitant acquérir des compétences en apprentissage automatique"
+    ],
+    "prerequis": [
+      "Connaissances de base en programmation Python",
+      "Notions en statistiques et probabilités recommandées"
+    ],
+    "tarif": "2 100 HT",
+    "modalite": "Hybride",
+    "lieu": "À distance ou sur site",
+    "duree": "3 jours (21 heures)",
+    "prochaines_sessions": ""
+  },
+  {
+    "ID": "INT-7",
+    "titre": "ATLASSIAN - JIRA",
+    "NOMENCLATURE_EUROPE_INTITULE": "",
+    "LIEN_URL_DESCRIPTION": "",
+    "TYPE_EMPLOI_ACCESSIBLES": "Chef de projet Agile, Scrum Master",
+    "CERTIFICATEURS": "Formation interne",
+    "CAPACITES_ATTESTEES": "Utiliser les fonctionnalités de base et avancées de JIRA\nGérer les utilisateurs, projets et workflows\nGénérer des rapports et personnaliser des tableaux de bord\nAutomatiser des actions et intégrer JIRA avec d'autres outils\nAppliquer les méthodologies Agile avec JIRA\nConfigurer et utiliser JIRA Service Management",
+    "ACTIVITES_VISEES": "Introduction à JIRA\nGestion des projets et des tickets\nPersonnalisation et automatisation des processus\nGestion des tests et de la qualité\nMise en œuvre de projets Agile avec JIRA\nIntroduction à JIRA Service Management (JSM)\nAdministration de JIRA",
+    "LIBELLES_ROME": "",
+    "INTITULE_NSF": "",
+    "ABREGE_LIBELLES": "",
+    "certifiant": false,
+    "_source": "internal",
+    "public": [
+      "Chefs de projet",
+      "Développeurs",
+      "Testeurs",
+      "Membres d'équipes Agile",
+      "Toute personne impliquée dans la gestion de projets"
+    ],
+    "prerequis": [
+      "Connaissance des méthodologies de développement, notamment Agile"
+    ],
+    "tarif": "2 280 HT",
+    "modalite": "Hybride",
+    "lieu": "À distance",
+    "duree": "3 jours (21 heures)",
+    "prochaines_sessions": ""
+  },
+  {
+    "ID": "INT-8",
+    "titre": "Parcours Data Analyst",
+    "NOMENCLATURE_EUROPE_INTITULE": "",
+    "LIEN_URL_DESCRIPTION": "",
+    "TYPE_EMPLOI_ACCESSIBLES": "Data Analyst, Consultant Data",
+    "CERTIFICATEURS": "Formation interne",
+    "CAPACITES_ATTESTEES": "Comprendre les fondamentaux de la data et Big Data\nCollecter, organiser, et préparer les données pour l'analyse\nCréer des visualisations claires et dynamiques\nAppliquer les bases du Machine Learning\nMaîtriser des outils comme Python, SQL, Power BI, Tableau, et Jira",
+    "ACTIVITES_VISEES": "Initiation et maîtrise de Python\nIntroduction et perfectionnement en SQL\nIntroduction au NoSQL\nGestion de Projet Scrum avec Jira\nIntroduction et perfectionnement en ETL\nIntroduction au Cloud Computing\nAnglais professionnel et communication\nData Visualisation avec Power BI et Tableau",
+    "LIBELLES_ROME": "",
+    "INTITULE_NSF": "",
+    "ABREGE_LIBELLES": "",
+    "certifiant": false,
+    "_source": "internal",
+    "public": [
+      "Toute personne souhaitant se reconvertir ou approfondir ses compétences en analyse de données"
+    ],
+    "prerequis": [
+      "Notions en manipulation de données",
+      "Connaissances en Python et SQL recommandées"
+    ],
+    "tarif": "Sur demande",
+    "modalite": "Hybride",
+    "lieu": "À distance ou sur site",
+    "duree": "38 jours (306 heures)",
+    "prochaines_sessions": ""
+  },
+  {
+    "ID": "INT-9",
+    "titre": "Python – Data Visualisation",
+    "NOMENCLATURE_EUROPE_INTITULE": "",
+    "LIEN_URL_DESCRIPTION": "",
+    "TYPE_EMPLOI_ACCESSIBLES": "Data Analyst, Visualisation Expert",
+    "CERTIFICATEURS": "Formation interne",
+    "CAPACITES_ATTESTEES": "Comprendre les concepts fondamentaux de la visualisation de données\nMaîtriser les bibliothèques Python dédiées à la datavisualisation\nCréer des visualisations interactives et informatives\nAdapter les visualisations aux besoins spécifiques des projets",
+    "ACTIVITES_VISEES": "Introduction à la Data Visualisation\nEnvironnement Python pour la Data Visualisation\nCréation de visualisations avec Matplotlib\nVisualisations avancées avec Seaborn\nVisualisations interactives avec Plotly\nManipulation et préparation des données",
+    "LIBELLES_ROME": "",
+    "INTITULE_NSF": "",
+    "ABREGE_LIBELLES": "",
+    "certifiant": false,
+    "_source": "internal",
+    "public": [
+      "Analystes de données",
+      "Scientifiques de données",
+      "Développeurs",
+      "Toute personne souhaitant maîtriser la visualisation de données avec Python"
+    ],
+    "prerequis": [
+      "Connaissance de base du langage Python",
+      "Notions en manipulation de données recommandées"
+    ],
+    "tarif": "1 800 HT",
+    "modalite": "Hybride",
+    "lieu": "À distance",
+    "duree": "3 jours (21 heures)",
+    "prochaines_sessions": ""
+  },
+  {
+    "ID": "INT-10",
+    "titre": "Intelligence Artificielle",
+    "NOMENCLATURE_EUROPE_INTITULE": "",
+    "LIEN_URL_DESCRIPTION": "",
+    "TYPE_EMPLOI_ACCESSIBLES": "Ingénieur en intelligence artificielle, Consultant IA",
+    "CERTIFICATEURS": "Formation interne",
+    "CAPACITES_ATTESTEES": "Comprendre les concepts fondamentaux de l'Intelligence Artificielle\nIdentifier les différentes branches et applications de l'IA\nDécouvrir les technologies et outils utilisés en IA\nAppréhender les enjeux éthiques et les implications de l'IA dans divers secteurs",
+    "ACTIVITES_VISEES": "Introduction à l'Intelligence Artificielle\nTechniques fondamentales de l'IA\nOutils et technologies de l'IA\nEnjeux éthiques et réglementaires\nÉtudes de cas et applications pratiques",
+    "LIBELLES_ROME": "",
+    "INTITULE_NSF": "",
+    "ABREGE_LIBELLES": "",
+    "certifiant": false,
+    "_source": "internal",
+    "public": [
+      "Professionnels souhaitant comprendre et appliquer les concepts de l'IA",
+      "Managers et décideurs impliqués dans des projets technologiques",
+      "Développeurs et ingénieurs intéressés par l'implémentation de solutions d'IA"
+    ],
+    "prerequis": [
+      "Connaissances de base en informatique",
+      "Notions en programmation recommandées"
+    ],
+    "tarif": "1 800 HT",
+    "modalite": "Hybride",
+    "lieu": "À distance",
+    "duree": "3 jours (21 heures)",
+    "prochaines_sessions": ""
+  }
+]

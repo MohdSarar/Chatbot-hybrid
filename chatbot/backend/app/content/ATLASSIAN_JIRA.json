@@ -1,5 +1,6 @@
 {
   "titre": "ATLASSIAN - JIRA",
+  "_source": "internal",
   "objectifs": [
     "Utiliser les fonctionnalités de base et avancées de JIRA",
     "Gérer les utilisateurs, projets et workflows",

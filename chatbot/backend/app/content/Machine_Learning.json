@@ -1,5 +1,6 @@
 {
   "titre": "Machine Learning",
+  "_source": "internal",
   "objectifs": [
     "Comprendre les concepts fondamentaux du Machine Learning",
     "Maîtriser les principales techniques d'apprentissage supervisé et non supervisé",

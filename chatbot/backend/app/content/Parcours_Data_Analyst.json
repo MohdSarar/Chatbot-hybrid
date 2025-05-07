@@ -1,5 +1,6 @@
 {
   "titre": "Parcours Data Analyst",
+  "_source": "internal",
   "objectifs": [
     "Comprendre les fondamentaux de la data et Big Data",
     "Collecter, organiser, et préparer les données pour l'analyse",

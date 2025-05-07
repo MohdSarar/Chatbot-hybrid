@@ -1,5 +1,6 @@
 {
   "titre": "Python – Data Visualisation",
+  "_source": "internal",
   "objectifs": [
     "Comprendre les concepts fondamentaux de la visualisation de données",
     "Maîtriser les bibliothèques Python dédiées à la datavisualisation",

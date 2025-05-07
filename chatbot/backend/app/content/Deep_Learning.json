@@ -1,5 +1,6 @@
 {
   "titre": "Deep Learning",
+  "_source": "internal",
   "objectifs": [
     "Comprendre les concepts fondamentaux du Deep Learning",
     "Maîtriser les différentes architectures de réseaux de neurones",

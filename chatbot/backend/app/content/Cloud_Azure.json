@@ -1,5 +1,6 @@
 {
   "titre": "Cloud Azure",
+  "_source": "internal",
   "objectifs": [
     "Comprendre les concepts fondamentaux du cloud computing et les services offerts par Microsoft Azure",
     "Apprendre à créer et gérer des machines virtuelles et des services applicatifs sur Azure",
