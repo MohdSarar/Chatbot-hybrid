@@ -1,14 +1,32 @@
-fastapi
-uvicorn
-chromadb
-transformers
-pydantic
-langchain-openai
-langchain-community
-langchain-text-splitters
-langchain
-faiss-cpu
-pandas
-python-dotenv
-openai
-tiktoken #requis par LangChain
+
+# FastAPI and server dependencies
+fastapi>=0.103.1
+uvicorn>=0.23.2
+pydantic>=2.4.0
+email-validator>=2.0.0  # For EmailStr validation
+
+# OpenAI API
+openai>=1.3.0
+
+# NLP tools
+nltk>=3.8.1
+spacy>=3.6.1
+fr_core_news_md @ https://github.com/explosion/spacy-models/releases/download/fr_core_news_md-3.6.0/fr_core_news_md-3.6.0-py3-none-any.whl
+scikit-learn>=1.3.1
+joblib>=1.3.2
+
+# Data processing
+pandas>=2.1.1
+PyMuPDF>=1.23.3  # fitz package for PDF extraction
+
+# LangChain and vector stores (based on imports)
+langchain>=0.0.300
+langchain-openai>=0.0.3
+langchain-community>=0.0.10
+langchain-text-splitters>=0.0.1
+chromadb>=0.4.18
+faiss-cpu>=1.7.4
+tiktoken>=0.5.1  # Required by LangChain
+
+# Environment variables
+python-dotenv>=1.0.0
