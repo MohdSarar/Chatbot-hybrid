@@ -14,7 +14,7 @@ async def extract_text_from_pdf(file: UploadFile) -> str:
     """
     try:
         contents = await file.read()
-        temp_path = f"/tmp/{file.filename}"
+        temp_path = f"{file.filename}"
         with open(temp_path, "wb") as f:
             f.write(contents)
 
