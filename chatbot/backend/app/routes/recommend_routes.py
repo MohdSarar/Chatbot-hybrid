@@ -9,6 +9,7 @@ from app.services.matching_engine import custom_recommendation_scoring
 from app.services.data_loader import load_formations_to_df
 from pathlib import Path
 from app.logging_config import logger
+import app.globals as globs
 
 router = APIRouter()
 
@@ -20,6 +21,17 @@ def recommend_endpoint(r: RecommendRequest):
     profile = r.profile
     logger.info("Réception d'une requête /recommend pour l'utilisateur : %s", profile.name)
     matched_df = custom_recommendation_scoring(profile, df_formations)
+    # Mets à jour le profil utilisateur
+    globs.llm_counselor.set_user_profile_from_pydantic(profile)
+    
+    # ✅ DEBUG: Log profile after setting
+    print(f"🔍 COUNSELOR CONTEXT AFTER:")
+    print(f"   Nom: {globs.llm_counselor.ctx.nom}")
+    print(f"   Objectif: {globs.llm_counselor.ctx.objectif}")
+    print(f"   Compétences: {globs.llm_counselor.ctx.competences}")
+    print("=====================================\n")
+    # Mets à jour l'historique de conversation
+    globs.llm_counselor._init_conversation_history()
 
     if not matched_df.empty:
         best_match = matched_df.iloc[0]

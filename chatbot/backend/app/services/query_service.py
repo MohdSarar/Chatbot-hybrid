@@ -12,7 +12,7 @@ from pathlib import Path
 
 from app.schemas import UserProfile, SessionState, QueryResponse
 from app.logging_config import logger
-from app.utils import search_and_format_courses
+
 import app.globals as globs
 from app.formation_search import FormationSearch as fs
 
@@ -55,6 +55,8 @@ def _truncate(lst: list, n: int) -> list:
 # 2.  Fonction principale simplifiée
 # ──────────────────────────────────────────────────────────────
 
+
+
 def process_llm_response(
     question: str,
     history: List[dict],
@@ -63,102 +65,48 @@ def process_llm_response(
     last_recommended_course: dict | None = None
 ) -> Dict:
     logger.info("Process question: %.50s", question)
+    # Moteur : globs.llm_counselor
 
-    # 0) Si la requête client fournit une précédente recommended_course, on la stocke
-    if last_recommended_course:
-        session.recommended_course = last_recommended_course
-    # Récupération du moteur LLM
+
+    # ✅ DEBUG: Log received profile
+    print(f"\n🔍 === PROFILE RECEIVED BY BACKEND ===")
+    print(f"Name: {profile.name}")
+    print(f"Objective: {profile.objective}")
+    print(f"Level: {profile.level}")
+    print(f"Knowledge: '{profile.knowledge}'")
+    print(f"Email: {profile.email}")
+    print("=====================================\n")
+
+    # Restaure l’historique pour la session
+    globs.llm_counselor.ctx.conversation_history = [
+        {"role": msg["role"], "content": msg["content"]} for msg in history
+    ]
+
+    # ✅ DEBUG: Log profile before setting
+    print(f"🔍 COUNSELOR CONTEXT BEFORE:")
+    print(f"   Nom: {globs.llm_counselor.ctx.nom}")
+    print(f"   Objectif: {globs.llm_counselor.ctx.objectif}")
+    print(f"   Compétences: {globs.llm_counselor.ctx.competences}")
+
+    # Mets à jour le profil utilisateur
+    #globs.llm_counselor.set_user_profile_from_pydantic(profile)
+
+
+    # ✅ DEBUG: Log profile after setting
+    print(f"🔍 COUNSELOR CONTEXT AFTER:")
+    print(f"   Nom: {globs.llm_counselor.ctx.nom}")
+    print(f"   Objectif: {globs.llm_counselor.ctx.objectif}")
+    print(f"   Compétences: {globs.llm_counselor.ctx.competences}")
+    print("=====================================\n")
+
+    #globs.llm_counselor._init_conversation_history()
+    # Appel principal :
     try:
-        engine = get_llm_engine()
+        response_text = globs.llm_counselor.respond(question)
+        return {"answer": response_text, "intent": None, "next_action": None, "recommended_course": None}
     except Exception as exc:
-        logger.error("Init engine KO: %s", exc)
+        logger.error("Erreur moteur LLM: %s", exc, exc_info=True)
         return _error("init_error")
-
-    # Ne conserver que les 20 derniers messages
-    history = _truncate(history, 20)
-
-    # 1) Détection d’intention
-    intent = engine.detect_intent(question, history)
-    logger.info("Intent = %s", intent)
-
-    # 2) Recherche des formations pertinentes
-    formatted_text, course_source = search_and_format_courses(question, k=5)
-    print(f"\n\n Course Source : \n{course_source}\n\n")
-    print(f"\n\n Formatted Text : \n#{str(formatted_text)}#\n\n")
-
-    # Si on n’a rien trouvé ET que l’utilisateur pose une question sur la formation recommandée
-    if not formatted_text and session.recommended_course:
-        rc = session.recommended_course
-        # Extraction selon le nouveau schéma français
-        titre       = rc.get('titre', 'N/A')
-        objectifs   = rc.get('objectifs', [])
-        public_cible= rc.get('public_cible', [])
-        duree       = rc.get('duree', 'N/A')
-        tarif       = rc.get('tarif', 'N/A')
-        lieu        = rc.get('lieu', 'N/A')
-        certifiant  = rc.get('certifiant', False)
-        source      = rc.get('_source', 'internal')
-
-        # Re-création du bloc pour le prompt
-        formatted_text = (
-            "Voici la formation précédemment recommandée :\n"
-            f"- Titre           : {titre}\n"
-            f"- Objectifs       : {', '.join(objectifs) if objectifs else 'N/A'}\n"
-            f"- Public ciblé    : {', '.join(public_cible) if public_cible else 'N/A'}\n"
-            f"- Durée           : {duree}\n"
-            f"- Tarif           : {tarif}\n"
-            f"- Leiu            : {lieu}\n"
-            f"- Certifiante     : {'Oui' if certifiant else 'Non'}\n"
-            f"- _source         : {source}\n"
-        )
-        course_source = source
-
-    # 3) Construction du prompt « prêt »
-    if course_source == "external":
-        # Formations externes RNCP : on ajoute un warning et une consigne RNCP claire
-        base_prompt = (
-            external_warning("ces formations") + "\n\n"
-            f"{formatted_text.rstrip()}\n\n"
-            "À partir des formations du RNCP listées ci-dessous, choisissez une seule formation la plus pertinente "
-            "pour l'utilisateur et indiquez-la dans le champ `recommended_course` du JSON.\n\n"
-            f"Question utilisateur : {question}\n"
-        )
-    else:
-        # Cas interne : prompt standard
-        base_prompt = ""
-        if formatted_text:
-            base_prompt += formatted_text.rstrip() + "\n\n"
-            if intent == "recherche_filtrée":
-                criteria = extract_criteria_from_question(question)
-                intent_instr = build_intent_instruction(intent, criteria)
-
-        intent_instr = build_intent_instruction(intent).strip()
-
-
-        if intent_instr:
-            base_prompt += intent_instr + "\n\n"
-        base_prompt += f"Question utilisateur : {question}\n"
-
-
-    print(f"\n\n Base Prompt : \n\n {base_prompt}\n\n\n")
-    # 4) Appel au LLMEngine en mode « ready prompt » (injection historique +system JSON spec)
-    response = engine.generate_response(
-        base_prompt,
-        chat_history=history,
-        profile=profile,
-        session=session,
-        is_ready_prompt=True,
-        course_source=course_source,
-    )
-    
-    rc = response.get("recommended_course")
-    if isinstance(rc, dict):
-        session.recommended_course = rc
-    elif session.recommended_course:
-        response["recommended_course"] = session.recommended_course
-
-
-    return response
 
 
 

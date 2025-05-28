@@ -1,0 +1,461 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "salut", "bonjour", "hello", "hey", "coucou", "bonsoir", "salutations",
+        "bonjour à vous", "bien le bonjour", "salut toi", "yo", "hi", "bjr",
+        "slt", "cc", "bsr", "salut comment ça va", "bonjour je suis nouveau",
+        "hello je commence", "salut j'ai besoin d'aide", "bonjour conseiller"
+      ]
+    },
+    {
+      "tag": "profile_name",
+      "patterns": [
+        "je m'appelle", "mon nom est", "je suis", "moi c'est", "on m'appelle",
+        "mon prénom", "appelez-moi", "mon nom c'est", "c'est Marie", "Marie",
+        "je m'appelle Jean Dupont", "mon nom est Martin", "moi c'est Sophie",
+        "Pierre", "Ahmed", "Fatima", "Lucas", "Emma", "c moi Julie",
+        "mon prenom c'est Alex", "jsuis Thomas", "appelle moi Chris",
+        "salut je suis Marc", "bonjour moi c'est Léa", "hey c'est David",
+        "Nathalie", "Mohamed", "Sarah", "Kevin", "Camille", "Antoine",
+        "moi c Sophie", "c Julie", "Paul ici", "Lucie pour vous servir"
+      ]
+    },
+    {
+      "tag": "profile_age",
+      "patterns": [
+        "j'ai X ans", "mon âge", "âgé de", "né en", "X années", "X ans d'âge",
+        "j'ai eu X ans", "bientôt X ans", "j'ai 25 ans", "j'ai 30 ans", "28 ans",
+        "35", "42 ans", "j'ai 22", "23 ans", "jai 27 ans", "g 29 ans",
+        "j'ai bientot 40 ans", "la trentaine", "vingt-cinq ans", "j'ai eu 33 ans"
+      ]
+    },
+    {
+      "tag": "profile_situation",
+      "patterns": [
+        "je suis en recherche", "demandeur d'emploi", "au chômage", "sans emploi",
+        "je travaille", "salarié", "en poste", "étudiant", "en formation",
+        "reconversion", "changement de carrière", "freelance", "indépendant",
+        "je suis au chomage", "en recherche d'emploi", "je cherche du travail",
+        "sans boulot", "je bosse", "j'ai un job", "je suis en CDI", "CDD",
+        "je travaille dans le commerce", "je suis commercial", "je veux changer",
+        "en reconversion professionnelle", "je suis développeur"
+      ]
+    },
+    {
+      "tag": "profile_objective",
+      "patterns": [
+        "je veux devenir", "mon objectif", "je souhaite", "j'aimerais",
+        "mon but", "j'aspire à", "je vise", "mon projet", "envie de",
+        "intéressé par", "passionné par", "attiré par", "devenir data analyst",
+        "je veux travailler dans l'IA", "mon objectif c'est la data",
+        "j'aimerais devenir développeur", "envie de bosser dans le web",
+        "intéressé par le marketing digital", "je veux créer mon entreprise",
+        "mon but c'est de devenir chef de projet", "dans le domaine de l'IA"
+      ]
+    },
+    {
+      "tag": "search_formation",
+      "patterns": [
+        "cherche formation", "trouve formation", "formation en", "cours de",
+        "me former", "certification", "diplôme", "stage", "formation pour",
+        "où apprendre", "comment apprendre", "je cherche une formation",
+        "où trouver une formation", "quelles formations disponibles",
+        "formation professionnelle", "je veux me former", "besoin d'une formation",
+        "cours disponibles", "formations en ligne", "formation à distance",
+        "cherche cours", "autre formation", "autres formations",
+        "montrez moi les formations", "liste des formations", "catalogue formation",
+        "formation disponible", "qu'est-ce que vous proposez", "vos formations",
+        "formation beyond expertise", "formation interne", "formations internes",
+        "me faut-il une formation", "ai-je besoin d'une formation","je cherche une formation qui me correspond",
+        "formation intelligence artificielle", "formation IA", "cherche formation IA","est-ce que Beyond Expertise propose des formations qui me conviennent ?",
+        "est-ce que vous avez des formations adaptées à mon profil",
+        "est-ce que vous pouvez me proposer une formation qui me correspond",
+        "je veux une formation sur mesure", "formation personnalisée",
+        "formation adaptée à mon niveau", "formation pour débutants",
+        "formation avancée", "formation intermédiaire", "formation courte",
+        "formation longue", "formation intensive", "formation en alternance"
+      ]
+    },
+    {
+      "tag": "formation_select",
+      "patterns": [
+        "1", "2", "3", "4", "5", "premier", "deuxième", "troisième",
+        "je choisis", "je prends", "celle-ci", "celui-là", "cette formation",
+        "la première", "la 1", "numero 2", "je prends la 3", "la formation 1",
+        "je veux la première", "celle du haut", "la deuxième svp",
+        "je sélectionne la 4", "je vais prendre la 2", "choix numéro 1"
+      ]
+    },
+    {
+      "tag": "formation_details_objectives",
+      "patterns": [
+        "objectifs", "but", "apprendre quoi", "compétences", "acquis",
+        "qu'est-ce qu'on apprend", "programme", "contenu", "ensuite",
+        "quels sont les objectifs", "qu'est ce que je vais apprendre",
+        "quel est le programme", "contenu de la formation", "on apprend quoi",
+        "c'est quoi les objectifs", "qu'est-ce qu'on fait dans cette formation",
+        "les compétences acquises", "je vais savoir faire quoi", "et ensuite",
+        "objectifs de la formation", "but de cette formation", "à quoi ça sert",
+        "qu'est-ce que ça m'apporte", "compétences développées"
+        
+      ]
+    },
+    {
+      "tag": "formation_details_public",
+      "patterns": [
+        "pour qui", "c'est pour qui", "c pr qui", "public cible", "destiné à",
+        "qui peut", "niveau requis", "accessible à",
+        "c'est pour quel public", "je peux la faire", "faut quel niveau",
+        "c'est accessible aux débutants", "pour les reconversions",
+        "est-ce que c'est pour moi", "quel profil", "qui peut s'inscrire",
+        "conditions d'accès", "c pour ki", "pr qui cette formation",
+        "c pr qui ?", "pour ki", "pr ki", "c'est pr qui", "pour qui?",
+        "cpourqui", "c pour qui cette formation", "accessible à qui",
+        "ouvert à qui", "qui est concerné", "quel public visé",
+        "profil recherché", "profil type", "à qui s'adresse"
+      ]
+    },
+    {
+      "tag": "formation_details_duration",
+      "patterns": [
+        "durée", "combien de temps", "nombre d'heures", "jours", "semaines",
+        "mois", "temps nécessaire", "planning", "rythme", "ça dure combien",
+        "c'est sur combien de temps", "durée de la formation", "cb de temps",
+        "nombre de jours", "formation longue", "intensive", "temps plein",
+        "à mi-temps", "en soirée", "week-end", "combien d'heures par semaine",
+        "quand commencer", "dates de formation", "prochaine session",
+        "disponibilités", "calendrier", "planning formation", "horaires",
+        "formation quand", "début formation", "inscription deadline",
+        "dernière minute inscription", "places disponibles"
+      ]
+    },
+    {
+      "tag": "formation_details_price",
+      "patterns": [
+        "prix", "tarif", "coût", "combien ça coûte", "budget", "financement",
+        "gratuit", "payant", "montant", "frais", "quel est le prix",
+        "c'est combien", "tarif de la formation", "ça coute cher",
+        "c'est gratuit", "prix formation", "cout total", "cb €",
+        "finançable CPF", "prise en charge possible", "aides financières"
+      ]
+    },
+    {
+      "tag": "formation_details_location",
+      "patterns": [
+        "où", "lieu", "localisation", "à distance", "présentiel", "en ligne",
+        "ville", "adresse", "campus", "centre de formation", "où ça se passe",
+        "c'est où", "dans quelle ville", "formation à distance", "e-learning",
+        "visio", "sur place", "remote", "télétravail", "depuis chez moi",
+        "je dois me déplacer", "proche de Paris", "en région"
+      ]
+    },
+    {
+      "tag": "formation_details_inscription",
+      "patterns": [
+        "inscription", "s'inscrire", "comment s'inscrire", "procédure",
+        "candidature", "postuler", "rejoindre", "intégrer", "m'inscrire",
+        "comment je fais pour m'inscrire", "procédure d'inscription",
+        "dossier de candidature", "sélection", "tests d'entrée",
+        "comment postuler", "je veux m'inscrire", "inscription ouverte",
+        "délai inscription", "quand s'inscrire", "formulaire"
+      ]
+    },
+    {
+      "tag": "info_certif",
+      "patterns": [
+        "est-ce que cette formation est certifiante",
+        "formation certifiante ou pas",
+        "y a-t-il une certification à la fin",
+        "est-ce certifiant",
+        "certification incluse dans la formation",
+        "diplôme ou certificat délivré après formation",
+        "obtient-on une certification reconnue",
+        "c'est certifiant ce programme",
+        "formation avec certification officielle",
+        "quel type de certification obtenue",
+        "certification à la clé ou non",
+        "est-ce que je reçois un certificat",
+        "validation certifiante de la formation",
+        "titre certifié à la fin oui non",
+        "attestation ou vraie certification",
+        "certif comprise dans le prix",
+        "examen de certification prévu",
+        "ce cursus délivre quelle certification",
+        "formation qualifiante ou certifiante",
+        "reconnaissance officielle certification",
+        "est-ce que c'est diplômant",
+        "papier officiel à la fin",
+        "document certifiant les compétences",
+        "preuve de formation certifiée",
+        "c'est juste une attestation ou plus",
+        "niveau de certification obtenu",
+        "organisme certificateur qui délivre",
+        "formation homologuée avec certificat",
+        "titre professionnel ou simple attestation",
+        "quelle certif à la fin exactement",
+        "certification reconnue", "diplôme valide", "titre RNCP",
+        "reconnaissance état", "valeur du diplôme", "certifié",
+        "homologué", "accréditation", "label qualité",
+        "organisme certificateur", "validité certification"
+      ]
+    },
+    {
+      "tag": "info_prerequests",
+      "patterns": [
+        "prérequis", "prerequis", "quels sont les prérequis", "y a-t-il des prérequis",
+        "faut-il des prérequis", "conditions d'accès", "niveau requis",
+        "niveau minimum requis", "faut quel niveau", "compétences requises",
+        "compétences de base nécessaires", "connaissances préalables",
+        "bases nécessaires", "expérience nécessaire", "besoin d'expérience",
+        "faut-il un diplôme", "diplôme obligatoire", "diplôme requis",
+        "sans le bac possible", "accessible sans diplôme",
+        "mathématiques nécessaires", "niveau math requis",
+        "anglais obligatoire", "niveau anglais requis",
+        "background technique requis", "expérience informatique nécessaire",
+        "connaître déjà avant", "maîtriser avant la formation",
+        "logiciels à connaître avant", "outils à maîtriser avant",
+        "matériel nécessaire", "équipement requis", "ordinateur obligatoire",
+        "tests d'entrée", "examen d'admission", "sélection à l'entrée",
+        "critères de sélection", "dossier de candidature requis",
+        "entretien préalable", "conditions pour intégrer",
+        "puis-je suivre cette formation", "ai-je le niveau pour",
+        "suis-je éligible", "correspond à mon profil", "adapté à ma situation",
+        "j'ai pas le niveau", "trop difficile pour moi", "accessible débutant",
+        "sans diplôme", "sans bac", "niveau requis élevé", "peur de pas suivre",
+        "mathématiques nécessaires", "anglais obligatoire", "compétences de base",
+        "partir de zéro", "grands débutants acceptés", "quels sont les prérequis de cette formation ?" 
+      ]
+    },
+    {
+      "tag": "advice_reconversion",
+      "patterns": [
+        "reconversion", "changer de métier", "me reconvertir", "nouveau métier",
+        "changement de carrière", "réorientation", "transition professionnelle",
+        "je veux changer de métier", "comment me reconvertir", "reconversion data",
+        "passer de commercial à développeur", "changer de voie", "nouveau départ",
+        "j'en ai marre de mon job", "envie de changement", "reconversion à 40 ans",
+        "est-ce trop tard pour changer", "par où commencer ma reconversion",
+        "je suis trop vieux", "trop âgé pour ça", "à mon âge",
+        "je suis trop jeune", "pas assez d'expérience", "débutant total",
+        "reconversion à 50 ans", "changer à 45 ans", "tard pour commencer",
+        "jamais trop tard", "âge limite", "senior formation"
+      ]
+    },
+    {
+      "tag": "advice_cv",
+      "patterns": [
+        "cv", "curriculum vitae", "faire un cv", "améliorer cv", "aide cv",
+        "rédiger cv", "modèle cv", "exemple cv", "cv efficace",
+        "comment faire un bon cv", "mon cv est nul", "refaire mon cv",
+        "cv pour reconversion", "cv data analyst", "cv développeur",
+        "mettre quoi dans mon cv", "cv sans expérience", "cv moderne",
+        "cv ATS", "optimiser mon cv", "cv percutant"
+      ]
+    },
+    {
+      "tag": "advice_interview",
+      "patterns": [
+        "entretien", "interview", "préparer entretien", "questions entretien",
+        "réussir entretien", "stress entretien", "simulation entretien",
+        "j'ai un entretien demain", "comment réussir mon entretien",
+        "questions fréquentes entretien", "entretien data analyst",
+        "présentation en entretien", "parlez-moi de vous", "défauts qualités",
+        "négocier salaire", "entretien visio", "dress code entretien"
+      ]
+    },
+    {
+      "tag": "advice_motivation_letter",
+      "patterns": [
+        "lettre de motivation", "lettre candidature", "rédiger lettre",
+        "modèle lettre", "aide lettre", "exemple lettre motivation",
+        "comment écrire lettre de motivation", "lettre reconversion",
+        "lettre spontanée", "structure lettre motivation", "accrocher recruteur",
+        "lettre courte ou longue", "personnaliser lettre", "lettre générique",
+        "éviter erreurs lettre", "formules de politesse"
+      ]
+    },
+    {
+      "tag": "advice_job_search",
+      "patterns": [
+        "chercher emploi", "trouver travail", "recherche d'emploi",
+        "sites emploi", "offres d'emploi", "postuler", "candidatures",
+        "où chercher du travail", "meilleurs sites emploi", "indeed linkedin",
+        "candidature spontanée", "réseau professionnel", "jobboards",
+        "combien de candidatures par jour", "relancer recruteur",
+        "pas de réponse candidature", "stratégie recherche emploi"
+      ]
+    },
+    {
+      "tag": "advice_skills_assessment",
+      "patterns": [
+        "bilan de compétences", "évaluer compétences", "mes compétences",
+        "points forts", "atouts", "savoir-faire", "aptitudes",
+        "faire un bilan de compétences", "identifier mes compétences",
+        "soft skills hard skills", "compétences transférables",
+        "test de personnalité", "orientation professionnelle",
+        "connaitre mes points forts", "valoriser compétences"
+      ]
+    },
+    {
+      "tag": "advice_financing",
+      "patterns": [
+        "financement formation", "cpf", "aide financière", "pôle emploi finance",
+        "formation gratuite", "bourse", "prise en charge", "opco",
+        "comment financer ma formation", "utiliser mon cpf", "aide région",
+        "formation financée par pole emploi", "AIF", "transition pro",
+        "combien sur mon cpf", "formation trop chère", "échelonner paiement",
+        "prêt formation", "entreprise finance formation"
+      ]
+    },
+    {
+      "tag": "advice_entrepreneurship",
+      "patterns": [
+        "créer entreprise", "devenir entrepreneur", "monter sa boîte",
+        "startup", "business plan", "auto entrepreneur", "freelance",
+        "je veux créer ma boite", "devenir indépendant", "statut juridique",
+        "micro entreprise", "business model", "trouver idée business",
+        "financement startup", "incubateur", "accompagnement création",
+        "devenir freelance data", "se mettre à son compte"
+      ]
+    },
+    {
+      "tag": "continuation",
+      "patterns": [
+        "ensuite", "suite", "après", "et après", "continue", "quoi d'autre",
+        "autre chose", "et puis", "d'accord", "ok", "ensuite ?", "et ensuite",
+        "quoi d'autre", "ok et après", "d'acc", "dac", "oki", "suite ?",
+        "la suite", "on continue", "next", "suivant", "après ça",
+        "ensuit", "esuite", "ensuie", "ensiute", "suite ?", "suite?",
+        "et maintenant", "quoi maintenant", "qu'est-ce qu'on fait maintenant",
+        "étape suivante", "prochaine étape", "on fait quoi après",
+        "mais avant tout cela", "et avant", "mais d'abord"
+      ]
+    },
+    {
+      "tag": "confirmation",
+      "patterns": [
+        "oui", "ok", "d'accord", "parfait", "très bien", "c'est ça",
+        "exactement", "tout à fait", "confirme", "valide", "yes", "ouais",
+        "yep", "c'est bon", "nickel", "super", "génial", "top", "ça marche",
+        "affirmatif", "absolument", "bien sûr", "évidemment", "ok parfait"
+      ]
+    },
+    {
+      "tag": "negation",
+      "patterns": [
+        "non", "pas ça", "autre chose", "change", "annule", "stop",
+        "arrête", "faux", "incorrect", "pas d'accord", "non merci",
+        "pas intéressé", "ça ne va pas", "je veux pas", "nope", "nan",
+        "pas du tout", "absolument pas", "jamais", "négatif", "au contraire",
+        "aucune formation n'est pertinente", "rien ne me convient",
+        "ce n'est pas ce que je cherche", "pas adapté", "hors sujet",
+        "ça ne correspond pas", "autre chose svp", "cherche autre chose",
+        "pas ça du tout", "rien à voir", "c'est pas bon", "mauvais résultats"
+      ]
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "aide", "help", "besoin d'aide", "je comprends pas", "explique",
+        "comment ça marche", "mode d'emploi", "tutoriel", "guide",
+        "aidez-moi", "j'ai besoin d'aide", "je suis perdu", "help me",
+        "au secours", "SOS", "je comprends rien", "c'est compliqué",
+        "tu peux m'aider", "comment faire", "je sais pas quoi faire"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "merci", "je te remercie", "super", "génial", "parfait",
+        "excellent", "top", "nickel", "impeccable", "formidable",
+        "merci beaucoup", "mci", "thanks", "thx", "merci bcp",
+        "c'est gentil", "sympa", "cool", "au top", "trop bien",
+        "merci pour tout", "merci de votre aide", "grand merci"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "au revoir", "bye", "à bientôt", "salut", "ciao", "à plus",
+        "bonne journée", "bonne soirée", "à la prochaine", "aurevoir",
+        "a+", "++", "tchao", "adieu", "bonne continuation", "à toute",
+        "je dois y aller", "on se dit à bientôt", "bye bye", "see you"
+      ]
+    },
+    {
+      "tag": "report",
+      "patterns": [
+        "rapport", "export", "résumé", "bilan", "récapitulatif",
+        "synthèse", "document", "pdf", "télécharger", "envoie moi un rapport",
+        "je veux un résumé", "export pdf", "document récap", "bilan conversation",
+        "synthèse de notre échange", "recap", "summary", "enregistrer conversation",
+        "avoir une trace", "historique", "compte rendu"
+      ]
+    },
+    {
+      "tag": "unclear",
+      "patterns": [
+        "je sais pas", "aucune idée", "je ne sais pas quoi faire",
+        "perdu", "confus", "hésitant", "incertain", "pas sûr",
+        "jsp", "je sais pas trop", "bof", "peut-être", "je suis perdu",
+        "j'hésite", "je ne sais pas", "aucune idée", "compliqué pour moi",
+        "je suis largué", "c'est flou", "pas clair", "je doute",
+        "euh", "hmm", "bah", "ben", "pff", "mouais", "chais pas",
+        "ché pas", "je c pas", "jcp", "?", "??", "???", "hein",
+        "comment dire", "difficile à dire", "pas facile", "je vois pas"
+      ]
+    },
+    {
+      "tag": "job_info",
+      "patterns": [
+        "métier", "emploi", "poste", "travail", "profession", "carrière",
+        "débouchés", "salaire", "évolution", "perspective", "c'est quoi ce métier",
+        "en quoi consiste", "missions quotidiennes", "journée type",
+        "combien gagne un", "salaire moyen", "évolution de carrière",
+        "avenir du métier", "métier qui recrute", "job data analyst"
+      ]
+    },
+    {
+      "tag": "sector_info",
+      "patterns": [
+        "secteur", "domaine", "industrie", "branche", "filière",
+        "qui recrute", "porteur", "avenir", "tendance", "secteur d'activité",
+        "domaine qui embauche", "secteurs porteurs", "marchés en croissance",
+        "industries d'avenir", "où sont les opportunités", "tendances 2024",
+        "meilleurs secteurs", "domaines qui recrutent", "filières porteuses"
+      ]
+    },
+    {
+      "tag": "other_questions",
+      "patterns": [
+        "qui es-tu", "tu es qui", "es-tu un robot", "es-tu humain",
+        "tu es un bot", "tu es une IA", "c'est quoi beyond expertise",
+        "tu travailles pour qui", "tu représentes quelle entreprise",
+        "es-tu un vrai conseiller", "tu es un chatbot",
+        "ça va", "comment tu vas", "quoi de neuf", "tu fais quoi",
+        "tu es là", "tu m'entends", "allo", "tu dors", "réveille-toi",
+        "tu comprends", "tu me suis", "ok jusque là", "tu es toujours là",
+        "je me suis trompé", "erreur", "faute de frappe", "mal écrit",
+        "je voulais dire", "correction", "rectification", "en fait",
+        "non je voulais dire", "pardon c'est", "excusez-moi c'est",
+        "ça marche pas", "bug", "problème", "erreur système",
+        "ça charge pas", "bloqué", "planté", "freeze",
+        "je vois rien", "affichage problème", "technique souci",
+        "avis formation", "témoignages", "retours d'expérience",
+        "satisfaction", "taux de réussite", "anciens élèves",
+        "qu'en pensent les autres", "recommandations", "évaluations",
+        "notes formation", "commentaires participants",
+        "taux de placement", "trouvent du travail", "débouchés réels",
+        "statistiques emploi", "pourcentage réussite", "combien trouvent",
+        "garantie emploi", "placement après formation", "embauche assurée",
+        "chances de trouver", "probabilité emploi"
+      ]
+    },
+    {
+      "tag": "other",
+      "patterns": []
+    }
+  ]
+}

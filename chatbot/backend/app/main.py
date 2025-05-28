@@ -12,7 +12,7 @@ from app.routes.upload_routes import router as upload_router
 from app.routes.email_routes import router as email_router
 
 # Outils
-from app.llm_engine import LLMEngine
+from app.llm_driven_counselor import LLMDrivenCounselor
 from app.logging_config import logger
 import app.globals as globs
 from app.formation_search import FormationSearch
@@ -33,15 +33,12 @@ async def lifespan(app: FastAPI):
     globs.formation_search = FormationSearch(["app/content/rncp/rncp.json",
         "app\content\formations_internes.json"], "app/tfidf_model_all.joblib")
     # 1 — une seule instance LLMEngine qui RÉUTILISE ce service
-    globs.llm_engine = LLMEngine(
-        content_dir=str(DATA_DIR),
-        enable_rncp=enable_rncp,
-    )
+    globs.llm_counselor = LLMDrivenCounselor()
 
     yield
 
     # Nettoyage
-    globs.llm_engine = None
+    globs.llm_counselor = None
     logger.info("Application arrêtée")
 
 app = FastAPI(
