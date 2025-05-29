@@ -76,17 +76,17 @@ class LLMDrivenCounselor:
             "search_formation": "L'utilisateur cherche une formation. Utilise les résultats de recherche fournis pour l'aider.",
             
             "formation_select": "L'utilisateur veut sélectionner une formation. Guide-le dans son choix.",
-            "formation_details_objectives": "L'utilisateur s'intéresse aux objectifs de la formation. Détaille-les.",
-            "formation_details_public": "L'utilisateur veut savoir à qui s'adresse la formation. Explique le public cible.",
-            "formation_details_duration": "L'utilisateur demande la durée. Donne cette information clairement.",
-            "formation_details_price": "L'utilisateur s'intéresse au prix. Mentionne aussi les financements possibles.",
-            "formation_details_location": "L'utilisateur demande où se passe la formation. Précise lieu et modalités.",
-            "formation_details_inscription": "L'utilisateur veut s'inscrire. Guide-le dans les étapes.",
-            "info_certif": "L'utilisateur s'intéresse à la certification. Explique la valeur du diplôme.",
-            "info_prerequests": "L'utilisateur demande les prérequis. Rassure-le si possible.",
+            "formation_details_objectives": "L'utilisateur s'intéresse aux objectifs de la formation. Détaille-les sois concis et clair, va directement à l’essentiel sur les objectifs de la formation choisie.",
+            "formation_details_public": "L'utilisateur veut savoir à qui s'adresse la formation. va directement à l’essentiel sur le public cible de la formation choisie.",
+            "formation_details_duration": "L'utilisateur demande la durée. Donne cette information clairement et directement.",
+            "formation_details_price": "L'utilisateur s'intéresse au prix donne l'infor directement en euro. et Mentionne aussi les financements possibles.",
+            "formation_details_location": "L'utilisateur demande où se passe la formation. Précise lieu et modalités de la formation choisie directement .",
+            "formation_details_inscription": "L'utilisateur veut probablement s'inscrire. Guide-le dans les étapes.",
+            "info_certif": "L'utilisateur s'intéresse probablement à la certification. Explique la valeur du diplôme.",
+            "info_prerequests": "L'utilisateur demande les prérequis donne lui les prérequis directement et Rassure-le si possible.",
             
             "advice_reconversion": "L'utilisateur cherche des conseils pour sa reconversion. Sois encourageant et pratique.",
-            "advice_cv": "L'utilisateur veut améliorer son CV. Donne des conseils concrets.",
+            
             "advice_interview": "L'utilisateur prépare un entretien. Aide-le avec des tips pratiques.",
             "advice_motivation_letter": "L'utilisateur rédige une lettre de motivation. Guide-le efficacement.",
             "advice_job_search": "L'utilisateur cherche un emploi. Propose des stratégies.",
@@ -199,7 +199,7 @@ class LLMDrivenCounselor:
         # Stocker dans le contexte
         self._search_context["pending_query"] = query
         self._search_context["awaiting_confirmation"] = True
-        return f"Vous souhaitez rechercher des formations en **{query}** ?\n\n✅ Oui – Lancer la recherche\n❌ Non – Modifier"
+        return f"Vous souhaitez rechercher des formations pour **{query}** ?\n\n✅ Oui – Lancer la recherche\n❌ Non – Modifier"
 
         
     def _handle_formation_selection(self, text: str, entities: dict) -> str:
@@ -275,12 +275,7 @@ class LLMDrivenCounselor:
             elif objectifs:
                 return f"Les objectifs de {titre} sont : {objectifs}"
             else:
-                # Générer des objectifs génériques selon le type
-                if 'data' in titre.lower() or 'ia' in titre.lower() or "intelligence artificielle" in titre.lower():
-                    return (f"Les objectifs de {titre} incluent : maîtriser les fondamentaux, "
-                            f"développer des solutions pratiques, et acquérir une expertise reconnue.")
-                else:
-                    return f"Cette formation {titre} vise à développer les compétences clés du domaine."
+                return f"Cette formation {titre} vise à développer les compétences clés du domaine."
 
         
         elif aspect == "prerequisites":
@@ -559,15 +554,22 @@ class LLMDrivenCounselor:
             f"IMPORTANT : Adapte ta réponse à CE profil spécifique. Si son objectif ne correspond pas aux formations tech de Beyond Expertise, sois honnête et oriente-le ailleurs.\n\n"
             f"Formations Beyond Expertise disponibles :\n"
             f"Power BI, Cloud Azure, SQL/NoSQL, ETL, Deep Learning, Machine Learning, JIRA, Data Analyst, Python Visualisation, Intelligence Artificielle\n\n"
-            f"Réponds en 50-80 mots maximum, sois concis et utile."
+            f"Réponds en 50-80 mots maximum, sois concis et utile. et addresse l'utilisateur en son prénom quand possible"
         )
 
         # 6. Construire les messages à envoyer AU LLM (temporaire, pas stockés !)
-        llm_messages = self.ctx.conversation_history.copy()
-        # Injecte enriched_instruction SANS polluer l'historique utilisateur
+        # llm_messages = self.ctx.conversation_history.copy()
+        # # Injecte enriched_instruction SANS polluer l'historique utilisateur
+        # if enriched_instruction and enriched_instruction != base_instruction:
+        #     llm_messages.append({"role": "user", "content": enriched_instruction})
+        # llm_messages.append({"role": "system", "content": system_prompt})
+        llm_messages = [{"role": "system", "content": system_prompt}]
+        llm_messages += [
+            msg for msg in self.ctx.conversation_history if msg["role"] != "system"
+        ]
         if enriched_instruction and enriched_instruction != base_instruction:
             llm_messages.append({"role": "user", "content": enriched_instruction})
-        llm_messages.append({"role": "system", "content": system_prompt})
+
 
         # 7. Gestion du relai recherche formation (avant LLM)
         if self._search_context["awaiting_confirmation"]:
