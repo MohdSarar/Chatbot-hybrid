@@ -66,6 +66,6 @@ def recommend_endpoint(r: RecommendRequest):
         else:
             return RecommendResponse(
                 recommended_course="",
-                reply="Désolé, aucune recommandation de formation n'a pu être déterminée pour votre profil.",
+                reply="Désolé, aucune formation proposée par Beyond Expertise ne correspond actuellement à votre profil. Cependant, je peux vous aider à trouver des formations certifiantes externes (RNCP) adaptées à vos objectifs. N'hésitez pas à me le demander !",
                 details={}
             )
