@@ -19,6 +19,7 @@ class IntentClassifier:
             if model_bundle : 
                 print("model intent classifier found and loaded successfully")
             self.model = model_bundle["classifier"]
+            self.label_encoder = model_bundle["label_encoder"]
             # Nouveau : Charger le modèle d'embedding SentenceTransformer
             from sentence_transformers import SentenceTransformer
             self.embedder = SentenceTransformer(model_bundle["embedder_name"])
@@ -27,6 +28,7 @@ class IntentClassifier:
             logger.error(f"Failed to load intent classifier: {e}")
             self.model = None
             self.embedder = None
+            self.label_encoder = None
 
     def predict(self, text: str) -> Tuple[str, float]:
         """
@@ -38,7 +40,9 @@ class IntentClassifier:
             return "other", 0.0
         try:
             X = self.embedder.encode([text])
-            intent = self.model.predict(X)[0]
+            intent_encoded = self.model.predict(X)[0]
+            # DECODE THE INTENT NUMBER TO NAME!
+            intent = self.label_encoder.inverse_transform([intent_encoded])[0]
             proba = self.model.predict_proba(X)[0]
             confidence = proba.max()
             if confidence < 0.3:
@@ -64,7 +68,9 @@ class IntentClassifier:
             results = []
             for idx in top_indices:
                 if proba[idx] > 0.1:
-                    results.append((classes[idx], proba[idx]))
+                    # DECODE EACH CLASS TO GET THE INTENT NAME!
+                    intent_name = self.label_encoder.inverse_transform([classes[idx]])[0]
+                    results.append((intent_name, proba[idx]))
             return results if results else [("other", 0.0)]
         except Exception as e:
             logger.error(f"Top-k prediction error: {e}")
