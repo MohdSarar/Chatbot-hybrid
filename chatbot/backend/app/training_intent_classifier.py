@@ -40,8 +40,8 @@ except ImportError:
     logger.warning("spaCy non disponible.")
 
 EMBEDDING_MODEL_NAME = "paraphrase-multilingual-MiniLM-L12-v2"
-INTENTS_FILE = r"app\intents.json"
-MODEL_FILE = r"app\intent_model.pkl"
+INTENTS_FILE = r"chatbot-llm\chatbot\backend\app\intents.json"
+MODEL_FILE = r"chatbot-llm\chatbot\backend\app\intent_model.pkl"
 
 class IntentTrainer:
     def __init__(self, intents_path=INTENTS_FILE, force_tfidf=False):
