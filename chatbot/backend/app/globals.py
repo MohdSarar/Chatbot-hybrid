@@ -4,3 +4,4 @@ enable_rncp = True
 formation_search = None
 rag_engine = None
 llm_counselor = None
+intent_classifier = None
