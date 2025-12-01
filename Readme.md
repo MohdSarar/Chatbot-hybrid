@@ -1,26 +1,62 @@
-# Chatbot Hybrid – TF-IDF & Intent Classification
+# Hybrid Intent-Based Chatbot
 
-## Objectif
-Système de recommandation de formations basé sur :
-- une recherche TF-IDF + similarité cosinus,
-- un classifieur d’intentions pour comprendre la question utilisateur.
+A hybrid chatbot combining TF-IDF vectorization with intent classification for intelligent response generation.
 
-## Stack technique
-- Python
-- scikit-learn (TF-IDF, Similarity, Classifier)
-- NLTK (prétraitement)
-- FastAPI (API)
+## 🛠️ Technologies
 
-## Fonctionnalités
-- Détection d’intention.
-- Recherche des formations les plus proches.
-- API pour interroger le moteur.
+- **NLP Libraries**: NLTK, scikit-learn
+- **ML Algorithm**: TF-IDF Vectorization + Cosine Similarity
+- **Classification**: Intent Recognition Model
+- **Language**: Python 3.x
 
-## Installation
+## 📋 Features
+
+- TF-IDF based text similarity matching
+- Intent classification for query understanding
+- Hybrid response generation (retrieval + rule-based)
+- Customizable intent patterns
+
+## 🏗️ Architecture
+User Input → Preprocessing → TF-IDF Vectorization
+↓
+Intent Classification
+↓
+Response Selection (Cosine Similarity)
+↓
+Bot Response
+
+![Description](Chatbot-hybrid.png)
+
+
+![Description](Chatbot-hybrid-flow.png)
+
+
+## 🚀 Installation
 ```bash
+# Clone the repository
 git clone https://github.com/MohdSarar/Chatbot-hybrid.git
 cd Chatbot-hybrid
-python -m venv .venv
-.\.venv\Scripts\activate
-pip install -r requirements.txt
-uvicorn main:app --reload
+
+# Install dependencies
+pip install nltk scikit-learn numpy
+
+# Download NLTK data
+python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords')"
+```
+
+## 💡 Usage
+```bash
+python chatbot.py
+```
+
+## 📊 Model Details
+
+| Component | Method |
+|-----------|--------|
+| Text Vectorization | TF-IDF |
+| Similarity Measure | Cosine Similarity |
+| Intent Detection | Classification Model |
+
+## 👤 Author
+
+**Sarar Mohd** - [GitHub](https://github.com/MohdSarar)
